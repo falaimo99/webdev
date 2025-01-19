@@ -1,3 +1,4 @@
+/* Defaulting Style */
 * {
 	padding: 0;
 	margin: 0;
@@ -37,6 +38,17 @@ dialog {
 	border-radius: 10px;
 	overflow: hidden;
 	background-color: rgba(255, 248, 220, 0.32);
+
+	display: grid;
+	grid-template-columns: 1fr 3fr 1fr;
+	grid-template-rows: 1fr 4fr;
+}
+
+dialog > nav {
+	grid-column: 2;
+	grid-row: 0;
+	align-self: center;
+	justify-self: center;
 }
 
 #closeDialog {
