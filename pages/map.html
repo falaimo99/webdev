@@ -3,21 +3,34 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<script type="module" src="../scripts/script.js"></script>
 		<link rel="stylesheet" href="../styles/map.css" />
 		<link
 			rel="stylesheet"
 			href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=map"
 		/>
 		<title>The Map</title>
+		<script type="module" src="../scripts/script.js"></script>
 	</head>
 	<body>
 		<div id="grid-container">
+			<dialog id="welcome-dialog">
+				<h2>Welcome to the Map!</h2>
+				<p>
+					From here you will be able to <b>select</b> how to visit the
+					exhibition
+				</p>
+				<nav>
+					<button class="path-button" id="originpath-btn">
+						Origin Path
+					</button>
+					<button class="path-button" id="legacypath-btn">
+						Legacy Path
+					</button>
+					<button class="path-button" id="roamfree">Roam Free</button>
+				</nav>
+			</dialog>
+
 			<span class="material-symbols-outlined" id="map-icon"> map </span>
-			<nav>
-				<button class="path-button">Origin Path</button>
-				<button class="path-button">Legacy Path</button>
-			</nav>
 			<svg
 				viewBox="0 0 368 55"
 				fill="none"
