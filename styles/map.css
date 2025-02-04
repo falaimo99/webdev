@@ -1,3 +1,6 @@
+.material-symbols-outlined {
+	font-family: "Material Symbols Outlined";
+}
 /* Defaulting Style */
 * {
 	padding: 0;
@@ -81,6 +84,38 @@ dialog {
 }
 h2 {
 	line-height: 3rem;
+}
+
+.charDialog {
+	width: clamp(fit-content, 30vw, 40vw);
+	display: grid;
+	grid-template-columns: 1fr 3fr 1fr;
+	grid-template-rows: 1fr 3fr 1fr;
+}
+.charDialog > h1 {
+	grid-column: 2;
+	grid-row: 1;
+	justify-self: center;
+}
+.charDialog > img {
+	width: 40%;
+	grid-column: 2;
+	grid-row: 2;
+}
+.charDialog > p {
+	grid-row: 3;
+	grid-column: 2;
+	justify-self: center;
+	width: 75ch;
+}
+
+#arrow-forward {
+	grid-row: 2;
+	grid-column: 3;
+}
+#arrow-back {
+	grid-row: 2;
+	grid-column: 1;
 }
 
 nav {
