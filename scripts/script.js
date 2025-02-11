@@ -139,30 +139,23 @@ document.addEventListener("DOMContentLoaded", function () {
 				console.log(item)
 
                 if (item) {
-                    // Clone the tooltipTemplate content
                     const template = document.getElementById("tooltipTemplate");
                     const tooltipContent = template.content.cloneNode(true);
 
-                    // Populate the template with item data
                     tooltipContent.querySelector("h1").textContent = item.h1 || "No title available";
                     tooltipContent.querySelector("img").src = item.img || "";
                     tooltipContent.querySelector("img").alt = item.h2 || "Image";
                     tooltipContent.querySelector("#descriptionText").textContent = item.text1 || "No description available.";
                     tooltipContent.querySelector("small").textContent = `Provenance: ${item.Provenance || "Unknown"}`;
 
-                    // Insert the populated content into the tooltip description area
                     description.innerHTML = "";
                     description.appendChild(tooltipContent);
 
-                    // Position the tooltip near the clicked item
                     tooltip.style.left = `${x + 10}px`;
                     tooltip.style.top = `${y + 10}px`;
                     tooltip.classList.remove("hidden");
 
-					// tooltip.addEventListener("click", function (event) {
-					// 	const itemId = event.target.nextElementSibling?.id.match(/\d+/)?.[0];
-					// 	fetchItemDetails(itemId, event.clientX, event.clientY);
-					// });
+					
 
 					const radios = document.querySelectorAll('input[type="radio"]');
 					radios.forEach(radio => {
@@ -193,19 +186,7 @@ function updateDescription(item) {
 	} else {
 	console.log(complexity)
 	console.log(length)
-	// console.log(document.getElementById("descriptionText"))
 	  document.getElementById("descriptionText").textContent = "Please select both complexity and length to see the description.";
 	}
   }
-  
-//   document.addEventListener("DOMContentLoaded", function () {
-// 	// Attach event listeners to radio buttons
-// 	const radios = document.querySelectorAll('input[type="radio"]');
-// 	radios.forEach(radio => {
-// 	  radio.addEventListener('change', updateDescription);
-// 	});
-  
-// 	// Initialize with default values
-// 	updateDescription();
-//   });
   
