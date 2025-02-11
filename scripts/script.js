@@ -90,7 +90,7 @@ const charDialog = () => {
 		const map = document.querySelector("svg");
 		dialog.style.display = "none";
 		map.style.display = "block";
-		animateMask(selectedMask);
+		// animateMask(selectedMask);
 	});
 
 	arrowBack.addEventListener("click", () => {
@@ -107,3 +107,92 @@ const charDialog = () => {
 };
 
 welcomeDialog();
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const tooltip = document.getElementById("tooltip");
+    const title = document.getElementById("item-title");
+    const description = document.getElementById("item-description");
+    const closeBtn = document.getElementById("close-tooltip");
+
+    // Open tooltip when an item (circle, ellipse) is clicked
+    document.querySelectorAll("circle, ellipse").forEach(circle => {
+        circle.addEventListener("click", function (event) {
+            const itemId = event.target.nextElementSibling?.id.match(/\d+/)?.[0];
+            fetchItemDetails(itemId, event.clientX, event.clientY);
+        });
+    });
+
+    // Close tooltip when the close button is clicked
+    closeBtn.addEventListener("click", () => {
+        tooltip.classList.add("hidden");
+    });
+
+    function fetchItemDetails(itemId, x, y) {
+        fetch("../data/items.json")
+            .then(response => response.json())
+            .then(data => {
+				
+                const item = data.items.find(obj => obj.id === parseInt(itemId));
+
+				console.log(item)
+
+                if (item) {
+                    // Clone the tooltipTemplate content
+                    const template = document.getElementById("tooltipTemplate");
+                    const tooltipContent = template.content.cloneNode(true);
+
+                    // Populate the template with item data
+                    tooltipContent.querySelector("h1").textContent = item.h1 || "No title available";
+                    tooltipContent.querySelector("img").src = item.img || "";
+                    tooltipContent.querySelector("img").alt = item.h2 || "Image";
+                    tooltipContent.querySelector("#descriptionText").textContent = item.text1 || "No description available.";
+                    tooltipContent.querySelector("small").textContent = `Provenance: ${item.Provenance || "Unknown"}`;
+
+                    // Insert the populated content into the tooltip description area
+                    description.innerHTML = "";
+                    description.appendChild(tooltipContent);
+
+                    // Position the tooltip near the clicked item
+                    tooltip.style.left = `${x + 10}px`;
+                    tooltip.style.top = `${y + 10}px`;
+                    tooltip.classList.remove("hidden");
+
+                } else {
+                    title.textContent = "Unknown Item";
+                    description.textContent = "No description available.";
+                }
+            })
+            .catch(error => console.error("Error loading JSON:", error));
+    }
+});
+
+
+function updateDescription() {
+	const complexity = document.querySelector('input[name="complexity"]:checked');
+	const length = document.querySelector('input[name="length"]:checked');
+	console.log(complexity, length)
+	if (complexity && length) {
+	  const complexityValue = complexity.value;
+	  const lengthValue = length.value;
+	  const descriptionText = descriptions[complexityValue][lengthValue];
+	  document.getElementById("descriptionText").textContent = descriptionText || "No description available.";
+	} else {
+	
+	console.log(document.getElementById("descriptionText"))
+	  document.getElementById("descriptionText").textContent = "Please select both complexity and length to see the description.";
+	}
+  }
+  
+  document.addEventListener("DOMContentLoaded", function () {
+	// Attach event listeners to radio buttons
+	const radios = document.querySelectorAll('input[type="radio"]');
+	radios.forEach(radio => {
+	  radio.addEventListener('change', updateDescription);
+	});
+  
+	// Initialize with default values
+	updateDescription();
+  });
+  
