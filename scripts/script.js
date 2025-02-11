@@ -159,6 +159,18 @@ document.addEventListener("DOMContentLoaded", function () {
                     tooltip.style.top = `${y + 10}px`;
                     tooltip.classList.remove("hidden");
 
+					// tooltip.addEventListener("click", function (event) {
+					// 	const itemId = event.target.nextElementSibling?.id.match(/\d+/)?.[0];
+					// 	fetchItemDetails(itemId, event.clientX, event.clientY);
+					// });
+
+					const radios = document.querySelectorAll('input[type="radio"]');
+					radios.forEach(radio => {
+						radio.addEventListener('change', function() {
+							updateDescription(item);
+						});
+					});
+
                 } else {
                     title.textContent = "Unknown Item";
                     description.textContent = "No description available.";
@@ -169,30 +181,31 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-function updateDescription() {
+function updateDescription(item) {
 	const complexity = document.querySelector('input[name="complexity"]:checked');
 	const length = document.querySelector('input[name="length"]:checked');
 	console.log(complexity, length)
 	if (complexity && length) {
 	  const complexityValue = complexity.value;
 	  const lengthValue = length.value;
-	  const descriptionText = descriptions[complexityValue][lengthValue];
+	  const descriptionText = item.descriptions[complexityValue][lengthValue];
 	  document.getElementById("descriptionText").textContent = descriptionText || "No description available.";
 	} else {
-	
-	console.log(document.getElementById("descriptionText"))
+	console.log(complexity)
+	console.log(length)
+	// console.log(document.getElementById("descriptionText"))
 	  document.getElementById("descriptionText").textContent = "Please select both complexity and length to see the description.";
 	}
   }
   
-  document.addEventListener("DOMContentLoaded", function () {
-	// Attach event listeners to radio buttons
-	const radios = document.querySelectorAll('input[type="radio"]');
-	radios.forEach(radio => {
-	  radio.addEventListener('change', updateDescription);
-	});
+//   document.addEventListener("DOMContentLoaded", function () {
+// 	// Attach event listeners to radio buttons
+// 	const radios = document.querySelectorAll('input[type="radio"]');
+// 	radios.forEach(radio => {
+// 	  radio.addEventListener('change', updateDescription);
+// 	});
   
-	// Initialize with default values
-	updateDescription();
-  });
+// 	// Initialize with default values
+// 	updateDescription();
+//   });
   
