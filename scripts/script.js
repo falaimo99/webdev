@@ -1,3 +1,4 @@
+let currentLevel = 0;
 const adventurers = [
 	{
 		adventurer: "Merry & Pippin",
@@ -91,6 +92,8 @@ const charDialog = () => {
 		dialog.style.display = "none";
 		map.style.display = "block";
 		// animateMask(selectedMask);
+		currentLevel = adventurers[counter].level;
+		
 	});
 
 	arrowBack.addEventListener("click", () => {
@@ -136,16 +139,19 @@ document.addEventListener("DOMContentLoaded", function () {
 				
                 const item = data.items.find(obj => obj.id === parseInt(itemId));
 
-				console.log(item)
 
                 if (item) {
                     const template = document.getElementById("tooltipTemplate");
                     const tooltipContent = template.content.cloneNode(true);
+					const itemDescription = item.descriptions.find(obj => obj.level === currentLevel);
+					const radios = tooltipContent.querySelectorAll('input[type="radio"]');
+
+					
 
                     tooltipContent.querySelector("h1").textContent = item.h1 || "No title available";
                     tooltipContent.querySelector("img").src = item.img || "";
                     tooltipContent.querySelector("img").alt = item.h2 || "Image";
-                    tooltipContent.querySelector("#descriptionText").textContent = item.text1 || "No description available.";
+                    tooltipContent.querySelector("#descriptionText").textContent = itemDescription.veryBrief || "No description available.";
                     tooltipContent.querySelector("small").textContent = `Provenance: ${item.Provenance || "Unknown"}`;
 
                     description.innerHTML = "";
@@ -156,12 +162,13 @@ document.addEventListener("DOMContentLoaded", function () {
                     tooltip.classList.remove("hidden");
 
 					
-
-					const radios = document.querySelectorAll('input[type="radio"]');
 					radios.forEach(radio => {
 						radio.addEventListener('change', function() {
 							updateDescription(item);
 						});
+						if (radio.name === 'complexity' && radio.value === `${currentLevel}`) {
+							radio.checked = true
+						}
 					});
 
                 } else {
@@ -177,7 +184,10 @@ document.addEventListener("DOMContentLoaded", function () {
 function updateDescription(item) {
 	const complexity = document.querySelector('input[name="complexity"]:checked');
 	const length = document.querySelector('input[name="length"]:checked');
-	console.log(complexity, length)
+	// TODO: changes here at list
+	
+	// currentLevel = complexityLevels.findIndex(x => x===complexity);
+
 	if (complexity && length) {
 	  const complexityValue = complexity.value;
 	  const lengthValue = length.value;
