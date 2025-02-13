@@ -5,7 +5,7 @@
 		"id": 1,
 		"h1": "The First Manuscript of The Lord of the Rings",
 		"h2": "J.R.R. Tolkien’s Original Handwritten Draft",
-		"img": "https://example.com/tolkien-manuscript.jpg",
+		"img": "../static/items/1-manuscript.png",
 		"Provenance": "Marquette University Archives, USA",
 		"descriptions": [
 		  {
