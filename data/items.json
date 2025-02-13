@@ -33,7 +33,7 @@
       "id": 2,
       "h1": "Tolkien’s WWI Trench Map",
       "h2": "Used by J.R.R. Tolkien during the Battle of the Somme (1916-1917)",
-      "img": "../../2-trench-map.jpg",
+      "img": "../static/items/2-trench-map.jpg",
       "Provenance": "Bodleian Library, Oxford",
       "descriptions": [
         {
@@ -60,7 +60,7 @@
       "id": 3,
       "h1": "Tolkien’s Annotated Copy of Beowulf",
       "h2": "A heavily marked edition of Beowulf that influenced Tolkien’s writings",
-      "img": "../../3-beowulf.jpg",
+      "img": "../static/items/3-beowulf.jpg",
       "Provenance": "Bodleian Library, Oxford",
       "descriptions": [
         {
