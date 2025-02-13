@@ -23,9 +23,30 @@ body {
 	grid-template-rows: 10% 1fr;
 	grid-auto-flow: column;
 	justify-items: center;
-	background-color: antiquewhite;
-	background-image: url();
+	/* background-color: antiquewhite; */
+	/* background-image: url("../static/map/middle-earth-map.jpg"); */
+	/* backdrop-filter: blur(10px); */
+	/* filter: blur(1px); */
+	/* background-image: url(); */
 }
+
+.background-image {
+	position: fixed;
+	left: 0;
+	right: 0;
+	z-index: -1;
+	display: block;
+	background-image: url("../static/map/middle-earth-map.jpg");
+	width: 100vw;
+	height: 100vh;
+	-webkit-filter: blur(5px);
+	-moz-filter: blur(5px);
+	-o-filter: blur(5px);
+	-ms-filter: blur(5px);
+	filter: blur(5px);
+	filter: brightness(0.5) blur(5px)
+	
+  }
 
 #map-icon {
 	cursor: pointer;
@@ -240,6 +261,7 @@ button {
     padding: 1rem;
     max-width: 300px; /* You can set this based on your design */
     background-color: hsl(0, 0%, 38.82%);
+	/* background-image: url("../static/map/middle-earth-map.jpg"); */
     color: white;
     font-size: 1rem;
     font-weight: 500; /* Slightly lighter */
