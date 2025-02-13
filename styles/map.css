@@ -255,47 +255,101 @@ button {
 	outline: none;
 }
 
-
 .tooltip {
-    position: absolute; /* Allow it to position dynamically */
-    padding: 1rem;
-    max-width: 300px; /* You can set this based on your design */
-    background-color: hsl(0, 0%, 38.82%);
-	/* background-image: url("../static/map/middle-earth-map.jpg"); */
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    position: fixed;
+    margin: auto;
+    padding: 1.5rem;
+    background-color: rgba(0, 0, 0, 0.85);
     color: white;
     font-size: 1rem;
-    font-weight: 500; /* Slightly lighter */
-    border-radius: 8px;
-    border: none;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Adds a slight shadow for better contrast */
-    z-index: 1000; /* Ensure the tooltip stays on top */
+    font-weight: 500;
+    border-radius: 10px;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    max-width: 50rem; /* Ensure tooltip card has a max-width */
+    max-height: 30rem;
+    height: fit-content;
+    overflow: hidden; /* Hide overflow if content is too big */
 }
 
 .tooltip.hidden {
     display: none;
 }
 
-.tooltip h3 {
-    margin: 0;
-    font-size: 18px; /* Make the title a bit larger */
-    font-weight: bold;
-    margin-bottom: 0.5rem; /* Adds spacing between title and content */
+.tooltip h1 {
+    font-size: 22px;
+    margin-bottom: 0.5rem;
+}
+
+.tooltip .container {
+    display: flex; /* Use flexbox for image + content side by side */
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.tooltip img {
+    max-width: 12rem; /* Limit image width */
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    object-fit: contain; /* Scale image to fit */
+}
+
+.selection-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    height: fit-content;
+}
+
+.complexity, .length {
+    text-align: left;
+}
+
+.tooltip-navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.tooltip-navigation button {
+    padding: 8px 15px;
+    font-size: 14px;
+    background-color: #444;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.description {
+    overflow-y: auto;
+    max-height: 10rem;
+    margin-bottom: 1rem;
+}
+
+.tooltip-navigation button:hover {
+    background-color: #666;
 }
 
 #close-tooltip {
     position: absolute;
-    top: 0.5rem;
-    right: 0.5rem;
-    font-size: 18px;
-    font-weight: bold;
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
     cursor: pointer;
-    background: transparent;
+    background: none;
     border: none;
     color: white;
-    padding: 0.5rem;
 }
 
 #close-tooltip:hover {
-    background-color: rgba(255, 255, 255, 0.2); /* Subtle hover effect */
-    border-radius: 50%;
+    color: red;
 }

@@ -244,31 +244,39 @@
 				<span id="close-tooltip">&times;</span>
 				<p id="item-description"></p>
 			</div>
-			<template id="tooltipTemplate">
+			<template id="tooltipTemplate" style="min-width: fit-content; width: 20rem;">
 				<div class="container">
-				  <h1></h1>
-				  <img src="" alt="Image" id="objectImage" style="width: 100%; height: auto">
-				  <div class="selection-container">
-					<div class="complexity">
-					  <h2>Complexity</h2>
-					  <label><input type="radio" name="complexity" value="0"> Introductory</label>
-					  <label><input type="radio" name="complexity" value="1"> Average</label>
-					  <label><input type="radio" name="complexity" value="2"> Advanced</label>
+					
+					<div style="display: flex; flex-direction: row;">
+						<img src="" alt="Image" id="objectImage">
+						<div style="flex-grow: 1; padding: 1rem;">
+
+							<h1></h1>
+							<div class="selection-container">
+								<div class="complexity">
+									<h2>Complexity</h2>
+									<label><input type="radio" name="complexity" value="0"> Introductory</label>
+									<label><input type="radio" name="complexity" value="1"> Average</label>
+									<label><input type="radio" name="complexity" value="2"> Advanced</label>
+								</div>
+								<div class="length">
+									<h2>Length</h2>
+									<label><input type="radio" name="length" value="veryBrief" checked> Very Brief</label>
+									<label><input type="radio" name="length" value="midSize"> Mid-Size</label>
+									<label><input type="radio" name="length" value="long"> Long</label>
+								</div>
+							</div>
+							<div class="description">
+								<h3>Description</h3>
+								<p id="descriptionText"></p>
+							</div>
+							<small><strong>Provenance:</strong> </small>
+						</div>
 					</div>
-					<div class="length">
-					  <h2>Length</h2>
-					  <label><input type="radio" name="length" value="veryBrief" checked> Very Brief</label>
-					  <label><input type="radio" name="length" value="midSize"> Mid-Size</label>
-					  <label><input type="radio" name="length" value="long"> Long</label>
-					</div>
-				  </div>
-				  <div class="description">
-					<h3>Description</h3>
-					<p id="descriptionText"></p>
-				  </div>
-				  <small><strong>Provenance:</strong> </small>
 				</div>
-			  </template>
+			</template>
+			
+			
 			  
 		</div>
 	</body>
