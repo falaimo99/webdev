@@ -143,6 +143,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 if (item) {
                     const template = document.getElementById("tooltipTemplate");
                     const tooltipContent = template.content.cloneNode(true);
+					// console.log(item.descriptions)
+					// console.log(currentLevel)
 					const itemDescription = item.descriptions.find(obj => obj.level === currentLevel);
 					const radios = tooltipContent.querySelectorAll('input[type="radio"]');
 

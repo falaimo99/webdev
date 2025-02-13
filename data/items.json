@@ -1,174 +1,415 @@
 {
-	"items": [
-		{
-			"id": 1,
-			"h1": "Narsil",
-			"h2": "Narsil - The Sword of Elendil",
-			"img": "../static/Sword_narsil.jpg",
-			"text1": "Narsil was the sword of Elendil, used in the War of the Last Alliance.",
-			"text2": "Narsil was the sword wielded by Elendil, king of Gondor, during the War of the Last Alliance. It was broken during the battle but was later reforged as Andúril by Aragorn.",
-			"text3": "Narsil was a symbol of the ancient kings of Gondor and was forged in Rivendell by the Elven smiths. It was wielded by Elendil, the last High King of Gondor, during the War of the Last Alliance, where it was shattered by Sauron’s strike. The sword was preserved, and its shards were passed down through the generations. Eventually, Aragorn, a direct heir of Elendil, reforged Narsil into Andúril. This reforging was significant not only for its martial use but also as a symbol of Aragorn's claim to the throne of Gondor and the fight against Sauron’s forces.",
-			"Provenance": ""
-		},
-		{
-			"id": 2,
-			"h1": "Narsil",
-			"h2": "Narsil - The Sword of Elendil",
-			"img": "../static/Sword_narsil.jpg",
-			"text1": "Narsil was the sword of Elendil, used in the War of the Last Alliance.",
-			"text2": "Narsil was the sword wielded by Elendil, king of Gondor, during the War of the Last Alliance. It was broken during the battle but was later reforged as Andúril by Aragorn.",
-			"text3": "Narsil was a symbol of the ancient kings of Gondor and was forged in Rivendell by the Elven smiths. It was wielded by Elendil, the last High King of Gondor, during the War of the Last Alliance, where it was shattered by Sauron’s strike. The sword was preserved, and its shards were passed down through the generations. Eventually, Aragorn, a direct heir of Elendil, reforged Narsil into Andúril. This reforging was significant not only for its martial use but also as a symbol of Aragorn's claim to the throne of Gondor and the fight against Sauron’s forces.",
-			"Provenance": ""
-		},
-		{
-			"id": 3,
-			"h1": "",
-			"h2": "",
-			"img": "url",
-			"text1": "",
-			"text2": "",
-			"text3": "",
-			"Provenance": ""
-		},
-		{
-			"id": 4,
-			"h1": "Narsil",
-			"h2": "Narsil - The Sword of Elendil",
-			"img": "../static/Sword_narsil.jpg",
-			"text1": "Narsil was the sword of Elendil, used in the War of the Last Alliance.",
-			"text2": "Narsil was the sword wielded by Elendil, king of Gondor, during the War of the Last Alliance. It was broken during the battle but was later reforged as Andúril by Aragorn.",
-			"text3": "Narsil was a symbol of the ancient kings of Gondor and was forged in Rivendell by the Elven smiths. It was wielded by Elendil, the last High King of Gondor, during the War of the Last Alliance, where it was shattered by Sauron’s strike. The sword was preserved, and its shards were passed down through the generations. Eventually, Aragorn, a direct heir of Elendil, reforged Narsil into Andúril. This reforging was significant not only for its martial use but also as a symbol of Aragorn's claim to the throne of Gondor and the fight against Sauron’s forces.",
-			"Provenance": "",
-			"descriptions": [
-				{
-				  "level": 0,
-				  "veryBrief": "Narsil was the sword of Elendil, used in the War of the Last Alliance.",
-				  "midSize": "Narsil, the sword of Elendil, played a pivotal role in the War of the Last Alliance. It was famously broken by Sauron’s forces and later reforged as Andúril.",
-				  "long": "Narsil, forged by the Elven smiths of Rivendell, was the sword of Elendil, High King of Gondor, and wielded during the War of the Last Alliance. It was shattered in the battle against Sauron. The sword’s hilt and shards were preserved until Aragorn, a descendant of Elendil, reforged it as Andúril, the Flame of the West, which became a symbol of hope for Middle-earth during the War of the Ring."
-				},
-				{
-				  "level": 1,
-				  "veryBrief": "Narsil was the legendary sword of Elendil, crucial in the defeat of Sauron.",
-				  "midSize": "Narsil was the sword wielded by Elendil, king of Gondor, during the War of the Last Alliance. It was broken during the battle but was later reforged as Andúril by Aragorn.",
-				  "long": "Narsil was forged by the Elven smiths and wielded by Elendil, the last High King of Gondor, during the Last Alliance against Sauron. It shattered in the battle but its shards were kept and eventually reforged into Andúril by Aragorn. Narsil became a symbol of hope and resistance against Sauron’s tyranny, with Aragorn using the reforged blade in the War of the Ring."
-				},
-				{
-				  "level": 2,
-				  "veryBrief": "Narsil, Elendil's sword, was shattered by Sauron but later reforged as Andúril.",
-				  "midSize": "Narsil, forged by the smiths of Rivendell, was wielded by Elendil during the War of the Last Alliance. The sword was broken in the battle but was later reforged as Andúril by Aragorn, serving as a symbol of his right to the throne of Gondor.",
-				  "long": "Narsil was a symbol of the ancient kings of Gondor and was forged in Rivendell by the Elven smiths. It was wielded by Elendil, the last High King of Gondor, during the War of the Last Alliance, where it was shattered by Sauron’s strike. The sword was preserved, and its shards were passed down through the generations. Eventually, Aragorn, a direct heir of Elendil, reforged Narsil into Andúril. This reforging was significant not only for its martial use but also as a symbol of Aragorn's claim to the throne of Gondor and the fight against Sauron’s forces."
-				}
-			]
-		},
-		{
-			"id": 5,
-			"h1": "",
-			"h2": "",
-			"img": "url",
-			"text1": "",
-			"text2": "",
-			"text3": "",
-			"Provenance": ""
-		},
-		{
-			"id": 6,
-			"h1": "",
-			"h2": "",
-			"img": "url",
-			"text1": "",
-			"text2": "",
-			"text3": "",
-			"Provenance": ""
-		},
-		{
-			"id": 7,
-			"h1": "",
-			"h2": "",
-			"img": "url",
-			"text1": "",
-			"text2": "",
-			"text3": "",
-			"Provenance": ""
-		},
-		{
-			"id": 8,
-			"h1": "",
-			"h2": "",
-			"img": "url",
-			"text1": "",
-			"text2": "",
-			"text3": "",
-			"Provenance": ""
-		},
-		{
-			"id": 9,
-			"h1": "Narsil",
-			"h2": "The Sword",
-			"img": "url",
-			"text1": "",
-			"text2": "",
-			"text3": "",
-			"Provenance": ""
-		},
-		{
-			"id": 10,
-			"h1": "",
-			"h2": "",
-			"img": "url",
-			"text1": "",
-			"text2": "",
-			"text3": "",
-			"Provenance": ""
-		},
-		{
-			"id": 11,
-			"h1": "",
-			"h2": "",
-			"img": "url",
-			"text1": "",
-			"text2": "",
-			"text3": "",
-			"Provenance": ""
-		},
-		{
-			"id": 12,
-			"h1": "",
-			"h2": "",
-			"img": "url",
-			"text1": "",
-			"text2": "",
-			"text3": "",
-			"Provenance": ""
-		},
-		{
-			"id": 13,
-			"h1": "",
-			"h2": "",
-			"img": "url",
-			"text1": "",
-			"text2": "",
-			"text3": "",
-			"Provenance": ""
-		},
-		{
-			"id": 14,
-			"h1": "",
-			"h2": "",
-			"img": "url",
-			"text1": "",
-			"text2": "",
-			"text3": "",
-			"Provenance": ""
-		},
-		{
-			"id": 15,
-			"h1": "",
-			"h2": "",
-			"img": "url",
-			"text1": "",
-			"text2": "",
-			"text3": "",
-			"Provenance": ""
-		}
-	]
+  "items": [
+
+	{
+		"id": 1,
+		"h1": "The First Manuscript of The Lord of the Rings",
+		"h2": "J.R.R. Tolkien’s Original Handwritten Draft",
+		"img": "https://example.com/tolkien-manuscript.jpg",
+		"Provenance": "Marquette University Archives, USA",
+		"descriptions": [
+		  {
+			"level": 0,
+			"veryBrief": "Tolkien’s original handwritten draft ofThe Lord of the Rings.",
+			"midSize": "This is the first complete manuscript ofThe Lord of the Rings, written by J.R.R. Tolkien. It includes early versions of key moments in the story.",
+			"long": "This is the very first manuscript ofThe Lord of the Rings, written by J.R.R. Tolkien by hand. Preserved at Marquette University, it contains early drafts, revisions, and marginal notes by the author. This document captures the evolution of one of the most influential fantasy works of all time."
+		  },
+		  {
+			"level": 1,
+			"veryBrief": "The earliest known draft ofThe Lord of the Rings, written by Tolkien himself.",
+			"midSize": "Tolkien’s first manuscript ofThe Lord of the Ringsoffers a rare glimpse into his creative process. It includes early versions of beloved characters and storylines, some of which were later changed.",
+			"long": "This manuscript, housed at Marquette University, is a historical treasure. It provides insight into Tolkien’s method of world-building, including early drafts of names, places, and plot points that were refined in the final book. It also contains his handwritten notes, showing how he reworked certain passages over time."
+		  },
+		  {
+			"level": 2,
+			"veryBrief": "Tolkien’s original draft, featuring early character names and story variations.",
+			"midSize": "The Marquette manuscript reveals fascinating early versions of key scenes and names. For example, Aragorn was initially called 'Trotter,' and the story had different paths before reaching its final form.",
+			"long": "The original manuscript ofThe Lord of the Ringsis a vital artifact in Tolkien scholarship. It preserves his handwritten drafts, including discarded ideas, alternative plot directions, and character name changes. Scholars have analyzed this document to understand Tolkien’s meticulous approach to storytelling. Notably, it shows how he reworked major elements over time, from linguistic details to entire chapters. The manuscript remains one of the most significant pieces in the study of Tolkien’s legendarium."
+		  }
+		]
+	  },
+    
+    {
+      "id": 2,
+      "h1": "Tolkien’s WWI Trench Map",
+      "h2": "Used by J.R.R. Tolkien during the Battle of the Somme (1916-1917)",
+      "img": "https://example.com/tolkien-wwi-trench-map.jpg",
+      "Provenance": "Bodleian Library, Oxford",
+      "descriptions": [
+        {
+          "level": 0,
+          "veryBrief": "A map used by J.R.R. Tolkien in World War I, where he fought in the trenches of the Somme.",
+          "midSize": "During World War I, Tolkien served as a British officer and carried this map while stationed in the trenches. His wartime experiences deeply influencedThe Lord of the Rings, especially its depictions of war and desolation.",
+          "long": "J.R.R. Tolkien served as a second lieutenant in the British Army during World War I. He was deployed to the Western Front in 1916, where he fought in the Battle of the Somme. This trench map was among the materials he used while navigating the battlefield. The horrors of trench warfare, the devastation of the landscape, and the camaraderie of soldiers left a profound mark on his later writing. Many scholars see echoes of these experiences in Middle-earth, particularly in the barren, war-torn landscapes of Mordor."
+        },
+        {
+          "level": 1,
+          "veryBrief": "Tolkien’s experience as a soldier in WWI, reflected in this trench map, shaped his portrayal of war in Middle-earth.",
+          "midSize": "This is one of the maps used by J.R.R. Tolkien during his service in World War I. The destruction and desolation he witnessed deeply influenced his depiction of Mordor and the themes of loss, war, and endurance inThe Lord of the Rings.",
+          "long": "Tolkien fought in the Battle of the Somme, one of the deadliest battles in history. As a signals officer, he used maps like this one to navigate the shifting front lines. The mud, chaos, and suffering of trench warfare left an indelible impact on him, which later emerged in his literary work. He described Mordor as a place of 'ash, dust, and fumes'—a landscape that bears striking resemblance to No Man’s Land. His personal loss of friends in the war also shaped the themes of heroism, camaraderie, and sacrifice found inThe Lord of the Rings."
+        },
+        {
+          "level": 2,
+          "veryBrief": "Tolkien’s trench map from WWI is a rare artifact, connecting his real-world experiences with his mythology.",
+          "midSize": "This trench map, used by Tolkien in the Battle of the Somme, provides insight into how his direct experiences in war shaped the landscapes and conflicts of Middle-earth. Scholars have drawn connections between the battle-scarred fields of France and the desolation of Mordor.",
+          "long": "The influence of World War I on Tolkien’s works has been widely analyzed, with this trench map serving as a tangible link between his military service and his literary creations. The destruction of nature, the psychological toll of war, and the sense of duty among soldiers are all central themes inThe Lord of the Rings. Tolkien himself later wrote that the Dead Marshes were inspired by the real-life battlefields of the Somme, where bodies of fallen soldiers lay submerged in mud and water. His wartime experiences not only shaped the physical landscapes of Middle-earth but also its emotional and moral depth."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "h1": "Tolkien’s Annotated Copy of Beowulf",
+      "h2": "A heavily marked edition of Beowulf that influenced Tolkien’s writings",
+      "img": "https://example.com/tolkien-annotated-beowulf.jpg",
+      "Provenance": "Bodleian Library, Oxford",
+      "descriptions": [
+        {
+          "level": 0,
+          "veryBrief": "Tolkien’s personal copy of Beowulf, filled with notes that shaped The Lord of the Rings.",
+          "midSize": "This is J.R.R. Tolkien’s personal copy of Beowulf, a poem that deeply influenced his creation of Middle-earth. His extensive notes on the text helped shape the culture of Rohan and the heroic themes of The Lord of the Rings.",
+          "long": "Tolkien was a professor of Anglo-Saxon at Oxford and one of the most influential scholars of Beowulf. His annotations in this copy reveal his deep engagement with the text. He argued that Beowulf was not just a historical artifact but a profound work of literature. His insights reshaped the way scholars viewed the poem and directly influenced his own storytelling. The Rohirrim, their language, and their warrior culture are strongly inspired by the world of Beowulf."
+        },
+        {
+          "level": 1,
+          "veryBrief": "Tolkien’s annotated Beowulf reveals his deep study of Old English, which influenced the Rohirrim.",
+          "midSize": "Tolkien’s scholarly work on Beowulf redefined its literary importance. His copy, filled with notes, shows how he studied the poem’s structure, themes, and language—many elements of which found their way into The Lord of the Rings, especially in the culture of Rohan.",
+          "long": "Tolkien’s famous lecture 'Beowulf: The Monsters and the Critics' changed how the poem was viewed, arguing that it was not merely historical but a masterwork of literature. His annotations in this copy reveal his thoughts on its language, themes of heroism and fate, and narrative structure. The Rohirrim of Middle-earth, their Old English-based language, and their epic traditions owe much to Tolkien’s lifelong engagement with Beowulf. Even Théoden’s battle speech echoes the heroic spirit of the poem."
+        },
+        {
+          "level": 2,
+          "veryBrief": "A key artifact in Tolkien studies, this annotated Beowulf shaped his academic and literary legacy.",
+          "midSize": "Tolkien’s meticulous notes in this Beowulf edition reveal his scholarly approach to Old English literature. His analysis of themes like heroism, mortality, and the role of monsters influenced both his academic work and his storytelling, particularly in The Lord of the Rings.",
+          "long": "Tolkien’s relationship with Beowulf was transformative—both for literary studies and for his own mythology. His copy of the poem contains extensive notes where he explores its use of language, its treatment of fate and mortality, and its structure as an epic. His 1936 lecture permanently changed Beowulf scholarship, and many of its ideas—such as the heroic resistance against inevitable defeat—can be seen in The Lord of the Rings. The Rohirrim are not merely inspired by Anglo-Saxon culture; they embody the very ethos of Beowulf’s world."
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "h1": "The Earliest Sketch of Middle-earth",
+      "h2": "Tolkien’s First Hand-Drawn Map of Middle-earth (1926-1930)",
+      "img": "https://example.com/earliest-middle-earth-map.jpg",
+      "Provenance": "Bodleian Library, Oxford",
+      "descriptions": [
+        {
+          "level": 0,
+          "veryBrief": "Tolkien’s earliest map of Middle-earth, marking the beginning of his world-building.",
+          "midSize": "This is the first known sketch of Middle-earth, drawn by J.R.R. Tolkien. It represents the foundation of the world that would later become The Lord of the Rings and The Hobbit.",
+          "long": "Before The Hobbit or The Lord of the Rings were written, Tolkien began shaping his fictional world through maps. This is his earliest known sketch of Middle-earth, where key locations like Gondolin and Beleriand first appeared. Over time, this world would evolve into the setting we now know as Middle-earth."
+        },
+        {
+          "level": 1,
+          "veryBrief": "The first map where Tolkien envisioned Middle-earth, laying the groundwork for its geography.",
+          "midSize": "This early map, drawn by Tolkien between 1926 and 1930, marks the beginning of his world-building process. It includes locations from The Silmarillion and shows the initial development of Middle-earth’s geography.",
+          "long": "Tolkien’s creative process often started with maps, and this is the first known sketch of Middle-earth. Dating back to the late 1920s, it features early versions of places like Beleriand and Gondolin. At this stage, Tolkien was primarily focused on The Silmarillion’s mythology, but this map laid the foundation for all of his later works, including The Lord of the Rings."
+        },
+        {
+          "level": 2,
+          "veryBrief": "An early Middle-earth sketch, featuring Beleriand and Gondolin, drawn during The Silmarillion’s development.",
+          "midSize": "This sketch represents the earliest known visual representation of Tolkien’s world, including major Silmarillion locations. It predates the publication of any of his books and provides a rare glimpse into his creative process.",
+          "long": "Dating from the late 1920s, this is the first sketch where Tolkien began shaping the geography of Middle-earth. It shows his original concept for Beleriand, a key setting in The Silmarillion. Tolkien’s maps were integral to his storytelling, helping him construct a consistent world. This early version reveals how his ideas evolved, eventually leading to the detailed and expansive maps found in The Lord of the Rings."
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "h1": "Tolkien’s Desk & Writing Chair",
+      "h2": "The Desk and Chair Where The Hobbit & The Lord of the Rings Were Written",
+      "img": "https://example.com/tolkien-desk-chair.jpg",
+      "Provenance": "Bodleian Library Exhibition",
+      "descriptions": [
+        {
+          "level": 0,
+          "veryBrief": "Tolkien wrote The Hobbit and The Lord of the Rings at this desk.",
+          "midSize": "This is the very desk and chair where J.R.R. Tolkien wrote The Hobbit and The Lord of the Rings, shaping the world of Middle-earth.",
+          "long": "This unassuming desk and chair played a crucial role in literary history. It was here, in the quiet of his study, that J.R.R. Tolkien penned The Hobbit and The Lord of the Rings. The desk witnessed the birth of Middle-earth, as Tolkien meticulously crafted his stories, developing languages, histories, and characters that would captivate generations of readers."
+        },
+        {
+          "level": 1,
+          "veryBrief": "Tolkien’s workspace, where he brought Middle-earth to life.",
+          "midSize": "Tolkien wrote much of his legendarium at this desk, using it as his creative sanctuary. It was here that Bilbo’s journey, the Fellowship’s quest, and Middle-earth’s deep history took shape.",
+          "long": "This desk and chair are more than furniture—they are relics of literary history. Tolkien spent countless hours here, carefully constructing his legendarium. Notes, maps, and manuscripts would have covered the surface as he refined Middle-earth’s intricate details. This workspace was also where he continued his work as a professor and philologist, intertwining his scholarly pursuits with his storytelling."
+        },
+        {
+          "level": 2,
+          "veryBrief": "Tolkien’s legendary workspace, where he meticulously crafted his stories.",
+          "midSize": "From early drafts to final revisions, this desk was the heart of Tolkien’s creative process. It was where he refined Quenya and Sindarin, mapped Middle-earth, and rewrote passages until they met his exacting standards.",
+          "long": "Tolkien’s desk and chair are physical reminders of his dedication to storytelling and language. Here, he not only wrote The Hobbit and The Lord of the Rings but also revised The Silmarillion and expanded his linguistic creations. The worn wood of the desk holds the weight of a world that took decades to perfect, reflecting Tolkien’s love for deep world-building and meticulous craftsmanship."
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "h1": "Tolkien’s Handwritten Letter to a Fan",
+      "h2": "A Personal Letter from J.R.R. Tolkien Reflecting on His Creative Process (1958)",
+      "img": "https://example.com/tolkien-letter-1958.jpg",
+      "Provenance": "Marquette University Archives",
+      "descriptions": [
+        {
+          "level": 0,
+          "veryBrief": "A letter from Tolkien to a fan, sharing insights on his writing.",
+          "midSize": "This is a handwritten letter by J.R.R. Tolkien, responding to a fan’s questions about Middle-earth. In it, he discusses his inspirations, his writing process, and his thoughts on world-building.",
+          "long": "In 1958, a devoted fan wrote to J.R.R. Tolkien with questions about The Lord of the Rings and its lore. In this thoughtful response, Tolkien reflects on his creative process, sharing details about his world-building approach, the significance of language in his work, and his views on storytelling. The letter provides a rare glimpse into the mind of the author, offering fans a direct connection to his thoughts and creative philosophy."
+        },
+        {
+          "level": 1,
+          "veryBrief": "Tolkien’s personal reflections on writing, found in this 1958 letter.",
+          "midSize": "Tolkien’s response to a fan’s letter in 1958 reveals his deep commitment to crafting a believable world. He discusses language creation, mythology, and his narrative choices in Middle-earth.",
+          "long": "Tolkien was known to personally respond to many letters from readers, but this 1958 letter is particularly revealing. In it, he discusses the challenges of writing The Lord of the Rings, the influence of ancient myths on his storytelling, and his belief that Middle-earth was not merely fantasy but a secondary world with its own logic and depth. This letter exemplifies Tolkien’s meticulous attention to detail and his passion for linguistic and historical accuracy."
+        },
+        {
+          "level": 2,
+          "veryBrief": "A rare letter where Tolkien explains his world-building in depth.",
+          "midSize": "In this handwritten letter, Tolkien reflects on his work, explaining how languages shape Middle-earth and addressing questions about lore, inspiration, and the deeper meanings behind his stories.",
+          "long": "This letter is a treasure for Tolkien enthusiasts. Not only does he discuss the importance of linguistic invention in his world-building, but he also clarifies misconceptions about Middle-earth’s themes. He touches on the moral struggles of his characters, the role of fate versus free will, and even corrects fan assumptions about certain plot points. The letter stands as a testament to Tolkien’s dedication to his readers and his ever-expanding mythology."
+        }
+      ]
+    },
+    {
+		"id": 7,
+		"h1": "A Page from Tolkien’s Elvish Lexicon",
+		"h2": "An Early Draft of Tolkien’s Quenya and Sindarin Language Studies",
+		"img": "https://example.com/tolkien-elvish-lexicon.jpg",
+		"Provenance": "Bodleian Library, Oxford",
+		"descriptions": [
+		  {
+			"level": 0,
+			"veryBrief": "A rare page from Tolkien’s notes, detailing his Elvish languages.",
+			"midSize": "This page is from Tolkien’s personal lexicon, where he developed Elvish languages like Quenya and Sindarin, used in The Lord of the Rings.",
+			"long": "This document is an early draft from Tolkien’s work on Elvish languages, showing words, grammar rules, and linguistic notes. It highlights his deep understanding of philology and language construction, forming the foundation of the languages spoken in Middle-earth."
+		  },
+		  {
+			"level": 1,
+			"veryBrief": "A handwritten page detailing the structure of Elvish languages.",
+			"midSize": "Tolkien, a professor of philology, meticulously designed Elvish languages. This page from his lexicon reveals the evolution of Quenya and Sindarin, complete with vocabulary and grammatical structure.",
+			"long": "Tolkien’s love for languages led him to create Quenya and Sindarin, inspired by Finnish and Welsh. This rare document, preserved in the Bodleian Library, contains early word lists, phonetic rules, and linguistic structures, showcasing his academic precision and creativity."
+		  },
+		  {
+			"level": 2,
+			"veryBrief": "An artifact of Tolkien’s linguistic genius, shaping Middle-earth’s languages.",
+			"midSize": "This page is part of Tolkien’s private linguistic studies, containing rare vocabulary and grammar notes for Quenya and Sindarin. It provides insight into how he refined the languages over time.",
+			"long": "Tolkien didn’t just invent words—he built entire linguistic systems with internal consistency, etymologies, and historical evolution. This page from his Elvish lexicon illustrates the meticulous process behind Quenya and Sindarin, showing early forms of words and grammatical shifts. Fans and scholars consider this a vital piece of his creative process, bridging his professional expertise in historical linguistics with his legendary storytelling."
+		  }
+		]
+	  }
+	  ,
+	  {
+		"id": 8,
+		"h1": "Tolkien’s Pipe & Tobacco Pouch",
+		"h2": "The Personal Pipe and Pouch of J.R.R. Tolkien",
+		"img": "https://example.com/tolkien-pipe.jpg",
+		"Provenance": "Bodleian Library, Oxford",
+		"descriptions": [
+		  {
+			"level": 0,
+			"veryBrief": "Tolkien’s personal pipe and pouch, reflecting his love for pipe-smoking.",
+			"midSize": "This pipe and tobacco pouch belonged to J.R.R. Tolkien, who was an avid pipe-smoker. His characters, like Gandalf and Bilbo, share this habit.",
+			"long": "A treasured personal item of J.R.R. Tolkien, this pipe and tobacco pouch were used by him for many years. Smoking was a part of his daily routine and is famously reflected in characters like Bilbo, Gandalf, and the Hobbits of the Shire, who frequently enjoy their pipes. This connection between Tolkien’s life and his stories is an example of how personal experiences shaped his literary world."
+		  },
+		  {
+			"level": 1,
+			"veryBrief": "Tolkien’s personal pipe and pouch, inspiring the pipe-smoking traditions in Middle-earth.",
+			"midSize": "Tolkien’s love for pipe-smoking influenced the culture of Middle-earth, particularly the Hobbits and Gandalf. This pipe and pouch were among his daily personal items.",
+			"long": "Tolkien’s deep appreciation for pipe-smoking was well-known, and this practice found its way intoThe Lord of the Rings, where characters like Gandalf and the Hobbits enjoy ‘pipe-weed.’ This very pipe and tobacco pouch, owned and used by Tolkien himself, offer a tangible link to the writer’s lifestyle and the traditions he wove into his stories. The pipe was even displayed in the 2018Tolkien: Maker of Middle-earthexhibition at the Bodleian Library."
+		  },
+		  {
+			"level": 2,
+			"veryBrief": "The actual pipe used by Tolkien, whose love for smoking shaped Hobbit culture.",
+			"midSize": "Tolkien was rarely seen without his pipe, a habit deeply ingrained in his personal life and writings. This artifact connects his daily routine to the pipe-smoking traditions of Middle-earth.",
+			"long": "Tolkien’s passion for philology extended to his hobbies, including his fondness for pipe-smoking, which directly inspired Middle-earth’s ‘pipe-weed’ culture. The Hobbits’ relaxed lifestyle, their love for smoking, and Gandalf’s iconic image with his pipe all stem from Tolkien’s personal habits. This very pipe and pouch, preserved in the Bodleian Library and displayed in exhibitions, serve as a bridge between the real-life professor and the fantasy world he crafted. Smoking was not just a pastime for Tolkien—it was a ritual, often accompanying his writing sessions, making this item an intimate piece of his creative process."
+		  }
+		]
+	  },
+
+	  {
+		"id": 9,
+		"h1": "The One Ring",
+		"h2": "The Original One Ring Prop (2001-2003 Film Trilogy)",
+		"img": "https://www.jenshansen.com/cdn/shop/products/one-ring-movie-prop.jpg",
+		"Provenance": "Jens Hansen Official Site",
+		"descriptions": [
+		  {
+			"level": 0,
+			"veryBrief": "The golden ring that ruled them all, featured in Peter Jackson’s film trilogy.",
+			"midSize": "This is the original prop used in Peter Jackson’s The Lord of the Rings films, crafted by Jens Hansen in New Zealand.",
+			"long": "The One Ring, central to The Lord of the Rings trilogy, was designed by Jens Hansen, a master jeweler in New Zealand. This iconic prop appeared throughout the films, with different versions used for various shots, including oversized ones for close-ups. The inscription, written in Black Speech, glows when heated, revealing Sauron’s ominous message: 'One Ring to rule them all…'"
+		  },
+		  {
+			"level": 1,
+			"veryBrief": "The iconic One Ring prop from Peter Jackson’s trilogy, designed to be the central artifact of power in Middle-earth.",
+			"midSize": "Crafted by Jens Hansen, this prop was used throughout the The Lord of the Rings film series. Different versions of the ring existed for various shots, including a large-scale replica for close-ups.",
+			"long": "Jens Hansen, the official jeweler for the The Lord of the Rings films, designed the One Ring with smooth, minimalistic elegance. Its inscription in Black Speech is only visible when heated. Throughout filming, multiple versions were used, including a heavy gold ring for realistic shots and an oversized prop for cinematographic close-ups. The Ring symbolizes absolute power, temptation, and the burden of destiny in Tolkien’s legendarium."
+		  },
+		  {
+			"level": 2,
+			"veryBrief": "This is the authentic film prop from The Lord of the Rings trilogy, forged by Jens Hansen based on Tolkien’s description and Weta Workshop's specifications.",
+			"midSize": "Jens Hansen crafted multiple versions of the One Ring for filming. Some were small and made of gold-plated tungsten, while others were oversized to capture detailed engravings under dramatic lighting.",
+			"long": "Jens Hansen, a master jeweler in Nelson, New Zealand, was commissioned to design the One Ring prop based on Tolkien’s description. Weta Workshop oversaw its creation, ensuring the ring’s simplistic yet powerful aesthetic aligned with Middle-earth’s visual style. Some versions were made of gold-plated tungsten, while others were large-scale props used for intricate shots, particularly when the inscription was meant to glow. The ring’s design mirrors Anglo-Saxon and Norse influences, reflecting Tolkien’s deep scholarly background."
+		  }
+		]
+	  },
+	  {
+		"id": 10,
+		"h1": "The Shards of Narsil",
+		"h2": "The Shattered Sword of Elendil (Film Prop, 2001-2003)",
+		"img": "https://www.wetaworkshop.com/assets/shards_narsil.jpg",
+		"Provenance": "Weta Workshop Archives, New Zealand",
+		"descriptions": [
+		  {
+			"level": 0,
+			"veryBrief": "The broken sword of Elendil, later reforged into Andúril in 'The Lord of the Rings' films.",
+			"midSize": "The Shards of Narsil, as seen in Peter Jackson’s film trilogy, represent the broken sword of Elendil. In the story, the sword was shattered during battle with Sauron and later reforged into Andúril by Aragorn.",
+			"long": "This film prop replicates the legendary Shards of Narsil, the sword wielded by Elendil during the War of the Last Alliance. In 'The Fellowship of the Ring,' the broken sword is kept in Rivendell, symbolizing the lost kingship of Gondor. The design of the prop by Weta Workshop was inspired by real medieval swords and features fine Elvish inscriptions. The reforging of Narsil into Andúril is a key moment in Aragorn’s journey to reclaim the throne of Gondor."
+		  },
+		  {
+			"level": 1,
+			"veryBrief": "The film version of Narsil’s shards, central to Aragorn’s lineage and destiny.",
+			"midSize": "Weta Workshop crafted these shards to depict the legendary sword of Elendil in the 'Lord of the Rings' films. The design closely follows Tolkien’s descriptions and medieval swordsmith techniques.",
+			"long": "The Shards of Narsil were prominently featured in Peter Jackson’s 'The Fellowship of the Ring,' reinforcing Aragorn’s connection to the throne of Gondor. The film adaptation closely follows Tolkien’s lore, where the sword, broken during Elendil’s fall, represents the lost unity of men. The prop was carefully crafted by Weta Workshop with aged metalwork effects, adding authenticity to the shattered relic. In the story, Elrond presents the reforged sword to Aragorn, marking his acceptance of his royal heritage."
+		  },
+		  {
+			"level": 2,
+			"veryBrief": "Film prop depicting Narsil, the broken sword of Elendil, reforged into Andúril.",
+			"midSize": "This version of Narsil’s shards, designed by Weta Workshop, is based on descriptions from Tolkien’s texts. It plays a key symbolic role in the films, embodying the lost kingship of Gondor.",
+			"long": "The Shards of Narsil in Peter Jackson’s adaptation reflect Tolkien’s legendarium, where the sword, originally forged by Telchar of Nogrod, was shattered during the Last Alliance. This film prop captures the moment of Elendil’s fall and Sauron’s temporary defeat. The shards are first shown in Rivendell, where Aragorn recognizes their significance, foreshadowing his future as Isildur’s heir. The reforging scene in 'The Return of the King' mirrors the Norse mythological motif of reforged weapons, emphasizing Aragorn’s transformation into King Elessar."
+		  }
+		]
+	  },
+	  {
+		"id": 11,
+		"h1": "Tolkien’s Original Cover Design",
+		"h2": "The First Cover Design for The Lord of the Rings (1954)",
+		"img": "https://tolkienlibrary.com/assets/tolkien_original_cover.jpg",
+		"Provenance": "Bodleian Library, Oxford",
+		"descriptions": [
+		  {
+			"level": 0,
+			"veryBrief": "Tolkien’s own hand-drawn cover for the first edition ofThe Lord of the Rings.",
+			"midSize": "This is the original cover design created by J.R.R. Tolkien himself for the first edition ofThe Lord of the Rings(1954). Though not used in the final publication, it features his iconic eye of Sauron motif and Elvish script.",
+			"long": "BeforeThe Lord of the Ringswas published, Tolkien designed a cover for the book himself, showcasing his vision for how the story should be presented. The design includes the Eye of Sauron, the Ring, and Tengwar inscriptions. Ultimately, the publisher opted for a different cover, but Tolkien’s concept remains an essential artifact, reflecting his artistic sensibilities and deep involvement in every aspect of his world-building."
+		  },
+		  {
+			"level": 1,
+			"veryBrief": "Tolkien’s original cover forThe Lord of the Rings, featuring his own designs and Elvish script.",
+			"midSize": "J.R.R. Tolkien created this cover for the first edition ofThe Lord of the Rings, incorporating motifs like the Eye of Sauron and the Ring’s inscription. Though it was not used, it remains a vital part of the book’s history and design evolution.",
+			"long": "Tolkien was not only a writer but also an artist, and he created an intricate cover design forThe Lord of the Rings. The drawing, preserved at the Bodleian Library, features the Eye of Sauron looming over the One Ring, encircled by the Ring’s inscription in Tengwar script. Though the publisher ultimately chose a different cover, Tolkien’s design reveals how deeply he was involved in the presentation of his work. His love for medieval and mythological aesthetics is evident in the balance of symbolism and lettering."
+		  },
+		  {
+			"level": 2,
+			"veryBrief": "Tolkien’s unpublished cover forThe Lord of the Rings, showcasing his artistic and linguistic creativity.",
+			"midSize": "Tolkien’s original cover design was never used for publication, but it remains a crucial artifact, displaying his personal artistic style and his attention to linguistic detail, including Tengwar inscriptions.",
+			"long": "Tolkien’s original cover design forThe Lord of the Rings, housed at the Bodleian Library, represents his multifaceted talent as a philologist, artist, and storyteller. His composition includes the Eye of Sauron above the Ring, surrounded by an inscription in Elvish Tengwar, symbolizing the story’s central conflict. The design reflects influences from medieval manuscript art and calligraphy. While the publishers opted for a different cover, Tolkien’s design remains a testament to his hands-on approach to his world-building, ensuring that every detail aligned with his vision."
+		  }
+		]
+	  },
+	  {
+		"id": 12,
+		"h1": "Frodo’s Mithril Shirt",
+		"h2": "The Original Mithril Shirt Prop from The Lord of the Rings Trilogy (2001-2003)",
+		"img": "https://lotr.fandom.com/wiki/Mithril_Shirt",
+		"Provenance": "Weta Workshop / New Line Cinema",
+		"descriptions": [
+		  {
+			"level": 0,
+			"veryBrief": "The dazzling silver chainmail shirt worn by Frodo in Peter Jackson’sThe Lord of the Ringsfilms.",
+			"midSize": "This is the original prop used for Frodo’s Mithril shirt in Peter Jackson’sThe Lord of the Ringsfilm trilogy. It is a beautifully crafted piece made by Weta Workshop, designed to reflect the legendary Elven craftsmanship described in Tolkien’s books.",
+			"long": "A key item in both Tolkien’s story and Peter Jackson’s film adaptation, Frodo’s Mithril shirt was a gift from Bilbo Baggins and later saved Frodo’s life in Moria when an Orc’s spear thrust should have been fatal. Weta Workshop created this film prop with an intricate chainmail design, made from anodized aluminum to mimic the shimmering beauty and lightness described in the books. The shirt became an iconic symbol of Frodo’s journey, representing the hidden strength and protection of Middle-earth’s ancient craftsmanship."
+		  },
+		  {
+			"level": 1,
+			"veryBrief": "The actual Mithril shirt worn by Frodo in the film trilogy, crafted by Weta Workshop.",
+			"midSize": "This Mithril shirt, an essential prop from the films, was meticulously designed to match Tolkien’s descriptions. Worn by Elijah Wood as Frodo, it played a pivotal role in the Moria sequence when it saved him from an otherwise deadly Orc attack.",
+			"long": "Tolkien described Mithril as a legendary metal, ‘lighter than a feather and harder than dragon scales.’ Weta Workshop brought this concept to life with an incredible film prop, designed to appear as real Elven chainmail. The shirt was worn by Elijah Wood throughout the films and was crucial in multiple scenes—most notably in the Mines of Moria, where it prevented a fatal blow. The shirt later served as a powerful symbol of Frodo’s role in the story when it was displayed by the Orcs in Mordor as false proof of his death."
+		  },
+		  {
+			"level": 2,
+			"veryBrief": "A masterfully crafted Mithril shirt prop, embodying the legendary Elven metal of Tolkien’s lore.",
+			"midSize": "Weta Workshop’s Mithril shirt prop was designed with aluminum links to mimic Tolkien’s description of an impossibly light yet strong metal. In the films, it becomes a crucial item, reinforcing themes of fate and protection.",
+			"long": "The Mithril shirt is a prime example of how Peter Jackson’s adaptation sought authenticity in its props. Crafted by Weta Workshop, the shirt was made using thousands of interlinked anodized aluminum rings, reflecting the luminous silver sheen described inThe Lord of the Rings. In Tolkien’s legendarium, Mithril was mined only in Moria and was a symbol of lost greatness—its presence in Frodo’s possession connected him to Middle-earth’s rich history. In the films, its cinematic significance extends beyond mere costume design, visually representing Frodo’s hidden resilience and the unseen forces protecting him on his journey."
+		  }
+		]
+	  },
+	  {
+		"id": 13,
+		"h1": "The First Printing of The Lord of the Rings",
+		"h2": "Original First Edition (1954-1955)",
+		"img": "https://tolkienlibrary.com/first-edition-lotr.jpg",
+		"Provenance": "Tolkien Library / Various Rare Book Collectors",
+		"descriptions": [
+		  {
+			"level": 0,
+			"veryBrief": "The first edition ofThe Lord of the Rings, published in 1954-1955, marking the debut of Tolkien’s masterpiece.",
+			"midSize": "This is the original first edition ofThe Lord of the Rings, printed in three volumes between 1954 and 1955. It introduced the world to Middle-earth and became one of the most influential works in fantasy literature.",
+			"long": "The first edition ofThe Lord of the Ringswas published in three volumes:The Fellowship of the Ring(1954),The Two Towers(1954), andThe Return of the King(1955). The first printings, issued by George Allen & Unwin, had several typographical errors and inconsistencies that Tolkien himself noted and corrected in later editions. These rare books, now highly collectible, represent the very first appearance of one of the most celebrated works in literary history."
+		  },
+		  {
+			"level": 1,
+			"veryBrief": "The original first edition ofThe Lord of the Rings, printed in 1954-1955 and highly sought after by collectors.",
+			"midSize": "This first edition, published in three volumes by George Allen & Unwin, marked the beginning of The Lord of the Rings’ legacy. Early printings contained minor textual errors, later corrected by Tolkien in subsequent editions.",
+			"long": "WhenThe Fellowship of the Ringwas first published in 1954, it was met with critical acclaim, though Tolkien was initially unsure of its success. The first printings had typographical errors, including missing words and inconsistencies in Elvish spellings. Despite this, the books quickly gained popularity, cementing Tolkien’s place as the father of modern fantasy. Today, these first editions are among the most valuable literary collectibles, with well-preserved copies fetching tens of thousands of dollars at auction."
+		  },
+		  {
+			"level": 2,
+			"veryBrief": "The rare first printing of Tolkien’s epic, complete with early textual inconsistencies and publisher’s quirks.",
+			"midSize": "These first editions, published by George Allen & Unwin, contained misprints that were later corrected by Tolkien. Some errors include a missing closing parenthesis in theFellowshipindex and variations in the spelling of ‘Boromir’ inThe Two Towers.",
+			"long": "The first printings ofThe Lord of the Ringsare notable for a variety of publishing quirks, including an infamous misprint inThe Return of the King, where ‘fire’ was mistakenly printed as ‘find’ in the ‘House of Eorl’ appendix. Tolkien worked closely with the publisher to correct these in later editions. The rarity of pristine first editions, especially with original dust jackets, has made them some of the most sought-after Tolkien collectibles. Scholars and collectors prize them for their insight into the early stages of the book’s publication and Tolkien’s meticulous attention to detail."
+		  }
+		]
+	  },
+	  {
+		"id": 14,
+		"h1": "Gollum’s Motion Capture Suit",
+		"h2": "Used by Andy Serkis inThe Lord of the RingsFilm Trilogy (2001-2003)",
+		"img": "https://example.com/gollum-mocap-suit.jpg",
+		"Provenance": "Weta Workshop / Film Production Archives",
+		"descriptions": [
+		  {
+			"level": 0,
+			"veryBrief": "Andy Serkis wore this motion capture suit to bring Gollum to life inThe Lord of the Ringsmovies.",
+			"midSize": "This is the motion capture suit worn by Andy Serkis during the filming ofThe Lord of the Rings. The technology used to transform his performance into the CGI character of Gollum revolutionized the film industry.",
+			"long": "Gollum, one of the most iconic characters inThe Lord of the Ringstrilogy, was brought to life through cutting-edge motion capture technology. Andy Serkis wore this specially designed suit, which was covered in tracking markers, allowing computers to record his movements and translate them into the final CGI character. This groundbreaking performance paved the way for future advancements in digital acting and motion capture technology, influencing films likeAvatarandPlanet of the Apes."
+		  },
+		  {
+			"level": 1,
+			"veryBrief": "Andy Serkis' motion capture suit enabled the transformation of his acting into the fully CGI character of Gollum.",
+			"midSize": "This suit, equipped with tracking markers, allowed Andy Serkis to perform Gollum’s movements in real-time. His performance, combined with digital rendering by Weta Digital, set a new standard for CGI character realism.",
+			"long": "The creation of Gollum inThe Lord of the Ringswas one of the most ambitious uses of motion capture technology at the time. Andy Serkis' movements and facial expressions were meticulously recorded using this suit, with tracking markers capturing even the subtlest details. Weta Digital then transformed these recordings into the Gollum we see on screen. This technology not only allowed for a more immersive character but also showcased Serkis' remarkable acting ability, influencing the evolution of digital performances in cinema."
+		  },
+		  {
+			"level": 2,
+			"veryBrief": "This suit, worn by Andy Serkis, helped revolutionize motion capture and CGI character animation in film.",
+			"midSize": "Serkis’ performance, captured using this suit, laid the foundation for digital acting in modern cinema. The hybrid approach of practical acting and CGI rendering was a game-changer for character animation.",
+			"long": "Gollum’s motion capture was an intricate process that combined physical performance with digital artistry. Andy Serkis wore this suit while acting on set, interacting with other actors, and even crawling on all fours to match Gollum’s movements. The tracking markers allowed Weta Digital to map his movements onto a digital model, preserving every nuance of his performance. This was one of the first times a motion-captured character was fully integrated into a live-action film, influencing the way CGI characters are portrayed in modern cinema. Without this suit and Serkis' pioneering work, performances like those inAvatar,The Jungle Book, andThe Batman(as Serkis’ own Alfred) might not have been possible."
+		  }
+		]
+	  },
+	  {
+		"id": 15,
+		"h1": "The Original Map of Middle-earth",
+		"h2": "Drawn by Christopher Tolkien (c. 1953-1954)",
+		"img": "https://example.com/original-middle-earth-map.jpg",
+		"Provenance": "Bodleian Library, Oxford",
+		"descriptions": [
+		  {
+			"level": 0,
+			"veryBrief": "This is the first detailed map of Middle-earth, drawn by J.R.R. Tolkien’s son, Christopher.",
+			"midSize": "Christopher Tolkien, J.R.R. Tolkien’s son, carefully drew this map based on his father’s notes. It was used to guide the geography ofThe Lord of the Rings.",
+			"long": "J.R.R. Tolkien imagined Middle-earth as a vast and intricate world, and it was his son, Christopher Tolkien, who gave it a visual form. This map, hand-drawn in the early 1950s, became the definitive guide to Middle-earth’s geography, ensuring that the places described inThe Lord of the Ringswere consistent and well-defined. The map was included in early editions of the books and has influenced every depiction of Middle-earth since."
+		  },
+		  {
+			"level": 1,
+			"veryBrief": "Christopher Tolkien’s original hand-drawn map laid the foundation for all later visualizations of Middle-earth.",
+			"midSize": "J.R.R. Tolkien relied on this map, drawn by his son Christopher, to maintain geographical consistency inThe Lord of the Rings. It influenced every adaptation, from illustrated editions to film adaptations.",
+			"long": "This map, drafted by Christopher Tolkien under the guidance of his father, was essential in shaping Middle-earth’s geography. J.R.R. Tolkien continually refined the locations and distances while writingThe Lord of the Rings, making Christopher’s map a key reference. The careful placement of cities, forests, and mountain ranges ensured that every journey in the story was logically structured. The original map is now preserved at the Bodleian Library in Oxford, and it remains a cornerstone for any visual adaptation of Tolkien’s world."
+		  },
+		  {
+			"level": 2,
+			"veryBrief": "Christopher Tolkien’s map was foundational to the world-building of Middle-earth, influencing all subsequent depictions.",
+			"midSize": "Tolkien’s meticulous approach to geography is evident in this map, which his son Christopher drew as a working reference forThe Lord of the Rings. Every subsequent adaptation has relied on it.",
+			"long": "The importance of this map cannot be overstated—it was not just a reference forThe Lord of the Rings, but a core component of Tolkien’s storytelling. J.R.R. Tolkien insisted on precise geography, adjusting travel distances and terrain details throughout the writing process. Christopher Tolkien’s draft allowed his father to refine his descriptions of Middle-earth, and it became the basis for the maps included in all major editions ofThe Lord of the Rings. This map has since guided illustrators, filmmakers, and game designers in their portrayals of Middle-earth, from the iconic Alan Lee and John Howe illustrations to Peter Jackson’s cinematic adaptations."
+		  }
+		]
+	  }
+	  
+	  
+  ]
 }
