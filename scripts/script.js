@@ -43,8 +43,8 @@ const welcomeDialog = () => {
 				element.addEventListener("click", () => {
 					let leftMask = document.querySelector("#leftMask");
 					selectedMask = leftMask;
-					// maskColor(leftMask, "green", "0.3");
-					// maskColor(rightMask, "white", "0");
+					maskColor(leftMask, "green", "0.3");
+					maskColor(rightMask, "white", "0");
 				});
 				break;
 			case "legacypath-btn":
@@ -93,7 +93,6 @@ const charDialog = () => {
 		map.style.display = "block";
 		// animateMask(selectedMask);
 		currentLevel = adventurers[counter].level;
-		
 	});
 
 	arrowBack.addEventListener("click", () => {
@@ -111,92 +110,134 @@ const charDialog = () => {
 
 welcomeDialog();
 
-
-
 document.addEventListener("DOMContentLoaded", function () {
-    const tooltip = document.getElementById("tooltip");
-    const title = document.getElementById("item-title");
-    const description = document.getElementById("item-description");
-    const closeBtn = document.getElementById("close-tooltip");
+	const tooltip = document.getElementById("tooltip");
+	const title = document.getElementById("item-title");
+	const description = document.getElementById("item-description");
+	const closeBtn = document.getElementById("close-tooltip");
 
-    // Open tooltip when an item (circle, ellipse) is clicked
-    document.querySelectorAll("circle, ellipse").forEach(circle => {
-        circle.addEventListener("click", function (event) {
-            const itemId = event.target.nextElementSibling?.id.match(/\d+/)?.[0];
-            fetchItemDetails(itemId, event.clientX, event.clientY);
-        });
-    });
+	// Open tooltip when an item (circle, ellipse) is clicked
+	document.querySelectorAll("circle, ellipse").forEach((circle) => {
+		circle.addEventListener("click", function (event) {
+			const itemId =
+				event.target.nextElementSibling?.id.match(/\d+/)?.[0];
+			fetchItemDetails(itemId, event.clientX, event.clientY);
+		});
+	});
 
-    // Close tooltip when the close button is clicked
-    closeBtn.addEventListener("click", () => {
-        tooltip.classList.add("hidden");
-    });
+	// Close tooltip when the close button is clicked
+	closeBtn.addEventListener("click", () => {
+		tooltip.classList.add("hidden");
+	});
 
-    function fetchItemDetails(itemId, x, y) {
-        fetch("../data/items.json")
-            .then(response => response.json())
-            .then(data => {
-				
-                const item = data.items.find(obj => obj.id === parseInt(itemId));
+	function fetchItemDetails(itemId, x, y) {
+		fetch("../data/items.json")
+			.then((response) => response.json())
+			.then((data) => {
+				const item = data.items.find(
+					(obj) => obj.id === parseInt(itemId)
+				);
 
+				if (item) {
+					const template = document.getElementById("tooltipTemplate");
+					const tooltipContent = template.content.cloneNode(true);
+					const itemDescription = item.descriptions.find(
+						(obj) => obj.level === currentLevel
+					);
+					const radios = tooltipContent.querySelectorAll(
+						'input[type="radio"]'
+					);
 
-                if (item) {
-                    const template = document.getElementById("tooltipTemplate");
-                    const tooltipContent = template.content.cloneNode(true);
-					const itemDescription = item.descriptions.find(obj => obj.level === currentLevel);
-					const radios = tooltipContent.querySelectorAll('input[type="radio"]');
+					tooltipContent.querySelector("h1").textContent =
+						item.h1 || "No title available";
+					tooltipContent.querySelector("img").src = item.img || "";
+					tooltipContent.querySelector("img").alt =
+						item.h2 || "Image";
+					tooltipContent.querySelector(
+						"#descriptionText"
+					).textContent =
+						itemDescription.veryBrief ||
+						"No description available.";
+					tooltipContent.querySelector(
+						"small"
+					).textContent = `Provenance: ${
+						item.Provenance || "Unknown"
+					}`;
 
-					
+					description.innerHTML = "";
+					description.appendChild(tooltipContent);
 
-                    tooltipContent.querySelector("h1").textContent = item.h1 || "No title available";
-                    tooltipContent.querySelector("img").src = item.img || "";
-                    tooltipContent.querySelector("img").alt = item.h2 || "Image";
-                    tooltipContent.querySelector("#descriptionText").textContent = itemDescription.veryBrief || "No description available.";
-                    tooltipContent.querySelector("small").textContent = `Provenance: ${item.Provenance || "Unknown"}`;
+					tooltip.style.left = `${x + 10}px`;
+					tooltip.style.top = `${y + 10}px`;
+					tooltip.classList.remove("hidden");
 
-                    description.innerHTML = "";
-                    description.appendChild(tooltipContent);
-
-                    tooltip.style.left = `${x + 10}px`;
-                    tooltip.style.top = `${y + 10}px`;
-                    tooltip.classList.remove("hidden");
-
-					
-					radios.forEach(radio => {
-						radio.addEventListener('change', function() {
+					radios.forEach((radio) => {
+						radio.addEventListener("change", function () {
 							updateDescription(item);
 						});
-						if (radio.name === 'complexity' && radio.value === `${currentLevel}`) {
-							radio.checked = true
+						if (
+							radio.name === "complexity" &&
+							radio.value === `${currentLevel}`
+						) {
+							radio.checked = true;
 						}
 					});
-
-                } else {
-                    title.textContent = "Unknown Item";
-                    description.textContent = "No description available.";
-                }
-            })
-            .catch(error => console.error("Error loading JSON:", error));
-    }
+				} else {
+					title.textContent = "Unknown Item";
+					description.textContent = "No description available.";
+				}
+			})
+			.catch((error) => console.error("Error loading JSON:", error));
+	}
 });
 
-
 function updateDescription(item) {
-	const complexity = document.querySelector('input[name="complexity"]:checked');
+	const complexity = document.querySelector(
+		'input[name="complexity"]:checked'
+	);
 	const length = document.querySelector('input[name="length"]:checked');
 	// TODO: changes here at list
-	
+
 	// currentLevel = complexityLevels.findIndex(x => x===complexity);
 
 	if (complexity && length) {
-	  const complexityValue = complexity.value;
-	  const lengthValue = length.value;
-	  const descriptionText = item.descriptions[complexityValue][lengthValue];
-	  document.getElementById("descriptionText").textContent = descriptionText || "No description available.";
+		const complexityValue = complexity.value;
+		const lengthValue = length.value;
+		const descriptionText = item.descriptions[complexityValue][lengthValue];
+		document.getElementById("descriptionText").textContent =
+			descriptionText || "No description available.";
 	} else {
-	console.log(complexity)
-	console.log(length)
-	  document.getElementById("descriptionText").textContent = "Please select both complexity and length to see the description.";
+		console.log(complexity);
+		console.log(length);
+		document.getElementById("descriptionText").textContent =
+			"Please select both complexity and length to see the description.";
 	}
-  }
-  
+}
+
+const mapBtnFunc = (() => {
+	const mapBtn = document.querySelector("#map-icon");
+	mapBtn.addEventListener("click", () => {
+		let dialog = document.createElement("dialog");
+		dialog.className = "bmMapDialog";
+		let icon = document.createElement("span");
+		let img = document.createElement("img");
+		icon.className = "material-icons";
+		icon.innerHTML = "close";
+		icon.addEventListener("click", () => {
+			dialog.close();
+			dialog.style.display = "none";
+		});
+		img.src = "../static/map/bmMap.png";
+		img.addEventListener("click", () => {
+			window
+				.open(
+					"https://www.britishmuseum.org/visit/museum-map",
+					"_blank"
+				)
+				.focus();
+		});
+		dialog.append(img, icon);
+		container.appendChild(dialog);
+		dialog.showModal();
+	});
+})();
