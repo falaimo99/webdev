@@ -12,10 +12,10 @@
 		<script type="module" src="../scripts/script.js"></script>
 	</head>
 	<body>
-		<div class="background-image" ></div>
+		<div class="background-image"></div>
 		<div id="grid-container">
 			<dialog class="welcomeDialog">
-				<h2>Welcome Adventurer to the Map!</h2>
+				<h2>Welcome Adventurer to The Map!</h2>
 				<p>
 					From here you will be able to <b>select</b> how to visit the
 					exhibition
@@ -31,7 +31,16 @@
 				</nav>
 			</dialog>
 
-			<span class="material-icons" id="map-icon"> map </span>
+			<div class="top-btneer">
+				<span class="material-icons top-btn" id="map-icon"> map </span>
+				<span
+					class="material-icons top-btn"
+					id="home"
+					onclick="location.href=`/index.html`"
+				>
+					home
+				</span>
+			</div>
 			<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 
 			<svg
@@ -244,26 +253,70 @@
 				<span id="close-tooltip">&times;</span>
 				<p id="item-description"></p>
 			</div>
-			<template id="tooltipTemplate" style="min-width: fit-content; width: 20rem;">
+			<template
+				id="tooltipTemplate"
+				style="min-width: fit-content; width: 20rem"
+			>
 				<div class="container">
-					
-					<div style="display: flex; flex-direction: row;">
-						<img src="" alt="Image" id="objectImage">
-						<div style="flex-grow: 1; padding: 1rem;">
-
+					<div style="display: flex; flex-direction: row">
+						<img src="" alt="Image" id="objectImage" />
+						<div style="flex-grow: 1; padding: 1rem">
 							<h1></h1>
 							<div class="selection-container">
 								<div class="complexity">
 									<h2>Complexity</h2>
-									<label><input type="radio" name="complexity" value="0"> Introductory</label>
-									<label><input type="radio" name="complexity" value="1"> Average</label>
-									<label><input type="radio" name="complexity" value="2"> Advanced</label>
+									<label
+										><input
+											type="radio"
+											name="complexity"
+											value="0"
+										/>
+										Introductory</label
+									>
+									<label
+										><input
+											type="radio"
+											name="complexity"
+											value="1"
+										/>
+										Average</label
+									>
+									<label
+										><input
+											type="radio"
+											name="complexity"
+											value="2"
+										/>
+										Advanced</label
+									>
 								</div>
 								<div class="length">
 									<h2>Length</h2>
-									<label><input type="radio" name="length" value="veryBrief" checked> Very Brief</label>
-									<label><input type="radio" name="length" value="midSize"> Mid-Size</label>
-									<label><input type="radio" name="length" value="long"> Long</label>
+									<label
+										><input
+											type="radio"
+											name="length"
+											value="veryBrief"
+											checked
+										/>
+										Very Brief</label
+									>
+									<label
+										><input
+											type="radio"
+											name="length"
+											value="midSize"
+										/>
+										Mid-Size</label
+									>
+									<label
+										><input
+											type="radio"
+											name="length"
+											value="long"
+										/>
+										Long</label
+									>
 								</div>
 							</div>
 							<div class="description">
@@ -275,9 +328,6 @@
 					</div>
 				</div>
 			</template>
-			
-			
-			  
 		</div>
 	</body>
 </html>

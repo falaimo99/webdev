@@ -47,9 +47,17 @@ body {
 	filter: brightness(0.5) blur(5px);
 }
 
-#map-icon {
-	cursor: pointer;
+.top-btneer {
 	position: absolute;
+	top: 1rem;
+	left: 1rem;
+	width: fit-content;
+	height: fit-content;
+	display: flex;
+	gap: 1rem;
+}
+.top-btn {
+	cursor: pointer;
 	padding: 0.8rem;
 	border-radius: 5px;
 	color: #ffffff;
@@ -57,7 +65,7 @@ body {
 	left: 1rem;
 	background-color: hsl(0, 0%, 38.82%);
 }
-#map-icon:hover {
+.top-btn:hover {
 	background-color: hsl(0, 0%, 58.82%);
 }
 
