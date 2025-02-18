@@ -89,8 +89,10 @@ const charDialog = () => {
 
 	selectBtn.addEventListener("click", () => {
 		const map = document.querySelector("svg");
+		const newJourney = document.querySelector("#new-journey-btn");
 		dialog.style.display = "none";
 		map.style.display = "block";
+		newJourney.style.display = "block";
 		// animateMask(selectedMask);
 		currentLevel = adventurers[counter].level;
 	});
@@ -218,9 +220,10 @@ const mapBtnFunc = (() => {
 	const mapBtn = document.querySelector("#map-icon");
 	mapBtn.addEventListener("click", () => {
 		let dialog = document.createElement("dialog");
-		dialog.className = "bmMapDialog";
 		let icon = document.createElement("span");
 		let img = document.createElement("img");
+		let linkBtn = document.createElement("span");
+		dialog.className = "bmMapDialog";
 		icon.className = "material-icons";
 		icon.innerHTML = "close";
 		icon.addEventListener("click", () => {
@@ -228,7 +231,10 @@ const mapBtnFunc = (() => {
 			dialog.style.display = "none";
 		});
 		img.src = "../static/map/bmMap.png";
-		img.addEventListener("click", () => {
+		linkBtn.className = "material-icons top-btn";
+		linkBtn.innerHTML = "link";
+		linkBtn.id = "link-btn";
+		linkBtn.addEventListener("click", () => {
 			window
 				.open(
 					"https://www.britishmuseum.org/visit/museum-map",
@@ -236,7 +242,7 @@ const mapBtnFunc = (() => {
 				)
 				.focus();
 		});
-		dialog.append(img, icon);
+		dialog.append(img, icon, linkBtn);
 		container.appendChild(dialog);
 		dialog.showModal();
 	});

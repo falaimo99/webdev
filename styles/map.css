@@ -68,6 +68,16 @@ body {
 .top-btn:hover {
 	background-color: hsl(0, 0%, 58.82%);
 }
+#new-journey-btn {
+	display: none;
+	font-weight: 600;
+	width: max-content;
+	height: fit-content;
+	grid-column: 2;
+	align-self: center;
+	border-color: antiquewhite;
+	border-style: solid;
+}
 
 a {
 	cursor: pointer;
@@ -379,4 +389,11 @@ button {
 	top: 1rem;
 	right: 1rem;
 	cursor: pointer;
+}
+.bmMapDialog > #link-btn {
+	width: fit-content;
+	display: block;
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
 }
