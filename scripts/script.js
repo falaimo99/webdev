@@ -30,6 +30,8 @@ const maskColor = (mask, color, opacity) => {
 
 let selectedMask = undefined;
 
+// Script for the Welcome Dialog, it will trigger a series of event
+// that will reflect in the final map view
 const welcomeDialog = () => {
 	const pathBtns = document.querySelectorAll(".path-button");
 	const welcomeDialog = document.querySelector(".welcomeDialog");
@@ -45,6 +47,7 @@ const welcomeDialog = () => {
 					selectedMask = leftMask;
 					maskColor(leftMask, "green", "0.3");
 					maskColor(rightMask, "white", "0");
+					
 				});
 				break;
 			case "legacypath-btn":
@@ -216,6 +219,7 @@ function updateDescription(item) {
 	}
 }
 
+//Script for the map button, leads to a view of the real british museum map and a link to it
 const mapBtnFunc = (() => {
 	const mapBtn = document.querySelector("#map-icon");
 	mapBtn.addEventListener("click", () => {
@@ -247,3 +251,4 @@ const mapBtnFunc = (() => {
 		dialog.showModal();
 	});
 })();
+

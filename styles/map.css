@@ -90,6 +90,7 @@ svg {
 	grid-row: 2;
 	justify-self: center;
 	align-self: center;
+	transform: scale(1.5,1.5) translate(20%);
 }
 /* 
 #rightMask {
