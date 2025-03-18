@@ -96,7 +96,7 @@ const charDialog = () => {
 		dialog.style.display = "none";
 		map.style.display = "block";
 		newJourney.style.display = "block";
-		if (selectedMask != undefined){
+		if (selectedMask != undefined){	
 			map.style.animation = `${selectedMask.id}Transform forwards 3s`
 		}
 		currentLevel = adventurers[counter].level;
