@@ -256,13 +256,29 @@
 			</div>
 			<template
 				id="tooltipTemplate"
-				style="min-width: fit-content; width: 20rem"
 			>
-				<div class="container">
-					<div style="display: flex; flex-direction: row">
+				<div class="container" 
+				style="
+				display: flex; 
+				flex-direction: column; 
+				justify-content: space-between;
+				height: 100% !important;
+				"
+				>
+					
+					<section style="min-height: 20vh !important;">
 						<img src="" alt="Image" id="objectImage" />
-						<div style="flex-grow: 1; padding: 1rem">
+					</section>
+						
+					<section>
 							<h1></h1>
+							<div class="description">
+								<h3>Description</h3>
+								<p id="descriptionText"></p>
+							</div>
+							<small><strong>Provenance:</strong> </small>
+					</section>
+					<section>
 							<div class="selection-container">
 								<div class="complexity">
 									<h2>Complexity</h2>
@@ -320,13 +336,9 @@
 									>
 								</div>
 							</div>
-							<div class="description">
-								<h3>Description</h3>
-								<p id="descriptionText"></p>
-							</div>
-							<small><strong>Provenance:</strong> </small>
-						</div>
-					</div>
+							
+						</section>
+					
 				</div>
 			</template>
 		</div>

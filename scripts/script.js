@@ -1,4 +1,7 @@
+
+let selectedPath = null; 
 let currentLevel = 0;
+let currentItemIndex = 0;
 const adventurers = [
 	{
 		adventurer: "Merry & Pippin",
@@ -39,6 +42,17 @@ const welcomeDialog = () => {
 		element.addEventListener("click", () => {
 			welcomeDialog.style.display = "none";
 			charDialog();
+			switch (element.id) {
+				case "originpath-btn":
+					selectedPath = 'originPath';
+					break;
+				case "legacypath-btn":
+					selectedPath = 'legacypathPath';
+					break;
+				default:
+					selectedPath = 'freePath';
+					break;
+			}
 		});
 		switch (element.id) {
 			case "originpath-btn":
@@ -123,13 +137,24 @@ document.addEventListener("DOMContentLoaded", function () {
 	const description = document.getElementById("item-description");
 	const closeBtn = document.getElementById("close-tooltip");
 
+	const paths = {
+		'originPath': [1, 2, 3, 4, 5, 6, 7, 8],
+		'legacyPath': [1, 9, 10, 11, 12, 13, 14, 15],
+		'freePath': [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+	}
+	
 	// Open tooltip when an item (circle, ellipse) is clicked
 	document.querySelectorAll("circle, ellipse").forEach((circle) => {
 		circle.addEventListener("click", function (event) {
-			const itemId =
-				event.target.nextElementSibling?.id.match(/\d+/)?.[0];
+			const itemId = event.target.nextElementSibling?.id.match(/\d+/)?.[0];
 			fetchItemDetails(itemId, event.clientX, event.clientY);
 		});
+	});
+
+	const startButton = document.getElementById("new-journey-btn"); // Adjust ID if needed
+	startButton.addEventListener("click", function () {
+		// Simulate a click at a fixed position or fetch the real position of item 1
+		fetchItemDetails(1, window.innerWidth / 2, window.innerHeight / 2); // Adjust X, Y if necessary
 	});
 
 	// Close tooltip when the close button is clicked
@@ -144,6 +169,10 @@ document.addEventListener("DOMContentLoaded", function () {
 				const item = data.items.find(
 					(obj) => obj.id === parseInt(itemId)
 				);
+				// Update current index
+				if (selectedPath) {
+					currentItemIndex = paths[selectedPath].indexOf(+itemId);
+				}
 
 				if (item) {
 					const template = document.getElementById("tooltipTemplate");
@@ -171,11 +200,39 @@ document.addEventListener("DOMContentLoaded", function () {
 						item.Provenance || "Unknown"
 					}`;
 
+
+					// Add navigation buttons
+				const navButtons = document.createElement("div");
+				navButtons.classList.add("nav-buttons");
+				if (selectedPath) {
+					if (currentItemIndex > 0) {
+						const prevBtn = document.createElement("button");
+						prevBtn.textContent = "← Previous";
+						prevBtn.addEventListener("click", () => {
+							const prevId = paths[selectedPath][currentItemIndex - 1];
+							fetchItemDetails(prevId, x, y);
+						});
+						navButtons.appendChild(prevBtn);
+					}
+
+					if (currentItemIndex < paths[selectedPath].length - 1) {
+						const nextBtn = document.createElement("button");
+						nextBtn.textContent = "Next →";
+						nextBtn.addEventListener("click", () => {
+							const nextId = paths[selectedPath][currentItemIndex + 1];
+							fetchItemDetails(nextId, x, y);
+						});
+						navButtons.appendChild(nextBtn);
+					}
+				}
+
+
 					description.innerHTML = "";
 					description.appendChild(tooltipContent);
+					description.appendChild(navButtons);
 
-					tooltip.style.left = `${x + 10}px`;
-					tooltip.style.top = `${y + 10}px`;
+					tooltip.style.right = `${10}px`;
+					tooltip.style.top = `${10}px`;
 					tooltip.classList.remove("hidden");
 
 					radios.forEach((radio) => {
@@ -189,14 +246,17 @@ document.addEventListener("DOMContentLoaded", function () {
 							radio.checked = true;
 						}
 					});
-				} else {
-					title.textContent = "Unknown Item";
-					description.textContent = "No description available.";
-				}
+				} 
 			})
 			.catch((error) => console.error("Error loading JSON:", error));
 	}
+
+
+	
 });
+
+
+
 
 function updateDescription(item) {
 	const complexity = document.querySelector(
@@ -214,8 +274,6 @@ function updateDescription(item) {
 		document.getElementById("descriptionText").textContent =
 			descriptionText || "No description available.";
 	} else {
-		console.log(complexity);
-		console.log(length);
 		document.getElementById("descriptionText").textContent =
 			"Please select both complexity and length to see the description.";
 	}
