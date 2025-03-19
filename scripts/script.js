@@ -67,6 +67,7 @@ const welcomeDialog = () => {
 			case "legacypath-btn":
 				element.addEventListener("click", () => {
 					let rightMask = document.querySelector("#rightMask");
+					selectedMask = rightMask;
 					maskColor(rightMask, "gold", "0.3");
 					maskColor(leftMask, "white", "0");
 				});
@@ -155,6 +156,9 @@ document.addEventListener("DOMContentLoaded", function () {
 	startButton.addEventListener("click", function () {
 		// Simulate a click at a fixed position or fetch the real position of item 1
 		fetchItemDetails(1, window.innerWidth / 2, window.innerHeight / 2); // Adjust X, Y if necessary
+		// If the user went on we should change the button to resume and add
+		// a new setup button
+
 	});
 
 	// Close tooltip when the close button is clicked
