@@ -6,6 +6,7 @@
 body {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     width: 100vw;
@@ -53,11 +54,16 @@ p {
 }
 
 img {
+    position: absolute;
     width: 15vw;
     height: 15vw;
     object-fit: cover;
     border-radius: 100%;
     align-self: center;
+}
+#black-speech {
+    position: relative;
+    display: inline;
 }
 
 span {
@@ -75,4 +81,7 @@ span {
     top: 1rem;
     left: 1rem;
     background-color: hsl(0, 0%, 38.82%);
+}
+.top-btn:hover {
+    background-color: hsl(0, 0%, 58.82%);
 }
