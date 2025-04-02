@@ -1,53 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Narsil - The Sword of Elendil</title>
-  <link rel="stylesheet" href="../styles/item.css">
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Narsil - The Sword of Elendil</title>
+        <link rel="stylesheet" href="../styles/item.css" />
+    </head>
+    <body>
+        <div class="container">
+            <h1>Narsil - The Sword of Elendil</h1>
 
-  <div class="container">
-    <h1>Narsil - The Sword of Elendil</h1>
+            <!-- Image of the object -->
+            <img
+                src="../static/Sword_narsil.jpg"
+                alt="Narsil - The Sword of Elendil"
+                id="objectImage"
+                style="width: 100%; height: auto"
+            />
 
-    <!-- Image of the object -->
-    <img src="../static/Sword_narsil.jpg" alt="Narsil - The Sword of Elendil" id="objectImage" style="width: 100%; height: auto">
+            <div class="selection-container">
+                <div class="complexity">
+                    <h2>Complexity</h2>
+                    <label>
+                        <input
+                            type="radio"
+                            name="complexity"
+                            value="introductory"
+                            checked
+                        />
+                        Introductory
+                    </label>
+                    <label>
+                        <input type="radio" name="complexity" value="average" />
+                        Average
+                    </label>
+                    <label>
+                        <input
+                            type="radio"
+                            name="complexity"
+                            value="advanced"
+                        />
+                        Advanced
+                    </label>
+                </div>
 
-    <div class="selection-container">
-      <div class="complexity">
-        <h2>Complexity</h2>
-        <label>
-          <input type="radio" name="complexity" value="introductory" checked> Introductory
-        </label>
-        <label>
-          <input type="radio" name="complexity" value="average"> Average
-        </label>
-        <label>
-          <input type="radio" name="complexity" value="advanced"> Advanced
-        </label>
-      </div>
+                <div class="length">
+                    <h2>Length</h2>
+                    <label>
+                        <input
+                            type="radio"
+                            name="length"
+                            value="veryBrief"
+                            checked
+                        />
+                        Very Brief
+                    </label>
+                    <label>
+                        <input type="radio" name="length" value="midSize" />
+                        Mid-Size
+                    </label>
+                    <label>
+                        <input type="radio" name="length" value="long" /> Long
+                    </label>
+                </div>
+            </div>
 
-      <div class="length">
-        <h2>Length</h2>
-        <label>
-          <input type="radio" name="length" value="veryBrief" checked> Very Brief
-        </label>
-        <label>
-          <input type="radio" name="length" value="midSize"> Mid-Size
-        </label>
-        <label>
-          <input type="radio" name="length" value="long"> Long
-        </label>
-      </div>
-    </div>
+            <div class="description">
+                <h3>Description</h3>
+                <p id="descriptionText">
+                    Narsil was the sword of Elendil, used in the War of the Last
+                    Alliance.
+                </p>
+            </div>
+        </div>
 
-    <div class="description">
-      <h3>Description</h3>
-      <p id="descriptionText">Narsil was the sword of Elendil, used in the War of the Last Alliance.</p>
-    </div>
-  </div>
-
-  <script src="../scripts/item.js"></script>
-</body>
+        <script src="../scripts/item.js"></script>
+    </body>
 </html>

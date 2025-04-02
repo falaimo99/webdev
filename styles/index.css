@@ -56,7 +56,7 @@ main > section {
 	display: flex;
 	flex-direction: column;
 	position: absolute;
-	width: clamp(5vw, 16vw, 30vw);
+	width: clamp(5vw, 30vw, 30vw);
 	height: clamp(3vh, fit-content, 10vh);
 	bottom: 0;
 	left: 0;

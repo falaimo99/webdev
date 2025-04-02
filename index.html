@@ -1,50 +1,53 @@
 <!--This page will serve the purpose of Cover Page-->
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>The Middle-Earth Cabinet</title>
-		<script src="scripts/script.js" type="module"></script>
-		<link rel="stylesheet" href="./styles/index.css" />
-		<link
-			rel="stylesheet"
-			href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu"
-		/>
-	</head>
-	<body>
-		<header>
-			<!--May also be in a dropdown menu-->
-			<nav>
-				<span class="material-symbols-outlined"> menu </span>
-				<p class="homepage">Homepage<!--or logo--></p>
-				<p href="pages/about.html">About</p>
-				<p href="pages/disclaimer.html">Disclaimer</p>
-				<p href="pages/docs.html">Docs</p>
-			</nav>
-		</header>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>The Middle-Earth Cabinet</title>
+        <script src="scripts/script.js" type="module"></script>
+        <link rel="stylesheet" href="./styles/index.css" />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu"
+        />
+    </head>
+    <body>
+        <header>
+            <!--May also be in a dropdown menu-->
+            <nav>
+                <span class="material-symbols-outlined"> menu </span>
+                <p class="homepage">Homepage<!--or logo--></p>
+                <p onclick="window.location.href = './pages/about.html'">
+                    About
+                </p>
+                <p href="pages/disclaimer.html">Disclaimer</p>
+                <p href="pages/docs.html">Docs</p>
+            </nav>
+        </header>
 
-		<main>
-			<!--This is the body of the page, under the header, inspired by the
+        <main>
+            <!--This is the body of the page, under the header, inspired by the
         current british museum design, this would create continuity
         below the main lies a moving image or high quality static one
         as background-->
 
-			<video autoplay>
-				<source src="static/loop.mp4" type="video/mp4" />
-			</video>
+            <video autoplay>
+                <source src="static/loop.mp4" type="video/mp4" />
+            </video>
 
-			<section>
-				<!--This section serves as small introductory text to the exhibit-->
-				<h1>The Middle-Earth Cabinet</h1>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea,
-				ipsa aspernatur? Repudiandae, dicta. Nesciunt alias natus minus
-				soluta iure dignissimos molestias unde ad quaerat odio? Facere
-				sapiente nesciunt non inventore?
-				<button onclick="window.location.href='pages/map.html'">
-					The Map
-				</button>
-			</section>
-		</main>
-	</body>
+            <section>
+                <!--This section serves as small introductory text to the exhibit-->
+                <h1>The Middle-Earth Cabinet</h1>
+                An Exhibit about the life and legacy of J.R.R. Tolkien, the
+                world famous writer and worldbuilder that brought to life the
+                world of Arda and Middle Earth.<br />
+                A first time for an exclusive collection at the King's Library,
+                inside the British Museum!
+                <button onclick="window.location.href='pages/map.html'">
+                    The Map
+                </button>
+            </section>
+        </main>
+    </body>
 </html>
