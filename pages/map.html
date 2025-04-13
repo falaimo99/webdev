@@ -255,7 +255,11 @@
             </svg>
             <div id="tooltip" class="tooltip hidden">
                 <span id="close-tooltip">&times;</span>
-                <p id="item-description"></p>
+                <div id="item-description"
+                style="display: flex; flex-direction: column; height: 100%;
+                justify-content: space-between;
+                "
+                ></div>
             </div>
             <template id="tooltipTemplate">
                 <div
@@ -263,21 +267,35 @@
                     style="
                         display: flex;
                         flex-direction: column;
-                        justify-content: space-between;
-                        height: 100% !important;
+                        justify-content: start;
+                        height: 100%;
                     "
                 >
-                    <section style="min-height: 20vh !important">
-                        <img src="" alt="Image" id="objectImage" />
+                    <section 
+                    class="tooltip-img-container" 
+                    style="
+                        height: 15rem;
+                        display:flex;
+                        flex-direction:column;
+                        justify-content:start;
+                        align-items:center;
+
+                        "
+                    >
+                        <img src="" alt="Image" id="objectImage"
+                        
+                        />
                     </section>
 
                     <section>
-                        <h1></h1>
-                        <div class="description">
-                            <h3>Description</h3>
-                            <p id="descriptionText"></p>
+                        <div class="description-container">
+                            <h1></h1>
+                            <div class="description">
+                                <h3>Description</h3>
+                                <p id="descriptionText"></p>
+                            </div>
+                            <small><strong>Provenance:</strong> </small>
                         </div>
-                        <small><strong>Provenance:</strong> </small>
                     </section>
                     <section>
                         <div class="selection-container">
