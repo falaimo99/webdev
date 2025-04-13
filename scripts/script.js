@@ -47,7 +47,7 @@ const welcomeDialog = () => {
 					selectedPath = 'originPath';
 					break;
 				case "legacypath-btn":
-					selectedPath = 'legacypathPath';
+					selectedPath = 'legacyPath';
 					break;
 				default:
 					selectedPath = 'freePath';
