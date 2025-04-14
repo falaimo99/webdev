@@ -60,7 +60,7 @@ The only other consideration about backend is about internal data retrieval, the
 
 The website structure is fairly simple having only one job in mind. Navigation is facilitated by the presence of recognizable buttons and an attempt to respect visual hyerarchy among the elements at screen.
 
-Starting from the index/homepage it is possible to visit one of the functional pages (about, docs, disclaimer), and a suggested access to the main feature of the website, "The Map" page, from which you can start exploring the collection.
+Starting from the index/homepage it is possible to visit one of the informational pages (about, docs, disclaimer), and an highlighted access to the main feature of the website, "The Map" page, from which you can start exploring the collection.
 
 ### 3.1.1 Sitemap
 
@@ -103,7 +103,7 @@ The index/homepage is strongly inspired by The British Museum one, being this im
 
 The homepage features:
 
--   A pitch black header bar containing the links to the functional pages (about, disclaimer, docs)
+-   A pitch black header bar containing the links to the informational pages (about, disclaimer, docs)
 -   A background video that merges real life Tolkien artifacts and clips with movies clips from «The Lord Of The Rings» Trilogy, it was realized using the open source video editor [kdenlive](https://kdenlive.org/)
 -   A small tooltip box containing some informative text about the exhibition and a slightly bigger button leading to "The Map" the main feature of the website.
 
@@ -111,12 +111,12 @@ The differences with the British Museum website are to be found in layout, we ha
 
 ### 3.2.2 "The Map" Page
 
-This is the page that guides the user through the exhibition, this is a graph representation of the user interaction, this acts as a "setup phase" that allows the user to select their level and how they want to visit.
+This is the page that guides the user through the exhibition, this is a graph representation of the user interaction, this acts as a "setup phase" that allows the user how they want to visit and the difficulty of the descriptions. During this phase the user is presented with two `<dialog>` elements.
 
 ```mermaid
 flowchart LR
 
-n1["Path Selection"] --> n2["Character Selection"] --> n3["King's Library Map"]
+n1["Path Selection"] --> n2["Character Selection"] --> n3["King's Library Map and Exhibition"]
 
 ```
 
@@ -137,67 +137,31 @@ The process to realize the svg that allows the map to function was rather simple
 
 It is implemented using the `<svg>` element in html, and it was used to simplify the interaction scripts at work that will be later described.
 
-### 3.2.3 Exhibit Card
+### 3.2.3 Item Card
 
 Each exhibit card follows the same template. The first set of information at display is the museal description of the item, adjustable per level and length through radio buttons. You can also access, with dedicated buttons, the available metadata and map for each item.
 
-### 3.2.4 Information Pages (About, Disclaimer, Docs )
+In each card you can also find arrows to move from one item to the other without using the map to select each one of them.
 
-### 3.2.5 Multimedia Integration (Images, Videos, Audio)
+### 3.2.4 Informational Pages (About, Disclaimer, Docs)
+
+The Informational pages give access to the relevant information for those interested in the project and its developers:
+
+-   "About" provides a small overview of the team and links to their github profiles
+-   "Disclaimer" provides legal text and the selected license, providing context to those who visit the project externally
 
 ### 3.3 JavaScript Functionality
 
-### 3.3.1 User Interactions and Event Handling
+All the relevant javascript code is contained into `scripts/script.js`, being all the pages except "The Map" page static it is relevant only for the functionalities described in paragraph 3.2.2 and 3.2.3.
 
-### 3.3.2 Asynchronous Data Loading (AJAX)
+Javascript is used for all the interactive functionality on the website, everything is managed client side. The script loads content coming from `data/items.json`, and adjusts it according to the choices made by the user during the setup phase. Javascript is also used to set the variables during the setup phase and to make them available throughout the session.
 
-### 3.3.3 Third-Party Integrations (e.g., Analytics, Maps)
-
-### 3.3.4 State Management (if applicable)
+The functions provided regulate the behavior of the setup dialogs, of the British Museum Map dialog, and the item card content retrieval and displaying.
 
 ### 3.4 Styling and Theming (CSS)
 
-### 3.4.1 Style Guides and Conventions
-
-IV. Backend Development
-
-### 4.1 Server-Side Logic and APIs
-
-### 4.1.1 API Endpoints and Specifications
-
-### 4.1.2 Data Validation and Sanitization
-
-### 4.1.3 Business Logic Implementation
-
-### 4.2 Database Design and Management
-
-### 4.2.1 Database Schema (Diagram and Description of Tables, Fields, Relationships)
-
-### 4.2.2 Data Models and Entities
-
-### 4.2.3 Data Access Layer
-
-### 4.2.4 Database Backup and Recovery Procedures
-
-### 4.3 Content Management System (CMS) (if applicable)
-
-### 4.3.1 CMS Architecture and Components
-
-### 4.3.2 Content Modeling and Structure within the CMS
-
-### 4.3.3 User Roles and Permissions within the CMS
-
-### 4.3.4 Workflow for Content Creation and Publishing
-
-### 4.4 Security Implementation (Detailed)
-
-### 4.4.1 Authentication and Authorization Mechanisms
-
-### 4.4.2 Protection Against Common Web Vulnerabilities (e.g., XSS, SQL Injection)
-
-### 4.4.3 Data Encryption (at rest and in transit)
-
-### 4.4.4 Security Auditing and Logging
+The Styling and Theming is full of small references to Tolkien's work.
+We'll try to outline them in this paragraph, it is a simple theming but we deem effective enough to please the eye.
 
 V. Content Management
 
@@ -241,35 +205,7 @@ VI. Interactive Features (if applicable)
 
 ### 6.4 User Engagement Features (e.g., Comments, Sharing)
 
-V
-
-### 10.1 Deployment Process and Procedures
-
-### 10.2 Server Configuration and Management
-
-### 10.3 Monitoring and Logging
-
-### 10.4 Backup and Recovery Procedures
-
-### 10.5 Software Updates and Patch Management
-
-### 10.6 Ongoing Maintenance Tasks
-
-### 10.7 Troubleshooting Common Issues
-
-XII. Analytics and Reporting
-
-### 12.1 Tracking Tools and Implementation (e.g., Google Analytics)
-
-### 12.2 Key Performance Indicators (KPIs) for the Website
-
-### 12.3 Reporting Procedures and Frequency
-
-XIII. Glossary
-
-### Definition of Technical Terms and Acronyms Used in the Document
-
-XIV. Appendices (if applicable)
+## Appendices (if applicable)
 
 ### A. Database Schema Diagrams
 

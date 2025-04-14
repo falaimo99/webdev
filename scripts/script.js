@@ -1,6 +1,7 @@
 let selectedPath = null;
 let currentLevel = 0;
 let currentItemIndex = 0;
+
 const adventurers = [
     {
         adventurer: "Merry & Pippin",
