@@ -68,7 +68,7 @@ body {
 .top-btn:hover {
 	background-color: hsl(0, 0%, 58.82%);
 }
-#new-journey-btn {
+#resume-journey-btn {
 	display: none;
 	font-weight: 600;
 	width: max-content;
@@ -338,14 +338,15 @@ button {
 }
 
 .selection-container {
+	margin-top: 1rem;
     display: flex;
     justify-content: start;
     flex-wrap: wrap;
 }
 
 .description-container {
-    height: 8rem;
-	margin-top: 2rem;
+    height: 7rem;
+	margin-top: 1rem;
     overflow-y: scroll;
 }
 
@@ -383,6 +384,13 @@ button {
     cursor: pointer;
     font-size: 14px;
     transition: background 0.2s;
+}
+
+.nav-buttons button.inactive,
+.nav-buttons button.inactive:hover
+ {
+	background-color: darkgrey;
+	cursor: not-allowed;
 }
 
 .nav-buttons button:hover {
@@ -459,3 +467,86 @@ button {
 	top: 1rem;
 	right: 1rem;
 }
+
+
+.btn-group input[type="radio"] {
+	display: none;
+}
+
+.btn-group label {
+	padding: 0.5rem 1rem;
+	margin-right: 0.5rem;
+	border: 2px solid #007bff;
+	border-radius: 0.5rem;
+	color: #007bff;
+	background-color: white;
+	cursor: pointer;
+	transition: all 0.2s ease;
+	user-select: none;
+}
+
+.btn-group label:hover {
+	background-color: #e6f0ff;
+}
+
+.btn-group input[type="radio"]:checked + label {
+	background-color: #007bff;
+	color: white;
+}
+
+.item-controls {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+	margin-bottom: 1rem;
+}
+
+.radio-button-group {
+	display: flex;
+	justify-content: center;
+	gap: 0.5rem;
+}
+
+.radio-button-group input[type="radio"] {
+	display: none;
+}
+
+.radio-button-group label {
+	padding: 0.5rem 1rem;
+	border: 2px solid #007bff;
+	border-radius: 0.5rem;
+	color: #007bff;
+	background-color: white;
+	cursor: pointer;
+	transition: all 0.2s ease;
+	font-weight: 500;
+}
+
+.radio-button-group input[type="radio"]:checked + label {
+	background-color: #007bff;
+	color: white;
+}
+
+.nav-buttons {
+	display: flex;
+	justify-content: center;
+	gap: 1rem;
+}
+
+.nav-buttons button {
+	padding: 0.5rem 1rem;
+	border: none;
+	border-radius: 0.5rem;
+	cursor: pointer;
+	transition: background-color 0.2s ease;
+}
+
+.nav-buttons button:hover:not(.inactive) {
+	background-color: #e0e0e0;
+}
+
+.nav-buttons button.inactive {
+	opacity: 0.5;
+	cursor: default;
+}
+

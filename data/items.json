@@ -14,7 +14,7 @@
 		"schema.ownedFrom": 1958,
 		"schema.GeoCoordinates":{
 			"latitude": "43.03914248988245",
-			"longitude": "43.03914248988245, -87.927307087411"
+			"longitude": "-87.927307087411"
 		},
 		"descriptions": [
 		  {
@@ -233,7 +233,7 @@
 		"DC.creator": "Weta Workshop",
 		"DC.source": "https://www.wetaworkshop.com/projects/the-lord-of-the-rings-the-fellowship-of-the-ring",
 		"schema.GeoCoordinates": {
-		"latitude": "-41.30601484061519",
+			"latitude": "-41.30601484061519",
 			"longitude": "174.82346517437728"
 		},
 		"descriptions": [
@@ -299,7 +299,7 @@
 		"DC.source": "https://www.wetaworkshop.com/projects/the-lord-of-the-rings-the-fellowship-of-the-ring",
 		"DC.provenance": "Weta Workshop Archives, New Zealand",
 		"schema.GeoCoordinates": {
-		"latitude": "-41.30601484061519",
+			"latitude": "-41.30601484061519",
 			"longitude": "174.82346517437728"
 		},
 		"descriptions": [
@@ -360,7 +360,7 @@
 		"DC.creator":"Weta Workshop",
 		"DC.source": "https://www.wetaworkshop.com/projects/the-lord-of-the-rings-the-fellowship-of-the-ring",
 		"schema.GeoCoordinates": {
-		"latitude": "-41.30601484061519",
+			"latitude": "-41.30601484061519",
 			"longitude": "174.82346517437728"
 		},
 		"descriptions": [
@@ -394,7 +394,7 @@
 		"DC.creator":"Weta Workshop",
 		"DC.date":2003,
 		"schema.GeoCoordinates": {
-		"latitude": "-41.30601484061519",
+			"latitude": "-41.30601484061519",
 			"longitude": "174.82346517437728"
 		},
 		"descriptions": [

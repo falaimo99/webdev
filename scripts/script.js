@@ -107,7 +107,7 @@ const charDialog = () => {
 
 	selectBtn.addEventListener("click", () => {
 		const map = document.querySelector("svg");
-		const newJourney = document.querySelector("#new-journey-btn");
+		const newJourney = document.querySelector("#resume-journey-btn");
 		dialog.style.display = "none";
 		map.style.display = "block";
 		newJourney.style.display = "block";
@@ -152,10 +152,17 @@ document.addEventListener("DOMContentLoaded", function () {
 		});
 	});
 
-	const startButton = document.getElementById("new-journey-btn"); // Adjust ID if needed
+	const startButton = document.getElementById("resume-journey-btn"); // Adjust ID if needed
 	startButton.addEventListener("click", function () {
+		// console.log(currentItemIndex)
 		// Simulate a click at a fixed position or fetch the real position of item 1
-		fetchItemDetails(1, window.innerWidth / 2, window.innerHeight / 2); // Adjust X, Y if necessary
+
+		let idx = 1;
+		if (selectedPath) {
+			idx = paths[selectedPath][currentItemIndex]
+		}
+
+		fetchItemDetails(idx, window.innerWidth / 2, window.innerHeight / 2);
 		// If the user went on we should change the button to resume and add
 		// a new setup button
 
@@ -177,6 +184,9 @@ document.addEventListener("DOMContentLoaded", function () {
 				if (selectedPath) {
 					currentItemIndex = paths[selectedPath].indexOf(+itemId);
 				}
+
+				const newJourney = document.querySelector("#resume-journey-btn");
+				newJourney.innerHTML = 'Resume your Journey'
 
 				if (item) {
 					const template = document.getElementById("tooltipTemplate");
@@ -209,34 +219,162 @@ document.addEventListener("DOMContentLoaded", function () {
 				const navButtons = document.createElement("div");
 				navButtons.classList.add("nav-buttons");
 				if (selectedPath) {
+
+					const prevBtn = document.createElement("button");
+					prevBtn.textContent = "← Previous";
+					prevBtn.classList.add('inactive')
+
+					const nextBtn = document.createElement("button");
+					nextBtn.textContent = "Next →";
+					nextBtn.classList.add('inactive')
+					
+					
 					if (currentItemIndex > 0) {
-						const prevBtn = document.createElement("button");
-						prevBtn.textContent = "← Previous";
+						prevBtn.classList.remove('inactive')
 						prevBtn.addEventListener("click", () => {
 							const prevId = paths[selectedPath][currentItemIndex - 1];
 							fetchItemDetails(prevId, x, y);
 						});
-						navButtons.appendChild(prevBtn);
+						
 					}
+					navButtons.appendChild(prevBtn);
 
+					
 					if (currentItemIndex < paths[selectedPath].length - 1) {
-						const nextBtn = document.createElement("button");
-						nextBtn.textContent = "Next →";
+						nextBtn.classList.remove('inactive')
 						nextBtn.addEventListener("click", () => {
 							const nextId = paths[selectedPath][currentItemIndex + 1];
 							fetchItemDetails(nextId, x, y);
 						});
-						navButtons.appendChild(nextBtn);
+						
 					}
+					navButtons.appendChild(nextBtn);
 				}
 
 
-					description.innerHTML = "";
-					description.appendChild(tooltipContent);
-					description.appendChild(navButtons);
+const viewSwitcher = document.createElement("div");
+viewSwitcher.classList.add("btn-group", "mb-3");
+viewSwitcher.setAttribute("role", "group");
 
-					tooltip.style.right = `${10}px`;
-					tooltip.style.top = `${10}px`;
+viewSwitcher.innerHTML = `
+	<div class="radio-button-group">
+		<input type="radio" name="viewOption" id="descView" checked>
+		<label for="descView">Description</label>
+
+		<input type="radio" name="viewOption" id="metaView">
+		<label for="metaView">Metadata</label>
+
+		<input type="radio" name="viewOption" id="mapView">
+		<label for="mapView">Map</label>
+	</div>
+`;
+
+
+
+
+// Helper render functions
+function renderDescription() {
+	const tooltipContentClone = template.content.cloneNode(true);
+
+	tooltipContentClone.querySelector("h1").textContent =
+		item.h1 || "No title available";
+	tooltipContentClone.querySelector("img").src = item.img || "";
+	tooltipContentClone.querySelector("img").alt = item.h2 || "Image";
+	tooltipContentClone.querySelector("#descriptionText").textContent =
+		itemDescription.veryBrief || "No description available.";
+	tooltipContentClone.querySelector("small").textContent =
+		`Provenance: ${item.Provenance || "Unknown"}`;
+
+	const radios = tooltipContentClone.querySelectorAll('input[type="radio"]');
+	radios.forEach((radio) => {
+		radio.addEventListener("change", function () {
+			updateDescription(item);
+		});
+		if (
+			radio.name === "complexity" &&
+			radio.value === `${currentLevel}`
+		) {
+			radio.checked = true;
+		}
+	});
+
+	description.innerHTML = "";
+	description.appendChild(tooltipContentClone);
+
+	const controlsContainer = document.createElement("div");
+	controlsContainer.classList.add("item-controls");
+	controlsContainer.appendChild(viewSwitcher);
+	controlsContainer.appendChild(navButtons);
+	description.appendChild(controlsContainer);
+
+
+}
+
+
+function renderMetadata() {
+	const metadataContainer = document.createElement("div");
+	metadataContainer.classList.add("metadata-container");
+	metadataContainer.innerHTML = `
+		<h3>Metadata</h3>
+		<p><strong>Title:</strong> ${item["DC.Title"] || "N/A"}</p>
+		<p><strong>Creator:</strong> ${item["DC.creator"] || "N/A"}</p>
+		<p><strong>Date:</strong> ${item["DC.date"] || "N/A"}</p>
+		<p><strong>Provenance:</strong> ${item["DC.provenance"] || "N/A"}</p>
+		<p><strong>Source:</strong> <a href="${item["DC.source"]}" target="_blank">View Image</a></p>
+		<p><strong>Description:</strong> ${item["DC.description"] || "N/A"}</p>
+	`;
+	description.innerHTML = "";
+	description.appendChild(metadataContainer);
+	const controlsContainer = document.createElement("div");
+	controlsContainer.classList.add("item-controls");
+	controlsContainer.appendChild(viewSwitcher);
+	controlsContainer.appendChild(navButtons);
+	description.appendChild(controlsContainer);
+}
+
+function renderMap() {
+	const mapContainer = document.createElement("div");
+	mapContainer.id = "map";
+	mapContainer.style = "height: 300px; width: 100%; border-radius: 0.5rem; margin-bottom: 1rem;";
+	description.innerHTML = "";
+	description.appendChild(mapContainer);
+	const controlsContainer = document.createElement("div");
+	controlsContainer.classList.add("item-controls");
+	controlsContainer.appendChild(viewSwitcher);
+	controlsContainer.appendChild(navButtons);
+	description.appendChild(controlsContainer);
+
+	// Initialize OpenStreetMap
+	const lat = parseFloat(item["schema.GeoCoordinates"]?.latitude);
+	const lng = parseFloat(item["schema.GeoCoordinates"]?.longitude);
+
+	if (!lat || !lng) {
+		mapContainer.innerHTML = "<p>Location not available</p>";
+		return;
+	}
+
+	const map = L.map(mapContainer).setView([lat, lng], 13);
+	L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+		attribution: '&copy; OpenStreetMap contributors'
+	}).addTo(map);
+	L.marker([lat, lng]).addTo(map);
+}
+viewSwitcher.querySelector("#descView").addEventListener("change", renderDescription);
+viewSwitcher.querySelector("#metaView").addEventListener("change", renderMetadata);
+viewSwitcher.querySelector("#mapView").addEventListener("change", renderMap);
+
+
+renderDescription(); // default view
+
+
+					// description.innerHTML = "";
+					// description.appendChild(tooltipContent);
+					// description.appendChild(navButtons);
+
+					// tooltip.style.right = `${10}px`;
+					tooltip.style.top = '10%';
+					tooltip.style.height = '80%';
+					tooltip.style.maxHeight = '40rem'
 					tooltip.classList.remove("hidden");
 
 					radios.forEach((radio) => {
@@ -250,6 +388,7 @@ document.addEventListener("DOMContentLoaded", function () {
 							radio.checked = true;
 						}
 					});
+
 				} 
 			})
 			.catch((error) => console.error("Error loading JSON:", error));
@@ -283,7 +422,6 @@ function updateDescription(item) {
 	}
 }
 
-//Script for the map button, leads to a view of the real british museum map and a link to it
 const mapBtnFunc = (() => {
 	const mapBtn = document.querySelector("#map-icon");
 	mapBtn.addEventListener("click", () => {

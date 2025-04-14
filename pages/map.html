@@ -10,6 +10,13 @@
         <link rel="stylesheet" href="../styles/map.css" />
         <title>The Map</title>
         <script type="module" src="../scripts/script.js"></script>
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+            />
+            <script
+            src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+            ></script>
     </head>
     <body>
         <div class="background-image"></div>
@@ -41,7 +48,7 @@
                     home
                 </span>
             </div>
-            <span class="top-btn" id="new-journey-btn">Start your Journey</span>
+            <span class="top-btn" id="resume-journey-btn">Start your Journey</span>
             <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 
             <svg
@@ -269,12 +276,13 @@
                         flex-direction: column;
                         justify-content: start;
                         height: 100%;
+                        overflow-y: scroll;
                     "
                 >
                     <section 
                     class="tooltip-img-container" 
                     style="
-                        height: 15rem;
+                        min-height: 15rem !important;
                         display:flex;
                         flex-direction:column;
                         justify-content:start;
@@ -297,10 +305,13 @@
                             <small><strong>Provenance:</strong> </small>
                         </div>
                     </section>
+                    <section
+                    style="flex-grow: 1;"
+                    ></section>
                     <section>
                         <div class="selection-container">
                             <div class="complexity">
-                                <h2>Complexity</h2>
+                                <h3>Complexity</h3>
                                 <label
                                     ><input
                                         type="radio"
@@ -327,7 +338,7 @@
                                 >
                             </div>
                             <div class="length">
-                                <h2>Length</h2>
+                                <h3>Length</h3>
                                 <label
                                     ><input
                                         type="radio"
