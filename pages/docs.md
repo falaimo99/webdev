@@ -1,5 +1,3 @@
-Okay, here's a comprehensive index outline you can use as a reference for your technical documentation for a museum exhibition website. This outline covers various aspects, from the overall architecture to specific functionalities and maintenance.
-
 ## Introduction
 
 The Middle Earth Cabinet is a Project Website following the guidelines for the 2024-2025 a.y. valid for the exam "Information Modeling and Web Technologies".
@@ -56,33 +54,96 @@ The only other consideration about backend is about internal data retrieval, the
 
 ### 2.3 Data Flow and Interactions
 
-III. Frontend Development
+## Frontend Development
 
 ### 3.1 Website Structure and Navigation
 
+The website structure is fairly simple having only one job in mind. Navigation is facilitated by the presence of recognizable buttons and an attempt to respect visual hyerarchy among the elements at screen.
+
+Starting from the index/homepage it is possible to visit one of the functional pages (about, docs, disclaimer), and a suggested access to the main feature of the website, "The Map" page, from which you can start exploring the collection.
+
 ### 3.1.1 Sitemap
+
+```mermaid
+
+flowchart LR
+    Homepage["Homepage"] --> n1["About"]
+    Homepage --> n2["Disclaimer"]
+    Homepage --> n3["Documentation"]
+    Homepage --> n4["The Map"]
+    n4 --> n5["Map Items*"]
+
+```
+
+_This chart was realized using [mermaid](https://mermaid.js.org/)_
+
+\* these are not pages but are still treated as relevant elements.
 
 ### 3.1.2 User Interface (UI) Design Principles
 
+We tried to stick to the basic UI Design Principles without outlining our own requirements.
+We followed common sense regarding matters of readability and interaction facilities at user's disposal.
+
 ### 3.1.3 Responsive Design and Mobile Compatibility
 
-### 3.1.4 Accessibility (WCAG Compliance)
+Is yet to be implemented! Not present in the requirements.
 
 ### 3.2 Page Templates and Components
 
+The pages are few enough to make it available for us to devise unique designs for each of them. Trying to retain a coherent aesthetic.
+
+Consistent templates are present in:
+
+-   button styling
+-   exhibit cards
+
 ### 3.2.1 Homepage
 
-### 3.2.2 Exhibition Overview Page
+The index/homepage is strongly inspired by The British Museum one, being this imaginary exhibition staged inside "The King's Library", the first series of rooms indexed in the [Official Map](https://www.britishmuseum.org/visit/museum-map) of the aforementioned museum.
 
-### 3.2.3 Individual Exhibit Pages
+The homepage features:
 
-### 3.2.4 Search Functionality Page
+-   A pitch black header bar containing the links to the functional pages (about, disclaimer, docs)
+-   A background video that merges real life Tolkien artifacts and clips with movies clips from «The Lord Of The Rings» Trilogy, it was realized using the open source video editor [kdenlive](https://kdenlive.org/)
+-   A small tooltip box containing some informative text about the exhibition and a slightly bigger button leading to "The Map" the main feature of the website.
 
-### 3.2.5 Information Pages (e.g., About Us, Contact, Visit Us)
+The differences with the British Museum website are to be found in layout, we have of course fewer elements to deal with; and overflowing, we decided to have a static full-viewport homepage, while the BM site has to include many more elements below their bar and background video.
 
-### 3.2.6 Interactive Elements (e.g., Virtual Tours, 3D Models)
+### 3.2.2 "The Map" Page
 
-### 3.2.7 Multimedia Integration (Images, Videos, Audio)
+This is the page that guides the user through the exhibition, this is a graph representation of the user interaction, this acts as a "setup phase" that allows the user to select their level and how they want to visit.
+
+```mermaid
+flowchart LR
+
+n1["Path Selection"] --> n2["Character Selection"] --> n3["King's Library Map"]
+
+```
+
+_This chart was realized using [mermaid](https://mermaid.js.org/)_
+
+After the setup phase the user is able to explore the map in different ways:
+
+-   if they selected a Path, the map will zoom and pan to focus on the museum section dedicated to it, highlighted with the theme colour of that path. It will then appear a "Start your journey" button that will guide you through the right order of appearance of the exhibits.
+-   if they selected free roam they can freely explore each and every item available without an order.
+
+A useful "Resume your Journey" button will substitute the "Star your Journey" one, and will make it possible to resume from the last item you selected.
+
+Besides the map are available two buttons, one to return back to the homepage and another to visualize the british museum map, and a link that leads the user to the original source, in this view is also highlighted the actual exhibition location.
+
+#### Map Svg
+
+The process to realize the svg that allows the map to function was rather simple but required some work and refinements, the map was traced using the official map provided by the British Museum, at first using [figma](https://www.figma.com) and then refined using [inkscape](https://www.inkscape.com).
+
+It is implemented using the `<svg>` element in html, and it was used to simplify the interaction scripts at work that will be later described.
+
+### 3.2.3 Exhibit Card
+
+Each exhibit card follows the same template. The first set of information at display is the museal description of the item, adjustable per level and length through radio buttons. You can also access, with dedicated buttons, the available metadata and map for each item.
+
+### 3.2.4 Information Pages (About, Disclaimer, Docs )
+
+### 3.2.5 Multimedia Integration (Images, Videos, Audio)
 
 ### 3.3 JavaScript Functionality
 
@@ -97,8 +158,6 @@ III. Frontend Development
 ### 3.4 Styling and Theming (CSS)
 
 ### 3.4.1 Style Guides and Conventions
-
-### 3.4.2 Use of CSS Frameworks/Libraries (if applicable)
 
 IV. Backend Development
 
@@ -182,49 +241,7 @@ VI. Interactive Features (if applicable)
 
 ### 6.4 User Engagement Features (e.g., Comments, Sharing)
 
-VII. Search Functionality
-
-### 7.1 Search Engine Implementation
-
-### 7.2 Search Indexing and Updating
-
-### 7.3 Search Filters and Facets
-
-### 7.4 Relevance Ranking Algorithms
-
-VIII. Performance and Optimization
-
-### 8.1 Website Performance Metrics (e.g., Load Times, Response Times)
-
-### 8.2 Frontend Optimization Techniques (e.g., Image Optimization, Code Minification)
-
-### 8.3 Backend Optimization Techniques (e.g., Database Indexing, Caching)
-
-### 8.4 Content Delivery Network (CDN) Usage (if applicable)
-
-IX. Testing and Quality Assurance
-
-### 9.1 Testing Strategy and Scope
-
-### 9.2 Test Environments
-
-### 9.3 Types of Testing
-
-### 9.3.1 Unit Testing
-
-### 9.3.2 Integration Testing
-
-### 9.3.3 User Acceptance Testing (UAT)
-
-### 9.3.4 Performance Testing
-
-### 9.3.5 Security Testing
-
-### 9.3.6 Accessibility Testing
-
-### 9.4 Bug Reporting and Tracking Process
-
-X. Deployment and Maintenance
+V
 
 ### 10.1 Deployment Process and Procedures
 
@@ -239,16 +256,6 @@ X. Deployment and Maintenance
 ### 10.6 Ongoing Maintenance Tasks
 
 ### 10.7 Troubleshooting Common Issues
-
-XI. Security
-
-### 11.1 Detailed Security Architecture
-
-### 11.2 Vulnerability Management
-
-### 11.3 Access Control and Permissions
-
-### 11.4 Data Privacy and Compliance (e.g., GDPR if applicable)
 
 XII. Analytics and Reporting
 
@@ -271,3 +278,5 @@ XIV. Appendices (if applicable)
 ### C. Style Guides
 
 ### D. Wireframes or Mockups (if relevant to technical implementation)
+
+### E. Future Developments and current issues

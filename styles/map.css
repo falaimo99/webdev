@@ -1,109 +1,121 @@
 .material-symbols-outlined {
-	font-family: "Material Symbols Outlined";
+    font-family: "Material Symbols Outlined";
 }
 /* Defaulting Style */
 * {
-	padding: 0;
-	margin: 0;
+    padding: 0;
+    margin: 0;
 }
 
 body {
-	width: 100vw;
-	height: 100vh;
-	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-		Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
-		sans-serif;
+    width: 100vw;
+    height: 100vh;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+        sans-serif;
 }
 
 #grid-container {
-	width: 100%;
-	height: 100%;
-	display: grid;
-	grid-template-columns: 15% 70% 15%;
-	grid-template-rows: 10% 1fr;
-	grid-auto-flow: column;
-	justify-items: center;
-	/* background-color: antiquewhite; */
-	/* background-image: url("../static/map/middle-earth-map.jpg"); */
-	/* backdrop-filter: blur(10px); */
-	/* filter: blur(1px); */
-	/* background-image: url(); */
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 15% 70% 15%;
+    grid-template-rows: 10% 1fr;
+    grid-auto-flow: column;
+    justify-items: center;
+    /* background-color: antiquewhite; */
+    /* background-image: url("../static/map/middle-earth-map.jpg"); */
+    /* backdrop-filter: blur(10px); */
+    /* filter: blur(1px); */
+    /* background-image: url(); */
 }
 
 .background-image {
-	position: fixed;
-	left: 0;
-	right: 0;
-	z-index: -1;
-	display: block;
-	background-image: url("../static/map/middle-earth-map.jpg");
-	width: 100vw;
-	height: 100vh;
-	-webkit-filter: blur(5px);
-	-moz-filter: blur(5px);
-	-o-filter: blur(5px);
-	-ms-filter: blur(5px);
-	filter: blur(5px);
-	filter: brightness(0.5) blur(5px);
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    display: block;
+    background-image: url("../static/map/middle-earth-map.jpg");
+    width: 100vw;
+    height: 100vh;
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+    filter: brightness(0.5) blur(5px);
 }
 
 .top-btneer {
-	position: absolute;
-	top: 1rem;
-	left: 1rem;
-	width: fit-content;
-	height: fit-content;
-	display: flex;
-	gap: 1rem;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    gap: 1rem;
 }
 .top-btn {
-	cursor: pointer;
-	padding: 0.8rem;
-	border-radius: 5px;
-	color: #ffffff;
-	top: 1rem;
-	left: 1rem;
-	background-color: hsl(0, 0%, 38.82%);
+    cursor: pointer;
+    padding: 0.8rem;
+    border-radius: 5px;
+    color: #ffffff;
+    top: 1rem;
+    left: 1rem;
+    background-color: hsl(0, 0%, 38.82%);
 }
 .top-btn:hover {
-	background-color: hsl(0, 0%, 58.82%);
+    background-color: hsl(0, 0%, 58.82%);
 }
 #resume-journey-btn {
-	display: none;
-	font-weight: 600;
-	width: max-content;
-	height: fit-content;
-	grid-column: 2;
-	align-self: center;
-	border-color: antiquewhite;
-	border-style: solid;
-	animation: glowing infinite 3s ;
+    display: none;
+    font-weight: 600;
+    width: max-content;
+    height: fit-content;
+    grid-column: 2;
+    align-self: center;
+    border-color: antiquewhite;
+    border-style: solid;
+    animation: glowing infinite 3s;
 }
 @keyframes glowing {
-	0% {border-color: gold;}
-	33% {border-color: green;}
-	66% {border-color: skyblue;}
-	100% {border-color: gold;}
+    0% {
+        border-color: gold;
+    }
+    33% {
+        border-color: green;
+    }
+    66% {
+        border-color: skyblue;
+    }
+    100% {
+        border-color: gold;
+    }
 }
 
 a {
-	cursor: pointer;
+    cursor: pointer;
 }
 
 svg {
-	display: none;
-	width: clamp(80%, max-content, 100%);
-	grid-column: 2;
-	grid-row: 2;
-	justify-self: center;
-	align-self: center;
-	/* animation: rightMaskTransform forwards 4s; */
+    display: none;
+    width: clamp(80%, max-content, 100%);
+    grid-column: 2;
+    grid-row: 2;
+    justify-self: center;
+    align-self: center;
+    /* animation: rightMaskTransform forwards 4s; */
 }
 @keyframes rightMaskTransform {
-	100% {transform: scale(1.5,1.5) translate(-20%)};	
+    100% {
+        transform: scale(1.5, 1.5) translate(-20%);
+    }
 }
 @keyframes leftMaskTransform {
-	100% {transform: scale(1.5,1.5) translate(20%)};
+    100% {
+        transform: scale(1.5, 1.5) translate(20%);
+    }
 }
 /* 
 #rightMask {
@@ -114,176 +126,177 @@ svg {
 } */
 
 p {
-	justify-self: left;
+    justify-self: left;
 }
 
 dialog {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
 
-	padding: 3rem;
-	margin: 1rem;
-	width: min(fit-content) max(30vw);
-	height: max-content;
-	background-color: #ffffffdb;
-	align-self: center;
-	justify-self: center;
-	border: solid hsl(0, 0%, 48.82%);
-	outline: none;
-	border-radius: 11px;
+    padding: 3rem;
+    margin: 1rem;
+    width: min(fit-content) max(30vw);
+    height: max-content;
+    background-color: #ffffffdb;
+    align-self: center;
+    justify-self: center;
+    border: solid hsl(0, 0%, 48.82%);
+    outline: none;
+    border-radius: 11px;
 }
 h2 {
-	line-height: 3rem;
+    line-height: 3rem;
 }
 
 .charDialog {
-	width: 50%;
-	height: 80%;
-	display: grid;
-	grid-template-columns: 1fr 7fr 1fr;
-	grid-template-rows: 1fr 1fr 5fr 2fr 2fr;
-	justify-items: center;
-	align-items: center;
+    width: 50%;
+    min-width: min-content;
+    height: 80%;
+    display: grid;
+    grid-template-columns: 1fr 7fr 1fr;
+    grid-template-rows: 1fr 1fr 5fr 20% 2fr;
+    justify-items: center;
+    align-items: center;
 }
 .charDialog > h1 {
-	grid-column: 2;
-	grid-row: 1;
-	justify-self: center;
-	color: #636363b5;
+    grid-column: 2;
+    grid-row: 1;
+    justify-self: center;
+    color: #636363b5;
 }
 .charDialog > h2 {
-	grid-column: 2;
-	grid-row: 2;
-	justify-self: center;
+    grid-column: 2;
+    grid-row: 2;
+    justify-self: center;
 }
 
 .charDialog > img {
-	width: 60%;
-	grid-column: 2;
-	grid-row: 3;
-	border-radius: 11px;
-	aspect-ratio: 16/9;
-	object-fit: cover;
+    width: 60%;
+    grid-column: 2;
+    grid-row: 3;
+    border-radius: 11px;
+    aspect-ratio: 16/9;
+    object-fit: cover;
 }
 .charDialog > p {
-	grid-row: 4;
-	grid-column: 2;
-	justify-self: center;
-	width: 45ch;
-	margin-top: 1rem;
+    grid-row: 4;
+    grid-column: 2;
+    justify-self: center;
+    width: 45ch;
+    margin-top: 1rem;
 }
 .charDialog > span {
-	background-color: hsl(0, 0%, 90%);
-	border-radius: 100px;
-	padding: 1.5rem;
-	align-self: center;
-	justify-self: center;
+    background-color: hsl(0, 0%, 90%);
+    border-radius: 100px;
+    padding: 1.5rem;
+    align-self: center;
+    justify-self: center;
 }
 .charDialog > span:hover {
-	background-color: hsl(0, 0%, 95%);
-	border-radius: 100px;
-	padding: 1.5rem;
-	align-self: center;
-	justify-self: center;
+    background-color: hsl(0, 0%, 95%);
+    border-radius: 100px;
+    padding: 1.5rem;
+    align-self: center;
+    justify-self: center;
 }
 .charDialog > .path-button {
-	width: 40%;
-	grid-row: 5;
-	grid-column: 2;
-	justify-self: center;
-	margin-top: 1rem;
+    width: 40%;
+    grid-row: 5;
+    grid-column: 2;
+    justify-self: center;
+    margin-top: 1rem;
 }
 
 #arrow-forward {
-	cursor: pointer;
-	grid-column: 3;
-	grid-row: 3;
+    cursor: pointer;
+    grid-column: 3;
+    grid-row: 3;
 }
 #arrow-back {
-	cursor: pointer;
-	grid-column: 1;
-	grid-row: 3;
+    cursor: pointer;
+    grid-column: 1;
+    grid-row: 3;
 }
 
 nav {
-	width: clamp(fit-content, 60%, 60%);
-	grid-column: 2/3;
-	grid-row: 1;
-	padding: 1rem;
-	align-self: center;
-	justify-self: center;
+    width: clamp(fit-content, 60%, 60%);
+    grid-column: 2/3;
+    grid-row: 1;
+    padding: 1rem;
+    align-self: center;
+    justify-self: center;
 
-	display: grid;
-	row-gap: 1rem;
-	column-gap: 1rem;
-	grid-template-rows: 1fr 1fr;
-	grid-template-columns: 1fr 1fr;
-	align-items: center;
-	justify-items: center;
+    display: grid;
+    row-gap: 1rem;
+    column-gap: 1rem;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
 }
 .nav-interface {
-	width: 60%;
-	grid-row: 1;
-	padding: 1rem;
-	align-self: center;
-	justify-self: center;
+    width: 60%;
+    grid-row: 1;
+    padding: 1rem;
+    align-self: center;
+    justify-self: center;
 
-	display: flex;
+    display: flex;
 }
 
 .path-button {
-	grid-row: 1;
-	width: 100%;
-	padding: 1rem;
-	height: min-content(10vh);
-	align-self: center;
-	justify-self: center;
+    grid-row: 1;
+    width: 100%;
+    padding: 1rem;
+    height: min-content(10vh);
+    align-self: center;
+    justify-self: center;
 
-	font-size: 1rem;
-	cursor: pointer;
-	font-weight: 600;
-	border-style: none;
-	border-radius: 5px;
-	background-color: hsl(0, 0%, 38.82%);
-	color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: 600;
+    border-style: none;
+    border-radius: 5px;
+    background-color: hsl(0, 0%, 38.82%);
+    color: white;
 }
 .path-button:hover {
-	background-color: hsl(0, 0%, 58.82%);
+    background-color: hsl(0, 0%, 58.82%);
 }
 #roamfree {
-	grid-row: 2;
-	grid-column: 1/3;
-	width: 100%;
-	border: solid #87ceeb;
+    grid-row: 2;
+    grid-column: 1/3;
+    width: 100%;
+    border: solid #87ceeb;
 }
 #originpath-btn {
-	border: solid green;
+    border: solid green;
 }
 #legacypath-btn {
-	border: solid gold;
+    border: solid gold;
 }
 
 .path-button-interface {
-	grid-row: 1;
-	grid-column: 2;
-	padding: 1rem;
-	height: min-content(10vh);
-	align-self: center;
-	justify-self: center;
+    grid-row: 1;
+    grid-column: 2;
+    padding: 1rem;
+    height: min-content(10vh);
+    align-self: center;
+    justify-self: center;
 
-	font-size: 1rem;
-	cursor: pointer;
-	font-weight: 600;
-	border-style: none;
-	border-radius: 5px;
-	background-color: hsl(0, 0%, 38.82%);
-	color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: 600;
+    border-style: none;
+    border-radius: 5px;
+    background-color: hsl(0, 0%, 38.82%);
+    color: white;
 }
 
 button {
-	outline: none;
+    outline: none;
 }
 
 #tooltip {
@@ -327,33 +340,32 @@ button {
 
 /* Image */
 #tooltip img {
-
     object-fit: cover;
     border-radius: 8px;
     background: rgba(255, 255, 255, 0.1);
 
-	height: 100%;
-	width: auto;
-	max-width: 90%;
+    height: 100%;
+    width: auto;
+    max-width: 90%;
 }
 
 .selection-container {
-	margin-top: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
     display: flex;
     justify-content: start;
     flex-wrap: wrap;
 }
 
 .description-container {
-    height: 7rem;
-	margin-top: 1rem;
+    height: 9rem;
+    margin-top: 1rem;
     overflow-y: scroll;
 }
 
-
 /* Scrollable Content */
 #descriptionText {
-    font-size: 14px;
+    font-size: 1rem;
     color: rgba(255, 255, 255, 0.8);
     line-height: 1.5;
     flex-grow: 1;
@@ -387,10 +399,9 @@ button {
 }
 
 .nav-buttons button.inactive,
-.nav-buttons button.inactive:hover
- {
-	background-color: darkgrey;
-	cursor: not-allowed;
+.nav-buttons button.inactive:hover {
+    background-color: darkgrey;
+    cursor: not-allowed;
 }
 
 .nav-buttons button:hover {
@@ -415,11 +426,13 @@ button {
 
 /* Ensure tooltip never goes off screen */
 @keyframes adjustTooltip {
-    0% { transform: translateX(0); }
-    100% { 
+    0% {
+        transform: translateX(0);
+    }
+    100% {
         transform: translateX(
             calc(min(0px, 100vw - (var(--tooltip-x, 0px) + 450px)))
-        ); 
+        );
     }
 }
 
@@ -441,112 +454,109 @@ button {
     background: rgba(255, 255, 255, 0.1);
 }
 
-
 .bmMapDialog {
-	display: grid;
-	grid-template-columns: 1fr, fit-content;
-	padding: 0;
-	align-content: center;
-	justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr, fit-content;
+    padding: 0;
+    align-content: center;
+    justify-content: center;
 }
 .bmMapDialog > img {
-	width: 60%;
-	align-self: center;
+    width: 60%;
+    align-self: center;
 }
 .bmMapDialog > span {
-	display: block;
-	position: absolute;
-	top: 1rem;
-	right: 1rem;
-	cursor: pointer;
+    display: block;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
 }
 .bmMapDialog > #link-btn {
-	width: fit-content;
-	display: block;
-	position: absolute;
-	top: 1rem;
-	right: 1rem;
+    width: fit-content;
+    display: block;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
 }
 
-
 .btn-group input[type="radio"] {
-	display: none;
+    display: none;
 }
 
 .btn-group label {
-	padding: 0.5rem 1rem;
-	margin-right: 0.5rem;
-	border: 2px solid #007bff;
-	border-radius: 0.5rem;
-	color: #007bff;
-	background-color: white;
-	cursor: pointer;
-	transition: all 0.2s ease;
-	user-select: none;
+    padding: 0.5rem 1rem;
+    margin-right: 0.5rem;
+    border: 2px solid #007bff;
+    border-radius: 0.5rem;
+    color: #007bff;
+    background-color: white;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    user-select: none;
 }
 
 .btn-group label:hover {
-	background-color: #e6f0ff;
+    background-color: #e6f0ff;
 }
 
 .btn-group input[type="radio"]:checked + label {
-	background-color: #007bff;
-	color: white;
+    background-color: #007bff;
+    color: white;
 }
 
 .item-controls {
-	display: flex;
-	flex-direction: column;
-	gap: 0.5rem;
-	margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
 }
 
 .radio-button-group {
-	display: flex;
-	justify-content: center;
-	gap: 0.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
 }
 
 .radio-button-group input[type="radio"] {
-	display: none;
+    display: none;
 }
 
 .radio-button-group label {
-	padding: 0.5rem 1rem;
-	border: 2px solid #007bff;
-	border-radius: 0.5rem;
-	color: #007bff;
-	background-color: white;
-	cursor: pointer;
-	transition: all 0.2s ease;
-	font-weight: 500;
+    padding: 0.5rem 1rem;
+    border: 2px solid #007bff;
+    border-radius: 0.5rem;
+    color: #007bff;
+    background-color: white;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-weight: 500;
 }
 
 .radio-button-group input[type="radio"]:checked + label {
-	background-color: #007bff;
-	color: white;
+    background-color: #007bff;
+    color: white;
 }
 
 .nav-buttons {
-	display: flex;
-	justify-content: center;
-	gap: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
 }
 
 .nav-buttons button {
-	padding: 0.5rem 1rem;
-	border: none;
-	border-radius: 0.5rem;
-	cursor: pointer;
-	transition: background-color 0.2s ease;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
 }
 
 .nav-buttons button:hover:not(.inactive) {
-	background-color: #e0e0e0;
+    background-color: #e0e0e0;
 }
 
 .nav-buttons button.inactive {
-	opacity: 0.5;
-	cursor: default;
+    opacity: 0.5;
+    cursor: default;
 }
-

@@ -1,483 +1,479 @@
 {
-  "items": [
+    "items": [
+        {
+            "id": 1,
+            "h1": "The First Manuscript of The Lord of the Rings",
+            "h2": "J.R.R. Tolkien’s Original Handwritten Draft",
+            "img": "../static/items/1-manuscript.png",
+            "DC.Title": "The First Manuscript of The Lord of the Rings",
+            "DC.creator": "J.R.R. Tolkien",
+            "DC.source": "https://www.marquette.edu/library/archives/Mss/JRRT/about.php",
+            "DC.subject": "https://www.wikidata.org/wiki/Q15228",
+            "schema.acquiredFrom": "Marquette University Archives, USA",
+            "schema.ownedFrom": 1958,
+            "schema.GeoCoordinates": {
+                "latitude": "43.03914248988245",
+                "longitude": "-87.927307087411"
+            },
+            "descriptions": [
+                {
+                    "level": 0,
+                    "veryBrief": "Tolkien’s original handwritten draft ofThe Lord of the Rings.",
+                    "midSize": "This is the first complete manuscript ofThe Lord of the Rings, written by J.R.R. Tolkien. It includes early versions of key moments in the story.",
+                    "long": "This is the very first manuscript ofThe Lord of the Rings, written by J.R.R. Tolkien by hand. Preserved at Marquette University, it contains early drafts, revisions, and marginal notes by the author. This document captures the evolution of one of the most influential fantasy works of all time."
+                },
+                {
+                    "level": 1,
+                    "veryBrief": "The earliest known draft ofThe Lord of the Rings, written by Tolkien himself.",
+                    "midSize": "Tolkien’s first manuscript ofThe Lord of the Ringsoffers a rare glimpse into his creative process. It includes early versions of beloved characters and storylines, some of which were later changed.",
+                    "long": "This manuscript, housed at Marquette University, is a historical treasure. It provides insight into Tolkien’s method of world-building, including early drafts of names, places, and plot points that were refined in the final book. It also contains his handwritten notes, showing how he reworked certain passages over time."
+                },
+                {
+                    "level": 2,
+                    "veryBrief": "Tolkien’s original draft, featuring early character names and story variations.",
+                    "midSize": "The Marquette manuscript reveals fascinating early versions of key scenes and names. For example, Aragorn was initially called 'Trotter,' and the story had different paths before reaching its final form.",
+                    "long": "The original manuscript ofThe Lord of the Ringsis a vital artifact in Tolkien scholarship. It preserves his handwritten drafts, including discarded ideas, alternative plot directions, and character name changes. Scholars have analyzed this document to understand Tolkien’s meticulous approach to storytelling. Notably, it shows how he reworked major elements over time, from linguistic details to entire chapters. The manuscript remains one of the most significant pieces in the study of Tolkien’s legendarium."
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "h1": "Tolkien’s letter to Stanley Unwin, 1937",
+            "h2": "Letter in which Tolkien talks about his first work's success, The Hobbit.",
+            "img": "Stanley Unwin Picture",
+            "DC.source": "https://www.tolkienestate.com/letters/letter-to-stanley-unwin-his-publisher-16-dec-1937/",
+            "DC.creator": "J.R.R. Tolkien",
+            "descriptions": [
+                {
+                    "level": 0,
+                    "veryBrief": "In 1937, Tolkien wrote to his publisher about *The Hobbit* and a new story idea.",
+                    "midSize": "In 1937, J.R.R. Tolkien corresponded with Stanley Unwin about the success of *The Hobbit* and his early thoughts on a follow-up.",
+                    "long": "This 1937 letter shows Tolkien discussing the positive reception of *The Hobbit* with his publisher, Stanley Unwin, and mentioning initial concepts for a new book."
+                },
+                {
+                    "level": 1,
+                    "veryBrief": "A 1937 letter reveals Tolkien's early plans for what became «The Lord of The Rings».",
+                    "midSize": "This letter from Tolkien to his publisher in 1937 is important because it shows his initial ideas for a sequel to *The Hobbit*, which developed into «The Lord of The Rings».",
+                    "long": "This significant 1937 letter from J.R.R. Tolkien to Stanley Unwin provides insight into the genesis of «The Lord of The Rings». Following the success of *The Hobbit*, Tolkien outlines his preliminary thoughts for a new story, hinting at the epic scale it would eventually achieve and revealing his early creative process."
+                },
+                {
+                    "level": 2,
+                    "veryBrief": "Tolkien's 1937 letter to Unwin is a key primary source for understanding the inception of «The Lord of The Rings».",
+                    "midSize": "The 1937 correspondence between J.R.R. Tolkien and Stanley Unwin documents Tolkien's initial response to the request for a *Hobbit* sequel, revealing nascent ideas that would evolve into the complex narrative of «The Lord of The Rings».",
+                    "long": "This 1937 letter from J.R.R. Tolkien to Stanley Unwin is a crucial primary document for understanding the complex genesis of «The Lord of The Rings». It captures Tolkien's immediate thoughts following the success of *The Hobbit* and Unwin's request for a sequel. The letter reveals Tolkien's early grappling with the narrative possibilities, the potential expansion of the Middle-earth mythology, and the challenges of writing a follow-up that would resonate with readers while also satisfying his own artistic vision. It offers invaluable insight into the evolution of key themes, characters, and narrative structures that would come to define his epic work, and illuminates the professional dynamic that facilitated its creation."
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "h1": "Moria Gate",
+            "h2": "Drawn by J.R.R. Tolkien",
+            "img": "../static/items/3-beowulf.jpg",
+            "DC.provenance": "The Tolkien Estate",
+            "DC.date": 1939,
+            "DC.Title": "Moria Gate",
+            "DC.creator": "J.R.R. Tolkien",
+            "DC.source": "https://jrrtestate.wpenginepowered.com/wp-content/uploads/2021/10/639-azz0058-1.jpg",
+            "DC.description": "This drawing is dominated by the imposing wall of stone behind the doorway, both hostile and impregnable. The lower section of the drawing was cut off by Tolkien at a later date as it no longer complemented the published text.",
+            "descriptions": [
+                {
+                    "level": 0,
+                    "veryBrief": "Tolkien drew the big, strong gates of Moria.",
+                    "midSize": "This drawing by J.R.R. Tolkien shows the huge, stone gates of Moria. The wall behind the doorway looks very strong and hard to get through. Part of the bottom of the drawing was cut off later.",
+                    "long": "J.R.R. Tolkien, the author of The Lord of the Rings, drew this picture of the Gates of Moria. Notice how big and solid the stone wall looks – it’s meant to feel like a very protected place. Tolkien later decided to cut off the bottom part of the drawing because it didn't fit as well with the story in his book."
+                },
+                {
+                    "level": 1,
+                    "veryBrief": "Tolkien's drawing emphasizes the imposing and defensive nature of the Moria gate.",
+                    "midSize": "This is J.R.R. Tolkien's depiction of the Gates of Moria, focusing on the massive stone wall that conveys a sense of both hostility and impregnability. The lower portion of the drawing was later removed by Tolkien as he felt it was no longer suitable for the published text.",
+                    "long": "Tolkien's artistic interpretation of the Moria gate highlights the formidable architecture designed to repel entry. The drawing is dominated by the sheer scale and solidity of the stone wall surrounding the doorway, effectively communicating its defensive purpose. Interestingly, Tolkien himself cropped the lower section of the artwork, indicating a refinement of his vision for how the gate should be presented in relation to his writing."
+                },
+                {
+                    "level": 2,
+                    "veryBrief": "Tolkien's Moria gate drawing underscores its formidable architecture and textual evolution.",
+                    "midSize": "This drawing by J.R.R. Tolkien captures the imposing nature of the Moria gate, emphasizing the hostile and impregnable quality of the stone structure. The subsequent cropping of the lower section by Tolkien offers insight into his editorial process and evolving conception of the artwork's relationship to the narrative.",
+                    "long": "Tolkien's rendering of the Moria gate is notable for its stark portrayal of the gate's defensive architecture, with the massive stone wall serving as the dominant element, conveying an atmosphere of both inhospitality and invulnerability. The later excision of the lower portion of the drawing provides a fascinating glimpse into Tolkien's meticulous approach to his work, suggesting a deliberate decision to refine the visual representation to better align with the textual descriptions and thematic weight of the scene within The Lord of the Rings."
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "h1": "Bust of Tolkien",
+            "h2": "Exposed at Exeter College",
+            "img": "https://tolkiengateway.net/w/images/b/bf/J.R.R._Tolkien's_bust_at_Exeter.jpg",
+            "DC.creator": "Faith Faulconbridge",
+            "DC.date": "1977",
+            "DC.source": "https://www.exeter.ox.ac.uk/archives/jrr-tolkien-at-exeter-college/",
+            "DC.provenance": "Exeter College",
+            "schema.GeoCoordinates": {
+                "latitude": "51.7536943272477",
+                "longitude": "-1.2560482847300225"
+            },
+            "descriptions": [
+                {
+                    "level": 0,
+                    "veryBrief": "A statue of J.R.R. Tolkien, the famous writer, is at Exeter College in Oxford.",
+                    "midSize": "High up on a wall near the chapel at Exeter College in Oxford, you can see a statue of J.R.R. Tolkien. He was a famous writer who wrote The Hobbit and The Lord of the Rings. The words next to the statue say it was made by his daughter-in-law in 1977.",
+                    "long": "High on the wall near the entrance to the chapel at Exeter College, Oxford, is a bust of the author J.R.R. Tolkien. Tolkien (1892-1973) was a writer and scholar best known for his fantasy works. The inscription below the sculpture also tells us that Faith Tolkien (b.1928), his daughter-in-law, sculpted this portrait in 1977."
+                },
+                {
+                    "level": 1,
+                    "veryBrief": "A bust of J.R.R. Tolkien, author of The Lord of the Rings, is at Exeter College, sculpted by his daughter-in-law.",
+                    "midSize": "Located near the entrance of Exeter College Chapel in Oxford is a bust of J.R.R. Tolkien (1892-1973), the celebrated author and Oxford professor known for works like The Lord of the Rings. The inscription details that it was sculpted in 1977 by Faith Tolkien (b.1928), his daughter-in-law, highlighting a personal connection to the artwork.",
+                    "long": "Situated prominently near the entrance to Exeter College Chapel in Oxford is a sculpted bust of J.R.R. Tolkien. Tolkien (1892-1973) was a significant figure in 20th-century literature, renowned for his fantasy novels and academic work in philology. The inscription adjacent to the artwork provides his lifespan and credits Faith Tolkien (b.1928), his daughter-in-law, with creating the piece in 1977, offering insight into the family's relationship with the college."
+                },
+                {
+                    "level": 2,
+                    "veryBrief": "The Exeter College bust of Tolkien, sculpted by family, commemorates the influential author and scholar.",
+                    "midSize": "Positioned high on the wall at the entrance to Exeter College Chapel, Oxford, this bust of J.R.R. Tolkien (1892-1973) honors the esteemed author and scholar who spent a significant part of his academic career at Oxford. The inscription notes that it was sculpted by his daughter-in-law, Faith Tolkien (b.1928), in 1977, emphasizing the personal connection to this commemoration of his life and work.",
+                    "long": "This bust of J.R.R. Tolkien, located near the entrance to Exeter College Chapel, Oxford, serves as a lasting tribute to the influential author and philologist. John Ronald Reuel Tolkien (1892-1973) is best known for creating Middle-earth and writing The Hobbit and The Lord of the Rings, works that have had a profound impact on literature and popular culture. The inscription accompanying the sculpture reveals that it was created by his daughter-in-law, Faith Tolkien (b.1928), in 1977, adding a personal dimension to this memorial within his academic community."
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "h1": "Tolkien’s Desk & Writing Chair",
+            "h2": "The Desk and Chair Where The Hobbit & The Lord of the Rings Were Written",
+            "img": "https://pxl-wheatonedu.terminalfour.net/prod02/channel_1/media/wade-center/JRRTDesk1-760X760.jpg",
+            "DC.Title": "Tolkien's Desk & Writing Chair",
+            "schema.acquiredFrom": "Wade Center",
+            "schema.ownedFrom": 1987,
+            "schema.GeoCoordinates": {
+                "latitude": "41.870570128904795",
+                "longitude": "-88.10107415496579"
+            },
+            "descriptions": [
+                {
+                    "level": 0,
+                    "veryBrief": "Tolkien wrote The Hobbit and The Lord of the Rings at this desk.",
+                    "midSize": "This is the very desk and chair where J.R.R. Tolkien wrote The Hobbit and The Lord of the Rings, shaping the world of Middle-earth.",
+                    "long": "This unassuming desk and chair played a crucial role in literary history. It was here, in the quiet of his study, that J.R.R. Tolkien penned The Hobbit and The Lord of the Rings. The desk witnessed the birth of Middle-earth, as Tolkien meticulously crafted his stories, developing languages, histories, and characters that would captivate generations of readers."
+                },
+                {
+                    "level": 1,
+                    "veryBrief": "Tolkien’s workspace, where he brought Middle-earth to life.",
+                    "midSize": "Tolkien wrote much of his legendarium at this desk, using it as his creative sanctuary. It was here that Bilbo’s journey, the Fellowship’s quest, and Middle-earth’s deep history took shape.",
+                    "long": "This desk and chair are more than furniture—they are relics of literary history. Tolkien spent countless hours here, carefully constructing his legendarium. Notes, maps, and manuscripts would have covered the surface as he refined Middle-earth’s intricate details. This workspace was also where he continued his work as a professor and philologist, intertwining his scholarly pursuits with his storytelling."
+                },
+                {
+                    "level": 2,
+                    "veryBrief": "Tolkien’s legendary workspace, where he meticulously crafted his stories.",
+                    "midSize": "From early drafts to final revisions, this desk was the heart of Tolkien’s creative process. It was where he refined Quenya and Sindarin, mapped Middle-earth, and rewrote passages until they met his exacting standards.",
+                    "long": "Tolkien’s desk and chair are physical reminders of his dedication to storytelling and language. Here, he not only wrote The Hobbit and The Lord of the Rings but also revised The Silmarillion and expanded his linguistic creations. The worn wood of the desk holds the weight of a world that took decades to perfect, reflecting Tolkien’s love for deep world-building and meticulous craftsmanship."
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "h1": "Tolkien’s Handwritten Letter to a Fan",
+            "h2": "A Personal Letter from J.R.R. Tolkien Reflecting on His Creative Process (1958)",
+            "img": "https://example.com/tolkien-letter-1958.jpg",
+            "DC.creator": "J.R.R. Tolkien",
+            "DC.source": "https://www.tolkienestate.com/letters/letter-to-christopher-bretherton-a-reader-16-july-1964/",
+            "DC.provenance": "The Tolkien Estate",
+            "descriptions": [
+                {
+                    "level": 0,
+                    "veryBrief": "A letter from Tolkien to a fan, sharing insights on his writing.",
+                    "midSize": "This is a handwritten letter by J.R.R. Tolkien, responding to a fan’s questions about Middle-earth. In it, he discusses his inspirations, his writing process, and his thoughts on world-building.",
+                    "long": "In 1958, a devoted fan wrote to J.R.R. Tolkien with questions about The Lord of the Rings and its lore. In this thoughtful response, Tolkien reflects on his creative process, sharing details about his world-building approach, the significance of language in his work, and his views on storytelling. The letter provides a rare glimpse into the mind of the author, offering fans a direct connection to his thoughts and creative philosophy."
+                },
+                {
+                    "level": 1,
+                    "veryBrief": "Tolkien’s personal reflections on writing, found in this 1958 letter.",
+                    "midSize": "Tolkien’s response to a fan’s letter in 1958 reveals his deep commitment to crafting a believable world. He discusses language creation, mythology, and his narrative choices in Middle-earth.",
+                    "long": "Tolkien was known to personally respond to many letters from readers, but this 1958 letter is particularly revealing. In it, he discusses the challenges of writing The Lord of the Rings, the influence of ancient myths on his storytelling, and his belief that Middle-earth was not merely fantasy but a secondary world with its own logic and depth. This letter exemplifies Tolkien’s meticulous attention to detail and his passion for linguistic and historical accuracy."
+                },
+                {
+                    "level": 2,
+                    "veryBrief": "A rare letter where Tolkien explains his world-building in depth.",
+                    "midSize": "In this handwritten letter, Tolkien reflects on his work, explaining how languages shape Middle-earth and addressing questions about lore, inspiration, and the deeper meanings behind his stories.",
+                    "long": "This letter is a treasure for Tolkien enthusiasts. Not only does he discuss the importance of linguistic invention in his world-building, but he also clarifies misconceptions about Middle-earth’s themes. He touches on the moral struggles of his characters, the role of fate versus free will, and even corrects fan assumptions about certain plot points. The letter stands as a testament to Tolkien’s dedication to his readers and his ever-expanding mythology."
+                }
+            ]
+        },
+        {
+            "id": 7,
+            "h1": "The Book of Mazarbul, page",
+            "h2": "A page of The Book of Mazarbul written by Tolkien in runes, burnt for dramatic effect",
+            "DC.creator": "J.R.R. Tolkien",
+            "DC.source": "https://www.tolkienestate.com/painting/calligraphy/",
+            "DC.rightsOwner": "The Tolkien Estate",
+            "img": "https://example.com/tolkien-elvish-lexicon.jpg",
+            "Provenance": "Bodleian Library, Oxford",
+            "descriptions": [
+                {
+                    "level": 0,
+                    "veryBrief": "A page of The Book of Mazarbul, written by Tolkien in runes and burnt.",
+                    "midSize": "This is a page from The Book of Mazarbul, written in runes by Tolkien and designed to look burnt for dramatic effect.",
+                    "long": "This item is a page representing The Book of Mazarbul, featuring runes written by J.R.R. Tolkien. It was created to appear burnt, replicating the dramatic destruction of the book as depicted in «The Lord of The Rings»."
+                },
+                {
+                    "level": 1,
+                    "veryBrief": "A burnt page of The Book of Mazarbul, with runes written by Tolkien.",
+                    "midSize": "This page represents The Book of Mazarbul from «The Lord of The Rings». It features runes written by Tolkien and is designed to have a burnt appearance.",
+                    "long": "This page is a representation of a page from The Book of Mazarbul, a key artifact from «The Lord of The Rings». It features runes written by Tolkien and has been crafted to simulate the burnt and damaged appearance seen in the story's depiction of the book's destruction."
+                },
+                {
+                    "level": 2,
+                    "veryBrief": "A burnt page of The Book of Mazarbul, with Tolkien's runic writing.",
+                    "midSize": "This artifact is a page representing The Book of Mazarbul. It features runes written by J.R.R. Tolkien and is designed to replicate the burnt condition of the book as portrayed in «The Lord of The Rings».",
+                    "long": "This page is a significant artifact representing a page from The Book of Mazarbul. It features runes written by J.R.R. Tolkien and is crafted to depict the burnt and damaged state of the book. This object is important for understanding the visual representation of Tolkien's world and the dramatic events within the narrative of «The Lord of The Rings», specifically the harrowing scene in the Mines of Moria."
+                }
+            ]
+        },
+        {
+            "id": 8,
+            "h1": "Rivendell Model from the movies",
+            "h2": "The model used for close-ups and establishing shots of Rivendell in 'The Fellowship of The Ring'",
+            "img": "https://example.com/tolkien-pipe.jpg",
+            "DC.provenance": "Weta Workshop Archives, New Zealand",
+            "DC.creator": "Weta Workshop",
+            "DC.source": "https://www.wetaworkshop.com/projects/the-lord-of-the-rings-the-fellowship-of-the-ring",
+            "schema.GeoCoordinates": {
+                "latitude": "-41.30601484061519",
+                "longitude": "174.82346517437728"
+            },
+            "descriptions": [
+                {
+                    "level": 0,
+                    "veryBrief": "This is a model of Rivendell from the Lord of the Rings movies.",
+                    "midSize": "This is a small model of Rivendell, the beautiful elf city from the movie 'The Fellowship of the Ring'. It helps show what Rivendell looks like.",
+                    "long": "This model was used in the movie 'The Fellowship of the Ring' to show the city of Rivendell. It helps the filmmakers show where the characters are and what the city looks like from far away and up close."
+                },
+                {
+                    "level": 1,
+                    "veryBrief": "Model of Rivendell used in 'The Fellowship of The Ring' for various shots.",
+                    "midSize": "This is the physical model of Rivendell created for Peter Jackson's 'The Fellowship of The Ring'. It was utilized for both establishing shots to showcase the city's overall layout and for closer shots to provide detail.",
+                    "long": "This meticulously crafted model of Rivendell played a crucial role in the visual storytelling of 'The Fellowship of The Ring'. Filmmakers employed it to establish the grandeur and unique architecture of the elven sanctuary in wide, sweeping shots. Additionally, the model's detail allowed for closer perspectives, seamlessly integrating it into scenes requiring a tangible representation of Rivendell."
+                },
+                {
+                    "level": 2,
+                    "veryBrief": "A production model of Rivendell, integral to the film's visual language.",
+                    "midSize": "This scale model of Rivendell served as a key component in the production of 'The Fellowship of The Ring', facilitating the visualization of the elven settlement for cinematic purposes. Its use spanned from establishing the environment to providing detailed backdrops for closer character interactions.",
+                    "long": "This production-designed model of Rivendell represents a significant artifact in the cinematic adaptation of Tolkien's work. Its construction allowed the filmmakers to establish the spatial geography and architectural nuances of Rivendell, crucial for immersing audiences in the fictional world. The model's versatility, enabling both expansive establishing shots and more intimate close-ups, underscores its importance in shaping the film's visual narrative and its interpretation of Tolkien's descriptions."
+                }
+            ]
+        },
 
-	{
-		"id": 1,
-		"h1": "The First Manuscript of The Lord of the Rings",
-		"h2": "J.R.R. Tolkien’s Original Handwritten Draft",
-		"img": "../static/items/1-manuscript.png",
-		"DC.Title":"The First Manuscript of The Lord of the Rings",
-		"DC.creator": "J.R.R. Tolkien",
-		"DC.source": "https://www.marquette.edu/library/archives/Mss/JRRT/about.php",
-		"DC.subject": "https://www.wikidata.org/wiki/Q15228",
-		"schema.acquiredFrom": "Marquette University Archives, USA",
-		"schema.ownedFrom": 1958,
-		"schema.GeoCoordinates":{
-			"latitude": "43.03914248988245",
-			"longitude": "-87.927307087411"
-		},
-		"descriptions": [
-		  {
-			"level": 0,
-			"veryBrief": "Tolkien’s original handwritten draft ofThe Lord of the Rings.",
-			"midSize": "This is the first complete manuscript ofThe Lord of the Rings, written by J.R.R. Tolkien. It includes early versions of key moments in the story.",
-			"long": "This is the very first manuscript ofThe Lord of the Rings, written by J.R.R. Tolkien by hand. Preserved at Marquette University, it contains early drafts, revisions, and marginal notes by the author. This document captures the evolution of one of the most influential fantasy works of all time."
-		  },
-		  {
-			"level": 1,
-			"veryBrief": "The earliest known draft ofThe Lord of the Rings, written by Tolkien himself.",
-			"midSize": "Tolkien’s first manuscript ofThe Lord of the Ringsoffers a rare glimpse into his creative process. It includes early versions of beloved characters and storylines, some of which were later changed.",
-			"long": "This manuscript, housed at Marquette University, is a historical treasure. It provides insight into Tolkien’s method of world-building, including early drafts of names, places, and plot points that were refined in the final book. It also contains his handwritten notes, showing how he reworked certain passages over time."
-		  },
-		  {
-			"level": 2,
-			"veryBrief": "Tolkien’s original draft, featuring early character names and story variations.",
-			"midSize": "The Marquette manuscript reveals fascinating early versions of key scenes and names. For example, Aragorn was initially called 'Trotter,' and the story had different paths before reaching its final form.",
-			"long": "The original manuscript ofThe Lord of the Ringsis a vital artifact in Tolkien scholarship. It preserves his handwritten drafts, including discarded ideas, alternative plot directions, and character name changes. Scholars have analyzed this document to understand Tolkien’s meticulous approach to storytelling. Notably, it shows how he reworked major elements over time, from linguistic details to entire chapters. The manuscript remains one of the most significant pieces in the study of Tolkien’s legendarium."
-		  }
-		]
-	  }, 
-    {
-      "id": 2,
-      "h1": "Tolkien’s letter to Stanley Unwin, 1937",
-      "h2": "Letter in which Tolkien talks about his first work's success, The Hobbit.",
-      "img": "Stanley Unwin Picture",
-	  "DC.source": "https://www.tolkienestate.com/letters/letter-to-stanley-unwin-his-publisher-16-dec-1937/",
-	  "DC.creator":"J.R.R. Tolkien",
-	  "descriptions": [
-		  {
-			"level": 0,
-			"veryBrief": "In 1937, Tolkien wrote to his publisher about *The Hobbit* and a new story idea.",
-			"midSize": "In 1937, J.R.R. Tolkien corresponded with Stanley Unwin about the success of *The Hobbit* and his early thoughts on a follow-up.",
-			"long": "This 1937 letter shows Tolkien discussing the positive reception of *The Hobbit* with his publisher, Stanley Unwin, and mentioning initial concepts for a new book."
-		  },
-		  {
-			"level": 1,
-			"veryBrief": "A 1937 letter reveals Tolkien's early plans for what became *The Lord of the Rings*.",
-			"midSize": "This letter from Tolkien to his publisher in 1937 is important because it shows his initial ideas for a sequel to *The Hobbit*, which developed into *The Lord of the Rings*.",
-			"long": "This significant 1937 letter from J.R.R. Tolkien to Stanley Unwin provides insight into the genesis of *The Lord of the Rings*. Following the success of *The Hobbit*, Tolkien outlines his preliminary thoughts for a new story, hinting at the epic scale it would eventually achieve and revealing his early creative process."
-		  },
-		  {
-			"level": 2,
-			"veryBrief": "Tolkien's 1937 letter to Unwin is a key primary source for understanding the inception of *The Lord of the Rings*.",
-			"midSize": "The 1937 correspondence between J.R.R. Tolkien and Stanley Unwin documents Tolkien's initial response to the request for a *Hobbit* sequel, revealing nascent ideas that would evolve into the complex narrative of *The Lord of the Rings*.",
-			"long": "This 1937 letter from J.R.R. Tolkien to Stanley Unwin is a crucial primary document for understanding the complex genesis of *The Lord of the Rings*. It captures Tolkien's immediate thoughts following the success of *The Hobbit* and Unwin's request for a sequel. The letter reveals Tolkien's early grappling with the narrative possibilities, the potential expansion of the Middle-earth mythology, and the challenges of writing a follow-up that would resonate with readers while also satisfying his own artistic vision. It offers invaluable insight into the evolution of key themes, characters, and narrative structures that would come to define his epic work, and illuminates the professional dynamic that facilitated its creation."
-		  }
-      ]
-    },
-    {
-      "id": 3,
-      "h1": "Moria Gate",
-      "h2": "Drawn by J.R.R. Tolkien",
-      "img": "../static/items/3-beowulf.jpg",
-      "DC.provenance":"The Tolkien Estate",
-	  "DC.date": 1939,
-	  "DC.Title": "Moria Gate",
-	  "DC.creator":"J.R.R. Tolkien",
-	  "DC.source": "https://jrrtestate.wpenginepowered.com/wp-content/uploads/2021/10/639-azz0058-1.jpg",
-	  "DC.description": "This drawing is dominated by the imposing wall of stone behind the doorway, both hostile and impregnable. The lower section of the drawing was cut off by Tolkien at a later date as it no longer complemented the published text.",
-      "descriptions": [
-    {
-      "level": 0,
-      "veryBrief": "Tolkien drew the big, strong gates of Moria.",
-      "midSize": "This drawing by J.R.R. Tolkien shows the huge, stone gates of Moria. The wall behind the doorway looks very strong and hard to get through. Part of the bottom of the drawing was cut off later.",
-      "long": "J.R.R. Tolkien, the author of The Lord of the Rings, drew this picture of the Gates of Moria. Notice how big and solid the stone wall looks – it’s meant to feel like a very protected place. Tolkien later decided to cut off the bottom part of the drawing because it didn't fit as well with the story in his book."
-    },
-    {
-      "level": 1,
-      "veryBrief": "Tolkien's drawing emphasizes the imposing and defensive nature of the Moria gate.",
-      "midSize": "This is J.R.R. Tolkien's depiction of the Gates of Moria, focusing on the massive stone wall that conveys a sense of both hostility and impregnability. The lower portion of the drawing was later removed by Tolkien as he felt it was no longer suitable for the published text.",
-      "long": "Tolkien's artistic interpretation of the Moria gate highlights the formidable architecture designed to repel entry. The drawing is dominated by the sheer scale and solidity of the stone wall surrounding the doorway, effectively communicating its defensive purpose. Interestingly, Tolkien himself cropped the lower section of the artwork, indicating a refinement of his vision for how the gate should be presented in relation to his writing."
-    },
-    {
-      "level": 2,
-      "veryBrief": "Tolkien's Moria gate drawing underscores its formidable architecture and textual evolution.",
-      "midSize": "This drawing by J.R.R. Tolkien captures the imposing nature of the Moria gate, emphasizing the hostile and impregnable quality of the stone structure. The subsequent cropping of the lower section by Tolkien offers insight into his editorial process and evolving conception of the artwork's relationship to the narrative.",
-      "long": "Tolkien's rendering of the Moria gate is notable for its stark portrayal of the gate's defensive architecture, with the massive stone wall serving as the dominant element, conveying an atmosphere of both inhospitality and invulnerability. The later excision of the lower portion of the drawing provides a fascinating glimpse into Tolkien's meticulous approach to his work, suggesting a deliberate decision to refine the visual representation to better align with the textual descriptions and thematic weight of the scene within The Lord of the Rings."
-    }
-  ]
-},
-    {
-      "id": 4,
-      "h1": "Bust of Tolkien",
-      "h2": "Exposed at Exeter College",
-      "img": "https://tolkiengateway.net/w/images/b/bf/J.R.R._Tolkien's_bust_at_Exeter.jpg",
-      "DC.creator": "Faith Faulconbridge",
-	  "DC.date": "1977",
-	  "DC.source": "https://www.exeter.ox.ac.uk/archives/jrr-tolkien-at-exeter-college/",
-	  "DC.provenance": "Exeter College",
-	  "schema.GeoCoordinates": {
-		"latitude":"51.7536943272477",
-		"longitude": "-1.2560482847300225"
-	  },
-      "descriptions": [
-    {
-      "level": 0,
-      "veryBrief": "A statue of J.R.R. Tolkien, the famous writer, is at Exeter College in Oxford.",
-      "midSize": "High up on a wall near the chapel at Exeter College in Oxford, you can see a statue of J.R.R. Tolkien. He was a famous writer who wrote The Hobbit and The Lord of the Rings. The words next to the statue say it was made by his daughter-in-law in 1977.",
-      "long": "High on the wall near the entrance to the chapel at Exeter College, Oxford, is a bust of the author J.R.R. Tolkien. Tolkien (1892-1973) was a writer and scholar best known for his fantasy works. The inscription below the sculpture also tells us that Faith Tolkien (b.1928), his daughter-in-law, sculpted this portrait in 1977."
-    },
-    {
-      "level": 1,
-      "veryBrief": "A bust of J.R.R. Tolkien, author of The Lord of the Rings, is at Exeter College, sculpted by his daughter-in-law.",
-      "midSize": "Located near the entrance of Exeter College Chapel in Oxford is a bust of J.R.R. Tolkien (1892-1973), the celebrated author and Oxford professor known for works like The Lord of the Rings. The inscription details that it was sculpted in 1977 by Faith Tolkien (b.1928), his daughter-in-law, highlighting a personal connection to the artwork.",
-      "long": "Situated prominently near the entrance to Exeter College Chapel in Oxford is a sculpted bust of J.R.R. Tolkien. Tolkien (1892-1973) was a significant figure in 20th-century literature, renowned for his fantasy novels and academic work in philology. The inscription adjacent to the artwork provides his lifespan and credits Faith Tolkien (b.1928), his daughter-in-law, with creating the piece in 1977, offering insight into the family's relationship with the college."
-    },
-    {
-      "level": 2,
-      "veryBrief": "The Exeter College bust of Tolkien, sculpted by family, commemorates the influential author and scholar.",
-      "midSize": "Positioned high on the wall at the entrance to Exeter College Chapel, Oxford, this bust of J.R.R. Tolkien (1892-1973) honors the esteemed author and scholar who spent a significant part of his academic career at Oxford. The inscription notes that it was sculpted by his daughter-in-law, Faith Tolkien (b.1928), in 1977, emphasizing the personal connection to this commemoration of his life and work.",
-      "long": "This bust of J.R.R. Tolkien, located near the entrance to Exeter College Chapel, Oxford, serves as a lasting tribute to the influential author and philologist. John Ronald Reuel Tolkien (1892-1973) is best known for creating Middle-earth and writing The Hobbit and The Lord of the Rings, works that have had a profound impact on literature and popular culture. The inscription accompanying the sculpture reveals that it was created by his daughter-in-law, Faith Tolkien (b.1928), in 1977, adding a personal dimension to this memorial within his academic community."
-    }
-  ]
-},
-    {
-      "id": 5,
-      "h1": "Tolkien’s Desk & Writing Chair",
-      "h2": "The Desk and Chair Where The Hobbit & The Lord of the Rings Were Written",
-      "img": "https://pxl-wheatonedu.terminalfour.net/prod02/channel_1/media/wade-center/JRRTDesk1-760X760.jpg",
-	  "DC.Title": "Tolkien's Desk & Writing Chair",
-      "schema.acquiredFrom": "Wade Center",
-	  "schema.ownedFrom": 1987,
-	  "schema.GeoCoordinates":{
-		"latitude":"41.870570128904795",
-		"longitude": "-88.10107415496579"
-	  },
-      "descriptions": [
         {
-          "level": 0,
-          "veryBrief": "Tolkien wrote The Hobbit and The Lord of the Rings at this desk.",
-          "midSize": "This is the very desk and chair where J.R.R. Tolkien wrote The Hobbit and The Lord of the Rings, shaping the world of Middle-earth.",
-          "long": "This unassuming desk and chair played a crucial role in literary history. It was here, in the quiet of his study, that J.R.R. Tolkien penned The Hobbit and The Lord of the Rings. The desk witnessed the birth of Middle-earth, as Tolkien meticulously crafted his stories, developing languages, histories, and characters that would captivate generations of readers."
+            "id": 9,
+            "h1": "The One Ring Replica",
+            "h2": "The Replica of The One Ring Prop (2001-2003 Film Trilogy)",
+            "img": "https://www.jenshansen.com/collections/the-one-ring-replica",
+            "DC.creator": "Jens Hansen",
+            "DC.source": "https://www.jenshansen.com/collections/makers-of-the-worlds-most-famous-ring",
+            "schema.GeoCoordinates": {
+                "latitude": "-41.27514756668191",
+                "longitude": "173.2827509678444"
+            },
+            "descriptions": [
+                {
+                    "level": 0,
+                    "veryBrief": "The golden ring that ruled them all, featured in Peter Jackson’s film trilogy.",
+                    "midSize": "This is the replica prop used in Peter Jackson’s The Lord of the Rings films, crafted by Jens Hansen in New Zealand.",
+                    "long": "The One Ring, central to The Lord of the Rings trilogy, was designed by Jens Hansen, a master jeweler in New Zealand. This iconic prop appeared throughout the films, with different versions used for various shots, including oversized ones for close-ups. The inscription, written in Black Speech, glows when heated, revealing Sauron’s ominous message: 'One Ring to rule them all…'"
+                },
+                {
+                    "level": 1,
+                    "veryBrief": "The iconic One Ring prop replica from Peter Jackson’s trilogy, designed to be the central artifact of power in Middle-earth.",
+                    "midSize": "Crafted by Jens Hansen, this prop was used throughout the The Lord of the Rings film series. Different versions of the ring existed for various shots, including a large-scale replica for close-ups.",
+                    "long": "Jens Hansen, the official jeweler for the The Lord of the Rings films, designed the One Ring with smooth, minimalistic elegance. Its inscription in Black Speech is only visible when heated. Throughout filming, multiple versions were used, including a heavy gold ring for realistic shots and an oversized prop for cinematographic close-ups. The Ring symbolizes absolute power, temptation, and the burden of destiny in Tolkien’s legendarium."
+                },
+                {
+                    "level": 2,
+                    "veryBrief": "This is the replica film prop from The Lord of the Rings trilogy, forged by Jens Hansen based on Tolkien’s description and Weta Workshop's specifications.",
+                    "midSize": "Jens Hansen crafted multiple versions of the One Ring for filming. Some were small and made of gold-plated tungsten, while others were oversized to capture detailed engravings under dramatic lighting.",
+                    "long": "Jens Hansen, a master jeweler in Nelson, New Zealand, was commissioned to design the One Ring prop based on Tolkien’s description. Weta Workshop oversaw its creation, ensuring the ring’s simplistic yet powerful aesthetic aligned with Middle-earth’s visual style. Some versions were made of gold-plated tungsten, while others were large-scale props used for intricate shots, particularly when the inscription was meant to glow. The ring’s design mirrors Anglo-Saxon and Norse influences, reflecting Tolkien’s deep scholarly background."
+                }
+            ]
         },
         {
-          "level": 1,
-          "veryBrief": "Tolkien’s workspace, where he brought Middle-earth to life.",
-          "midSize": "Tolkien wrote much of his legendarium at this desk, using it as his creative sanctuary. It was here that Bilbo’s journey, the Fellowship’s quest, and Middle-earth’s deep history took shape.",
-          "long": "This desk and chair are more than furniture—they are relics of literary history. Tolkien spent countless hours here, carefully constructing his legendarium. Notes, maps, and manuscripts would have covered the surface as he refined Middle-earth’s intricate details. This workspace was also where he continued his work as a professor and philologist, intertwining his scholarly pursuits with his storytelling."
+            "id": 10,
+            "h1": "Narsil",
+            "h2": "The prop of the Sword of Elendil, used in the movies",
+            "img": "https://www.wetaworkshop.com/assets/shards_narsil.jpg",
+            "DC.creator": "Weta Workshop",
+            "DC.source": "https://www.wetaworkshop.com/projects/the-lord-of-the-rings-the-fellowship-of-the-ring",
+            "DC.provenance": "Weta Workshop Archives, New Zealand",
+            "schema.GeoCoordinates": {
+                "latitude": "-41.30601484061519",
+                "longitude": "174.82346517437728"
+            },
+            "descriptions": [
+                {
+                    "level": 0,
+                    "veryBrief": "The sword of Elendil, Narsil, from «The Lord of The Rings» movies.",
+                    "midSize": "This is a movie prop representing Narsil, the legendary sword wielded by Elendil in «The Lord of The Rings» films.",
+                    "long": "This prop represents Narsil, the famed sword of King Elendil, as depicted in Peter Jackson's «The Lord of The Rings» movie trilogy."
+                },
+                {
+                    "level": 1,
+                    "veryBrief": "Narsil, Elendil's sword, as seen in the *Lord of the Rings* films.",
+                    "midSize": "This prop is a recreation of Narsil, the sword used by Elendil in the *Lord of the Rings* movie adaptations, famously broken in battle.",
+                    "long": "This artifact is a movie prop representing Narsil, the legendary sword of Elendil. It was featured prominently in the opening sequence of *The Lord of the Rings: The Fellowship of the Ring*, depicting its breaking during the Last Alliance of Elves and Men."
+                },
+                {
+                    "level": 2,
+                    "veryBrief": "A movie prop of Narsil, the iconic sword of Elendil.",
+                    "midSize": "This is a prop sword created for the *Lord of the Rings* film trilogy, representing Narsil, the sword broken in the final battle against Sauron.",
+                    "long": "This meticulously crafted prop represents Narsil, the iconic sword wielded by King Elendil. As depicted in Peter Jackson's «The Lord of The Rings» trilogy, Narsil was broken during Elendil's battle with Sauron, a pivotal moment in Middle-earth's history. This prop serves as a tangible link to that legendary event as portrayed on screen."
+                }
+            ]
         },
         {
-          "level": 2,
-          "veryBrief": "Tolkien’s legendary workspace, where he meticulously crafted his stories.",
-          "midSize": "From early drafts to final revisions, this desk was the heart of Tolkien’s creative process. It was where he refined Quenya and Sindarin, mapped Middle-earth, and rewrote passages until they met his exacting standards.",
-          "long": "Tolkien’s desk and chair are physical reminders of his dedication to storytelling and language. Here, he not only wrote The Hobbit and The Lord of the Rings but also revised The Silmarillion and expanded his linguistic creations. The worn wood of the desk holds the weight of a world that took decades to perfect, reflecting Tolkien’s love for deep world-building and meticulous craftsmanship."
+            "id": 11,
+            "h1": "Tolkien’s Original Cover Design",
+            "h2": "The First Cover Design for The Lord of the Rings (1954)",
+            "img": "https://jrrtestate.wpenginepowered.com/wp-content/uploads/2021/04/735-azz0056.jpg",
+            "DC.source": "https://www.tolkienestate.com/painting/the-lord-of-the-rings/",
+            "DC.rightsOwner": "The Tolkien Estate",
+            "descriptions": [
+                {
+                    "level": 0,
+                    "veryBrief": "Tolkien’s own hand-drawn cover for the first edition ofThe Lord of the Rings.",
+                    "midSize": "This is the original cover design created by J.R.R. Tolkien himself for the first edition ofThe Lord of the Rings(1954). Though not used in the final publication, it features his iconic eye of Sauron motif and Elvish script.",
+                    "long": "BeforeThe Lord of the Ringswas published, Tolkien designed a cover for the book himself, showcasing his vision for how the story should be presented. The design includes the Eye of Sauron, the Ring, and Tengwar inscriptions. Ultimately, the publisher opted for a different cover, but Tolkien’s concept remains an essential artifact, reflecting his artistic sensibilities and deep involvement in every aspect of his world-building."
+                },
+                {
+                    "level": 1,
+                    "veryBrief": "Tolkien’s original cover forThe Lord of the Rings, featuring his own designs and Elvish script.",
+                    "midSize": "J.R.R. Tolkien created this cover for the first edition ofThe Lord of the Rings, incorporating motifs like the Eye of Sauron and the Ring’s inscription. Though it was not used, it remains a vital part of the book’s history and design evolution.",
+                    "long": "Tolkien was not only a writer but also an artist, and he created an intricate cover design forThe Lord of the Rings. The drawing, preserved at the Bodleian Library, features the Eye of Sauron looming over the One Ring, encircled by the Ring’s inscription in Tengwar script. Though the publisher ultimately chose a different cover, Tolkien’s design reveals how deeply he was involved in the presentation of his work. His love for medieval and mythological aesthetics is evident in the balance of symbolism and lettering."
+                },
+                {
+                    "level": 2,
+                    "veryBrief": "Tolkien’s unpublished cover for The Lord of the Rings, showcasing his artistic and linguistic creativity.",
+                    "midSize": "Tolkien’s original cover design was never used for publication, but it remains a crucial artifact, displaying his personal artistic style and his attention to linguistic detail, including Tengwar inscriptions.",
+                    "long": "Tolkien’s original cover design forThe Lord of the Rings, housed at the Bodleian Library, represents his multifaceted talent as a philologist, artist, and storyteller. His composition includes the Eye of Sauron above the Ring, surrounded by an inscription in Elvish Tengwar, symbolizing the story’s central conflict. The design reflects influences from medieval manuscript art and calligraphy. While the publishers opted for a different cover, Tolkien’s design remains a testament to his hands-on approach to his world-building, ensuring that every detail aligned with his vision."
+                }
+            ]
+        },
+        {
+            "id": 12,
+            "h1": "Sauron's Full Plate Armor",
+            "h2": "The Full Plate Armor used in the movies to represent Sauron (2001-2003)",
+            "img": "https://www.wetaworkshop.com/web/image/96339-0d97b436/LOTR_FOTR_Manufacture_044.jpg",
+            "DC.provenance": "Weta Workshop / New Line Cinema",
+            "DC.creator": "Weta Workshop",
+            "DC.source": "https://www.wetaworkshop.com/projects/the-lord-of-the-rings-the-fellowship-of-the-ring",
+            "schema.GeoCoordinates": {
+                "latitude": "-41.30601484061519",
+                "longitude": "174.82346517437728"
+            },
+            "descriptions": [
+                {
+                    "level": 0,
+                    "veryBrief": "The armor worn by Sauron in «The Lord of The Rings» movies (2001-2003).",
+                    "midSize": "This full plate armor was created for the *Lord of the Rings* film trilogy (2001-2003) to represent the character of Sauron.",
+                    "long": "This imposing full plate armor was specifically designed and created for the portrayal of Sauron in Peter Jackson's «The Lord of The Rings» film trilogy, released between 2001 and 2003."
+                },
+                {
+                    "level": 1,
+                    "veryBrief": "Armor used to depict Sauron in «The Lord of The Rings» films.",
+                    "midSize": "This is the full plate armor that audiences saw worn by the character Sauron in the *Lord of the Rings* movie adaptations.",
+                    "long": "As featured in Peter Jackson's cinematic adaptation of «The Lord of The Rings», this full plate armor served as the visual representation of the dark lord Sauron throughout the trilogy (2001-2003). Its design aimed to convey his power and menacing presence."
+                },
+                {
+                    "level": 2,
+                    "veryBrief": "The full plate armor designed for Sauron in the *Lord of the Rings* movie trilogy.",
+                    "midSize": "This artifact is the full plate armor crafted for the *Lord of the Rings* film trilogy (2001-2003) to embody the formidable figure of Sauron.",
+                    "long": "This full plate armor is a significant artifact from the production of Peter Jackson's «The Lord of The Rings» trilogy (2001-2003). It was specifically designed and constructed to visually represent Sauron, the primary antagonist, and played a crucial role in establishing his intimidating presence on screen."
+                }
+            ]
+        },
+        {
+            "id": 13,
+            "h1": "Weta Workshop Sketches",
+            "h2": "Selection of Weta Workshop Sketches for 'The Return of the King'",
+            "img": "https://www.wetaworkshop.com/web/image/107782-8120de75/LOTR_ROTK_Design_014.jpg",
+            "DC.source": "https://www.wetaworkshop.com/projects/the-lord-of-the-rings-the-return-of-the-king/gallery",
+            "DC.provenance": "Weta Workshop / New Line Cinema",
+            "DC.creator": "Weta Workshop",
+            "DC.date": 2003,
+            "schema.GeoCoordinates": {
+                "latitude": "-41.30601484061519",
+                "longitude": "174.82346517437728"
+            },
+            "descriptions": [
+                {
+                    "level": 0,
+                    "veryBrief": "These are sketches by Weta Workshop.",
+                    "midSize": "These are some of the drawings made by Weta Workshop, the company that created the special effects for the Lord of the Rings movies.",
+                    "long": "Weta Workshop is famous for making the amazing creatures and effects in the Lord of the Rings movies. These drawings are some of their early ideas for what those creatures and effects would look like."
+                },
+                {
+                    "level": 1,
+                    "veryBrief": "Weta Workshop sketches for 'The Return of the King'.",
+                    "midSize": "These are a selection of concept sketches created by Weta Workshop for the film 'The Return of the King'. They offer a glimpse into the creative process behind the movie's iconic visual effects.",
+                    "long": "These sketches provide a fascinating look at the early stages of production for 'The Return of the King'. Weta Workshop artists used these drawings to explore and refine their ideas for the film's characters, creatures, and environments, ultimately shaping the visual style of the movie."
+                },
+                {
+                    "level": 2,
+                    "veryBrief": "Weta Workshop concept art for 'The Return of the King'.",
+                    "midSize": "This collection of sketches showcases the conceptual artistry of Weta Workshop in the creation of 'The Return of the King'. They offer valuable insights into the design process, revealing the evolution of ideas from initial sketches to final on-screen realizations.",
+                    "long": "These sketches represent a crucial stage in the production of 'The Return of the King', demonstrating the collaborative nature of the creative process at Weta Workshop. They provide a unique perspective on the translation of Tolkien's literary world into a cinematic reality, highlighting the importance of visual development in shaping the film's overall aesthetic and narrative."
+                }
+            ]
+        },
+        {
+            "id": 14,
+            "h1": "Gollum’s Motion Capture Suit Replica",
+            "h2": "Replica of the one used by Andy Serkis in The Lord of the Rings Film Trilogy (2001-2003)",
+            "img": "https://www.wetafx.co.nz/assets/Uploads/images/page/desktop/gollum_splitScreen_desktop.jpg",
+            "DC.source": "https://www.wetafx.co.nz/films/case-studies/gollum",
+            "DC.creator": "Wētā FX",
+            "DC.rightsOwner": "Wētā FX",
+            "DC.provenance": "Weta Workshop / Film Production Archives",
+            "descriptions": [
+                {
+                    "level": 0,
+                    "veryBrief": "Andy Serkis wore this motion capture suit to bring Gollum to life inThe Lord of the Ringsmovies.",
+                    "midSize": "This is the motion capture suit worn by Andy Serkis during the filming ofThe Lord of the Rings. The technology used to transform his performance into the CGI character of Gollum revolutionized the film industry.",
+                    "long": "Gollum, one of the most iconic characters inThe Lord of the Ringstrilogy, was brought to life through cutting-edge motion capture technology. Andy Serkis wore this specially designed suit, which was covered in tracking markers, allowing computers to record his movements and translate them into the final CGI character. This groundbreaking performance paved the way for future advancements in digital acting and motion capture technology, influencing films likeAvatarandPlanet of the Apes."
+                },
+                {
+                    "level": 1,
+                    "veryBrief": "Andy Serkis' motion capture suit enabled the transformation of his acting into the fully CGI character of Gollum.",
+                    "midSize": "This suit, equipped with tracking markers, allowed Andy Serkis to perform Gollum’s movements in real-time. His performance, combined with digital rendering by Weta Digital, set a new standard for CGI character realism.",
+                    "long": "The creation of Gollum inThe Lord of the Ringswas one of the most ambitious uses of motion capture technology at the time. Andy Serkis' movements and facial expressions were meticulously recorded using this suit, with tracking markers capturing even the subtlest details. Weta Digital then transformed these recordings into the Gollum we see on screen. This technology not only allowed for a more immersive character but also showcased Serkis' remarkable acting ability, influencing the evolution of digital performances in cinema."
+                },
+                {
+                    "level": 2,
+                    "veryBrief": "This suit, worn by Andy Serkis, helped revolutionize motion capture and CGI character animation in film.",
+                    "midSize": "Serkis’ performance, captured using this suit, laid the foundation for digital acting in modern cinema. The hybrid approach of practical acting and CGI rendering was a game-changer for character animation.",
+                    "long": "Gollum’s motion capture was an intricate process that combined physical performance with digital artistry. Andy Serkis wore this suit while acting on set, interacting with other actors, and even crawling on all fours to match Gollum’s movements. The tracking markers allowed Weta Digital to map his movements onto a digital model, preserving every nuance of his performance. This was one of the first times a motion-captured character was fully integrated into a live-action film, influencing the way CGI characters are portrayed in modern cinema. Without this suit and Serkis' pioneering work, performances like those inAvatar,The Jungle Book, andThe Batman(as Serkis’ own Alfred) might not have been possible."
+                }
+            ]
+        },
+        {
+            "id": 15,
+            "h1": "Working Map for The Lord of The Rings",
+            "h2": "Map that tolkien built as the story went on.",
+            "img": "https://jrrtestate.wpenginepowered.com/wp-content/uploads/2021/04/604jpeg.jpg",
+            "DC.description": "Tolkien drew this map as he wrote The Lord of the Rings between 1937 and 1949. It grew physically larger as the story developed, necessitating the addition of extra sheets which were stuck on with brown parcel tape.",
+            "DC.provenance": "The Tolkien Estate",
+            "DC.rightsOwner": "The Tolkien Estate",
+            "descriptions": [
+                {
+                    "level": 0,
+                    "veryBrief": "Tolkien used this map while writing «The Lord of The Rings» (1937-1949).",
+                    "midSize": "This map was drawn by Tolkien between 1937 and 1949 as he wrote «The Lord of The Rings». It expanded as the story grew, with extra sections added.",
+                    "long": "J.R.R. Tolkien created this working map between 1937 and 1949 during the writing of «The Lord of The Rings». As the narrative unfolded and the geography of Middle-earth became more complex, Tolkien added extra sheets of paper to the original map, using brown parcel tape to accommodate the expanding world."
+                },
+                {
+                    "level": 1,
+                    "veryBrief": "This map, used by Tolkien for «The Lord of The Rings», shows how his world evolved.",
+                    "midSize": "Drawn by Tolkien while writing «The Lord of The Rings», this map illustrates the development of Middle-earth. You can see where he added extra sections as the story progressed.",
+                    "long": "This working map provides a fascinating glimpse into Tolkien's creative process for «The Lord of The Rings». Created between 1937 and 1949, it visually demonstrates how the geography of Middle-earth evolved as the story took shape. The added sections, attached with parcel tape, highlight the organic and developing nature of Tolkien's world-building."
+                },
+                {
+                    "level": 2,
+                    "veryBrief": "Tolkien's working map for «The Lord of The Rings» reveals the organic growth of Middle-earth.",
+                    "midSize": "This map, contemporaneous with the writing of «The Lord of The Rings» (1937-1949), is a testament to Tolkien's world-building. The physical additions to the map reflect the expanding scope and detail of his narrative.",
+                    "long": "This working map, created and modified by J.R.R. Tolkien between 1937 and 1949, offers significant insight into the development of Middle-earth during the writing of «The Lord of The Rings». The physical act of adding extra sheets, evident in the brown parcel tape, underscores the organic and iterative nature of Tolkien's creative process. It demonstrates that the world of Middle-earth was not fully formed from the outset but rather grew and evolved alongside the narrative, responding to the demands of the story and Tolkien's deepening vision."
+                }
+            ]
         }
-      ]
-    },
-    {
-      "id": 6,
-      "h1": "Tolkien’s Handwritten Letter to a Fan",
-      "h2": "A Personal Letter from J.R.R. Tolkien Reflecting on His Creative Process (1958)",
-      "img": "https://example.com/tolkien-letter-1958.jpg",
-      "DC.creator":"J.R.R. Tolkien",
-	  "DC.source": "https://www.tolkienestate.com/letters/letter-to-christopher-bretherton-a-reader-16-july-1964/",
-	  "DC.provenance": "The Tolkien Estate",
-      "descriptions": [
-        {
-          "level": 0,
-          "veryBrief": "A letter from Tolkien to a fan, sharing insights on his writing.",
-          "midSize": "This is a handwritten letter by J.R.R. Tolkien, responding to a fan’s questions about Middle-earth. In it, he discusses his inspirations, his writing process, and his thoughts on world-building.",
-          "long": "In 1958, a devoted fan wrote to J.R.R. Tolkien with questions about The Lord of the Rings and its lore. In this thoughtful response, Tolkien reflects on his creative process, sharing details about his world-building approach, the significance of language in his work, and his views on storytelling. The letter provides a rare glimpse into the mind of the author, offering fans a direct connection to his thoughts and creative philosophy."
-        },
-        {
-          "level": 1,
-          "veryBrief": "Tolkien’s personal reflections on writing, found in this 1958 letter.",
-          "midSize": "Tolkien’s response to a fan’s letter in 1958 reveals his deep commitment to crafting a believable world. He discusses language creation, mythology, and his narrative choices in Middle-earth.",
-          "long": "Tolkien was known to personally respond to many letters from readers, but this 1958 letter is particularly revealing. In it, he discusses the challenges of writing The Lord of the Rings, the influence of ancient myths on his storytelling, and his belief that Middle-earth was not merely fantasy but a secondary world with its own logic and depth. This letter exemplifies Tolkien’s meticulous attention to detail and his passion for linguistic and historical accuracy."
-        },
-        {
-          "level": 2,
-          "veryBrief": "A rare letter where Tolkien explains his world-building in depth.",
-          "midSize": "In this handwritten letter, Tolkien reflects on his work, explaining how languages shape Middle-earth and addressing questions about lore, inspiration, and the deeper meanings behind his stories.",
-          "long": "This letter is a treasure for Tolkien enthusiasts. Not only does he discuss the importance of linguistic invention in his world-building, but he also clarifies misconceptions about Middle-earth’s themes. He touches on the moral struggles of his characters, the role of fate versus free will, and even corrects fan assumptions about certain plot points. The letter stands as a testament to Tolkien’s dedication to his readers and his ever-expanding mythology."
-        }
-      ]
-    },
-    {
-		"id": 7,
-		"h1": "The Book of Mazarbul, page",
-		"h2": "A page of The Book of Mazarbul written by Tolkien in runes, burnt for dramatic effect",
-		"DC.creator":"J.R.R. Tolkien",
-		"DC.source":"https://www.tolkienestate.com/painting/calligraphy/",
-		"DC.rightsOwner":"The Tolkien Estate",
-		"img": "https://example.com/tolkien-elvish-lexicon.jpg",
-		"Provenance": "Bodleian Library, Oxford",
-		"descriptions": [
-    {
-      "level": 0,
-      "veryBrief": "A page of The Book of Mazarbul, written by Tolkien in runes and burnt.",
-      "midSize": "This is a page from The Book of Mazarbul, written in runes by Tolkien and designed to look burnt for dramatic effect.",
-      "long": "This item is a page representing The Book of Mazarbul, featuring runes written by J.R.R. Tolkien. It was created to appear burnt, replicating the dramatic destruction of the book as depicted in *The Lord of the Rings*."
-    },
-    {
-      "level": 1,
-      "veryBrief": "A burnt page of The Book of Mazarbul, with runes written by Tolkien.",
-      "midSize": "This page represents The Book of Mazarbul from *The Lord of the Rings*. It features runes written by Tolkien and is designed to have a burnt appearance.",
-      "long": "This page is a representation of a page from The Book of Mazarbul, a key artifact from *The Lord of the Rings*. It features runes written by Tolkien and has been crafted to simulate the burnt and damaged appearance seen in the story's depiction of the book's destruction."
-    },
-    {
-      "level": 2,
-      "veryBrief": "A burnt page of The Book of Mazarbul, with Tolkien's runic writing.",
-      "midSize": "This artifact is a page representing The Book of Mazarbul. It features runes written by J.R.R. Tolkien and is designed to replicate the burnt condition of the book as portrayed in *The Lord of the Rings*.",
-      "long": "This page is a significant artifact representing a page from The Book of Mazarbul. It features runes written by J.R.R. Tolkien and is crafted to depict the burnt and damaged state of the book. This object is important for understanding the visual representation of Tolkien's world and the dramatic events within the narrative of *The Lord of the Rings*, specifically the harrowing scene in the Mines of Moria."
-    }
-		]
-	  }
-	  ,
-	  {
-		"id": 8,
-		"h1": "Rivendell Model from the movies",
-		"h2": "The model used for close-ups and establishing shots of Rivendell in 'The Fellowship of The Ring'",
-		"img": "https://example.com/tolkien-pipe.jpg",
-		"DC.provenance": "Weta Workshop Archives, New Zealand",
-		"DC.creator": "Weta Workshop",
-		"DC.source": "https://www.wetaworkshop.com/projects/the-lord-of-the-rings-the-fellowship-of-the-ring",
-		"schema.GeoCoordinates": {
-			"latitude": "-41.30601484061519",
-			"longitude": "174.82346517437728"
-		},
-		"descriptions": [
-    {
-      "level": 0,
-      "veryBrief": "This is a model of Rivendell from the Lord of the Rings movies.",
-      "midSize": "This is a small model of Rivendell, the beautiful elf city from the movie 'The Fellowship of the Ring'. It helps show what Rivendell looks like.",
-      "long": "This model was used in the movie 'The Fellowship of the Ring' to show the city of Rivendell. It helps the filmmakers show where the characters are and what the city looks like from far away and up close."
-    },
-    {
-      "level": 1,
-      "veryBrief": "Model of Rivendell used in 'The Fellowship of The Ring' for various shots.",
-      "midSize": "This is the physical model of Rivendell created for Peter Jackson's 'The Fellowship of The Ring'. It was utilized for both establishing shots to showcase the city's overall layout and for closer shots to provide detail.",
-      "long": "This meticulously crafted model of Rivendell played a crucial role in the visual storytelling of 'The Fellowship of The Ring'. Filmmakers employed it to establish the grandeur and unique architecture of the elven sanctuary in wide, sweeping shots. Additionally, the model's detail allowed for closer perspectives, seamlessly integrating it into scenes requiring a tangible representation of Rivendell."
-    },
-    {
-      "level": 2,
-      "veryBrief": "A production model of Rivendell, integral to the film's visual language.",
-      "midSize": "This scale model of Rivendell served as a key component in the production of 'The Fellowship of The Ring', facilitating the visualization of the elven settlement for cinematic purposes. Its use spanned from establishing the environment to providing detailed backdrops for closer character interactions.",
-      "long": "This production-designed model of Rivendell represents a significant artifact in the cinematic adaptation of Tolkien's work. Its construction allowed the filmmakers to establish the spatial geography and architectural nuances of Rivendell, crucial for immersing audiences in the fictional world. The model's versatility, enabling both expansive establishing shots and more intimate close-ups, underscores its importance in shaping the film's visual narrative and its interpretation of Tolkien's descriptions."
-    }
-  ]
-},
-
-	  {
-		"id": 9,
-		"h1": "The One Ring Replica",
-		"h2": "The Replica of The One Ring Prop (2001-2003 Film Trilogy)",
-		"img": "https://www.jenshansen.com/collections/the-one-ring-replica",
-		"DC.creator": "Jens Hansen",
-		"DC.source": "https://www.jenshansen.com/collections/makers-of-the-worlds-most-famous-ring",
-		"schema.GeoCoordinates":{
-			"latitude":"-41.27514756668191",
-			"longitude":"173.2827509678444"
-		},
-		"descriptions": [
-		  {
-			"level": 0,
-			"veryBrief": "The golden ring that ruled them all, featured in Peter Jackson’s film trilogy.",
-			"midSize": "This is the replica prop used in Peter Jackson’s The Lord of the Rings films, crafted by Jens Hansen in New Zealand.",
-			"long": "The One Ring, central to The Lord of the Rings trilogy, was designed by Jens Hansen, a master jeweler in New Zealand. This iconic prop appeared throughout the films, with different versions used for various shots, including oversized ones for close-ups. The inscription, written in Black Speech, glows when heated, revealing Sauron’s ominous message: 'One Ring to rule them all…'"
-		  },
-		  {
-			"level": 1,
-			"veryBrief": "The iconic One Ring prop replica from Peter Jackson’s trilogy, designed to be the central artifact of power in Middle-earth.",
-			"midSize": "Crafted by Jens Hansen, this prop was used throughout the The Lord of the Rings film series. Different versions of the ring existed for various shots, including a large-scale replica for close-ups.",
-			"long": "Jens Hansen, the official jeweler for the The Lord of the Rings films, designed the One Ring with smooth, minimalistic elegance. Its inscription in Black Speech is only visible when heated. Throughout filming, multiple versions were used, including a heavy gold ring for realistic shots and an oversized prop for cinematographic close-ups. The Ring symbolizes absolute power, temptation, and the burden of destiny in Tolkien’s legendarium."
-		  },
-		  {
-			"level": 2,
-			"veryBrief": "This is the replica film prop from The Lord of the Rings trilogy, forged by Jens Hansen based on Tolkien’s description and Weta Workshop's specifications.",
-			"midSize": "Jens Hansen crafted multiple versions of the One Ring for filming. Some were small and made of gold-plated tungsten, while others were oversized to capture detailed engravings under dramatic lighting.",
-			"long": "Jens Hansen, a master jeweler in Nelson, New Zealand, was commissioned to design the One Ring prop based on Tolkien’s description. Weta Workshop oversaw its creation, ensuring the ring’s simplistic yet powerful aesthetic aligned with Middle-earth’s visual style. Some versions were made of gold-plated tungsten, while others were large-scale props used for intricate shots, particularly when the inscription was meant to glow. The ring’s design mirrors Anglo-Saxon and Norse influences, reflecting Tolkien’s deep scholarly background."
-		  }
-		]
-	  },
-	  {
-		"id": 10,
-		"h1": "Narsil",
-		"h2": "The prop of the Sword of Elendil, used in the movies",
-		"img": "https://www.wetaworkshop.com/assets/shards_narsil.jpg",
-		"DC.creator": "Weta Workshop",
-		"DC.source": "https://www.wetaworkshop.com/projects/the-lord-of-the-rings-the-fellowship-of-the-ring",
-		"DC.provenance": "Weta Workshop Archives, New Zealand",
-		"schema.GeoCoordinates": {
-			"latitude": "-41.30601484061519",
-			"longitude": "174.82346517437728"
-		},
-		"descriptions": [
-			{
-			  "level": 0,
-			  "veryBrief": "The sword of Elendil, Narsil, from *The Lord of the Rings* movies.",
-			  "midSize": "This is a movie prop representing Narsil, the legendary sword wielded by Elendil in *The Lord of the Rings* films.",
-			  "long": "This prop represents Narsil, the famed sword of King Elendil, as depicted in Peter Jackson's *The Lord of the Rings* movie trilogy."
-			},
-			{
-			  "level": 1,
-			  "veryBrief": "Narsil, Elendil's sword, as seen in the *Lord of the Rings* films.",
-			  "midSize": "This prop is a recreation of Narsil, the sword used by Elendil in the *Lord of the Rings* movie adaptations, famously broken in battle.",
-			  "long": "This artifact is a movie prop representing Narsil, the legendary sword of Elendil. It was featured prominently in the opening sequence of *The Lord of the Rings: The Fellowship of the Ring*, depicting its breaking during the Last Alliance of Elves and Men."
-			},
-			{
-			  "level": 2,
-			  "veryBrief": "A movie prop of Narsil, the iconic sword of Elendil.",
-			  "midSize": "This is a prop sword created for the *Lord of the Rings* film trilogy, representing Narsil, the sword broken in the final battle against Sauron.",
-			  "long": "This meticulously crafted prop represents Narsil, the iconic sword wielded by King Elendil. As depicted in Peter Jackson's *The Lord of the Rings* trilogy, Narsil was broken during Elendil's battle with Sauron, a pivotal moment in Middle-earth's history. This prop serves as a tangible link to that legendary event as portrayed on screen."
-			}
-		]
-	  },
-	  {
-		"id": 11,
-		"h1": "Tolkien’s Original Cover Design",
-		"h2": "The First Cover Design for The Lord of the Rings (1954)",
-		"img": "https://jrrtestate.wpenginepowered.com/wp-content/uploads/2021/04/735-azz0056.jpg",
-		"DC.source": "https://www.tolkienestate.com/painting/the-lord-of-the-rings/",
-		"DC.rightsOwner": "The Tolkien Estate", 
-		"descriptions": [
-		  {
-			"level": 0,
-			"veryBrief": "Tolkien’s own hand-drawn cover for the first edition ofThe Lord of the Rings.",
-			"midSize": "This is the original cover design created by J.R.R. Tolkien himself for the first edition ofThe Lord of the Rings(1954). Though not used in the final publication, it features his iconic eye of Sauron motif and Elvish script.",
-			"long": "BeforeThe Lord of the Ringswas published, Tolkien designed a cover for the book himself, showcasing his vision for how the story should be presented. The design includes the Eye of Sauron, the Ring, and Tengwar inscriptions. Ultimately, the publisher opted for a different cover, but Tolkien’s concept remains an essential artifact, reflecting his artistic sensibilities and deep involvement in every aspect of his world-building."
-		  },
-		  {
-			"level": 1,
-			"veryBrief": "Tolkien’s original cover forThe Lord of the Rings, featuring his own designs and Elvish script.",
-			"midSize": "J.R.R. Tolkien created this cover for the first edition ofThe Lord of the Rings, incorporating motifs like the Eye of Sauron and the Ring’s inscription. Though it was not used, it remains a vital part of the book’s history and design evolution.",
-			"long": "Tolkien was not only a writer but also an artist, and he created an intricate cover design forThe Lord of the Rings. The drawing, preserved at the Bodleian Library, features the Eye of Sauron looming over the One Ring, encircled by the Ring’s inscription in Tengwar script. Though the publisher ultimately chose a different cover, Tolkien’s design reveals how deeply he was involved in the presentation of his work. His love for medieval and mythological aesthetics is evident in the balance of symbolism and lettering."
-		  },
-		  {
-			"level": 2,
-			"veryBrief": "Tolkien’s unpublished cover for The Lord of the Rings, showcasing his artistic and linguistic creativity.",
-			"midSize": "Tolkien’s original cover design was never used for publication, but it remains a crucial artifact, displaying his personal artistic style and his attention to linguistic detail, including Tengwar inscriptions.",
-			"long": "Tolkien’s original cover design forThe Lord of the Rings, housed at the Bodleian Library, represents his multifaceted talent as a philologist, artist, and storyteller. His composition includes the Eye of Sauron above the Ring, surrounded by an inscription in Elvish Tengwar, symbolizing the story’s central conflict. The design reflects influences from medieval manuscript art and calligraphy. While the publishers opted for a different cover, Tolkien’s design remains a testament to his hands-on approach to his world-building, ensuring that every detail aligned with his vision."
-		  }
-		]
-	  },
-	  {
-		"id": 12,
-		"h1": "Sauron's Full Plate Armor",
-		"h2": "The Full Plate Armor used in the movies to represent Sauron (2001-2003)",
-		"img": "https://www.wetaworkshop.com/web/image/96339-0d97b436/LOTR_FOTR_Manufacture_044.jpg",
-		"DC.provenance": "Weta Workshop / New Line Cinema",
-		"DC.creator":"Weta Workshop",
-		"DC.source": "https://www.wetaworkshop.com/projects/the-lord-of-the-rings-the-fellowship-of-the-ring",
-		"schema.GeoCoordinates": {
-			"latitude": "-41.30601484061519",
-			"longitude": "174.82346517437728"
-		},
-		"descriptions": [
-    {
-      "level": 0,
-      "veryBrief": "The armor worn by Sauron in *The Lord of the Rings* movies (2001-2003).",
-      "midSize": "This full plate armor was created for the *Lord of the Rings* film trilogy (2001-2003) to represent the character of Sauron.",
-      "long": "This imposing full plate armor was specifically designed and created for the portrayal of Sauron in Peter Jackson's *The Lord of the Rings* film trilogy, released between 2001 and 2003."
-    },
-    {
-      "level": 1,
-      "veryBrief": "Armor used to depict Sauron in *The Lord of the Rings* films.",
-      "midSize": "This is the full plate armor that audiences saw worn by the character Sauron in the *Lord of the Rings* movie adaptations.",
-      "long": "As featured in Peter Jackson's cinematic adaptation of *The Lord of the Rings*, this full plate armor served as the visual representation of the dark lord Sauron throughout the trilogy (2001-2003). Its design aimed to convey his power and menacing presence."
-    },
-    {
-      "level": 2,
-      "veryBrief": "The full plate armor designed for Sauron in the *Lord of the Rings* movie trilogy.",
-      "midSize": "This artifact is the full plate armor crafted for the *Lord of the Rings* film trilogy (2001-2003) to embody the formidable figure of Sauron.",
-      "long": "This full plate armor is a significant artifact from the production of Peter Jackson's *The Lord of the Rings* trilogy (2001-2003). It was specifically designed and constructed to visually represent Sauron, the primary antagonist, and played a crucial role in establishing his intimidating presence on screen."
-    }
-		]
-	  },
-	  {
-		"id": 13,
-		"h1": "Weta Workshop Sketches",
-		"h2": "Selection of Weta Workshop Sketches for 'The Return of the King'",
-		"img": "https://www.wetaworkshop.com/web/image/107782-8120de75/LOTR_ROTK_Design_014.jpg",
-		"DC.source":"https://www.wetaworkshop.com/projects/the-lord-of-the-rings-the-return-of-the-king/gallery",
-		"DC.provenance":"Weta Workshop / New Line Cinema",
-		"DC.creator":"Weta Workshop",
-		"DC.date":2003,
-		"schema.GeoCoordinates": {
-			"latitude": "-41.30601484061519",
-			"longitude": "174.82346517437728"
-		},
-		"descriptions": [
-    {
-      "level": 0,
-      "veryBrief": "These are sketches by Weta Workshop.",
-      "midSize": "These are some of the drawings made by Weta Workshop, the company that created the special effects for the Lord of the Rings movies.",
-      "long": "Weta Workshop is famous for making the amazing creatures and effects in the Lord of the Rings movies. These drawings are some of their early ideas for what those creatures and effects would look like."
-    },
-    {
-      "level": 1,
-      "veryBrief": "Weta Workshop sketches for 'The Return of the King'.",
-      "midSize": "These are a selection of concept sketches created by Weta Workshop for the film 'The Return of the King'. They offer a glimpse into the creative process behind the movie's iconic visual effects.",
-      "long": "These sketches provide a fascinating look at the early stages of production for 'The Return of the King'. Weta Workshop artists used these drawings to explore and refine their ideas for the film's characters, creatures, and environments, ultimately shaping the visual style of the movie."
-    },
-    {
-      "level": 2,
-      "veryBrief": "Weta Workshop concept art for 'The Return of the King'.",
-      "midSize": "This collection of sketches showcases the conceptual artistry of Weta Workshop in the creation of 'The Return of the King'. They offer valuable insights into the design process, revealing the evolution of ideas from initial sketches to final on-screen realizations.",
-      "long": "These sketches represent a crucial stage in the production of 'The Return of the King', demonstrating the collaborative nature of the creative process at Weta Workshop. They provide a unique perspective on the translation of Tolkien's literary world into a cinematic reality, highlighting the importance of visual development in shaping the film's overall aesthetic and narrative."
-    }
-  ]
-},
-	  {
-		"id": 14,
-		"h1": "Gollum’s Motion Capture Suit Replica",
-		"h2": "Replica of the one used by Andy Serkis in The Lord of the Rings Film Trilogy (2001-2003)",
-		"img": "https://www.wetafx.co.nz/assets/Uploads/images/page/desktop/gollum_splitScreen_desktop.jpg",
-		"DC.source":"https://www.wetafx.co.nz/films/case-studies/gollum",
-		"DC.creator":"Wētā FX",
-		"DC.rightsOwner": "Wētā FX",
-		"DC.provenance": "Weta Workshop / Film Production Archives",
-		"descriptions": [
-		  {
-			"level": 0,
-			"veryBrief": "Andy Serkis wore this motion capture suit to bring Gollum to life inThe Lord of the Ringsmovies.",
-			"midSize": "This is the motion capture suit worn by Andy Serkis during the filming ofThe Lord of the Rings. The technology used to transform his performance into the CGI character of Gollum revolutionized the film industry.",
-			"long": "Gollum, one of the most iconic characters inThe Lord of the Ringstrilogy, was brought to life through cutting-edge motion capture technology. Andy Serkis wore this specially designed suit, which was covered in tracking markers, allowing computers to record his movements and translate them into the final CGI character. This groundbreaking performance paved the way for future advancements in digital acting and motion capture technology, influencing films likeAvatarandPlanet of the Apes."
-		  },
-		  {
-			"level": 1,
-			"veryBrief": "Andy Serkis' motion capture suit enabled the transformation of his acting into the fully CGI character of Gollum.",
-			"midSize": "This suit, equipped with tracking markers, allowed Andy Serkis to perform Gollum’s movements in real-time. His performance, combined with digital rendering by Weta Digital, set a new standard for CGI character realism.",
-			"long": "The creation of Gollum inThe Lord of the Ringswas one of the most ambitious uses of motion capture technology at the time. Andy Serkis' movements and facial expressions were meticulously recorded using this suit, with tracking markers capturing even the subtlest details. Weta Digital then transformed these recordings into the Gollum we see on screen. This technology not only allowed for a more immersive character but also showcased Serkis' remarkable acting ability, influencing the evolution of digital performances in cinema."
-		  },
-		  {
-			"level": 2,
-			"veryBrief": "This suit, worn by Andy Serkis, helped revolutionize motion capture and CGI character animation in film.",
-			"midSize": "Serkis’ performance, captured using this suit, laid the foundation for digital acting in modern cinema. The hybrid approach of practical acting and CGI rendering was a game-changer for character animation.",
-			"long": "Gollum’s motion capture was an intricate process that combined physical performance with digital artistry. Andy Serkis wore this suit while acting on set, interacting with other actors, and even crawling on all fours to match Gollum’s movements. The tracking markers allowed Weta Digital to map his movements onto a digital model, preserving every nuance of his performance. This was one of the first times a motion-captured character was fully integrated into a live-action film, influencing the way CGI characters are portrayed in modern cinema. Without this suit and Serkis' pioneering work, performances like those inAvatar,The Jungle Book, andThe Batman(as Serkis’ own Alfred) might not have been possible."
-		  }
-		]
-	  },
-	  {
-		"id": 15,
-		"h1": "Working Map for The Lord of The Rings",
-		"h2": "Map that tolkien built as the story went on.",
-		"img": "https://jrrtestate.wpenginepowered.com/wp-content/uploads/2021/04/604jpeg.jpg",
-		"DC.description": "Tolkien drew this map as he wrote The Lord of the Rings between 1937 and 1949. It grew physically larger as the story developed, necessitating the addition of extra sheets which were stuck on with brown parcel tape.",
-		"DC.provenance": "The Tolkien Estate",
-		"DC.rightsOwner":"The Tolkien Estate",
-		"descriptions": [
-			  {
-				"level": 0,
-				"veryBrief": "Tolkien used this map while writing *The Lord of the Rings* (1937-1949).",
-				"midSize": "This map was drawn by Tolkien between 1937 and 1949 as he wrote *The Lord of the Rings*. It expanded as the story grew, with extra sections added.",
-				"long": "J.R.R. Tolkien created this working map between 1937 and 1949 during the writing of *The Lord of the Rings*. As the narrative unfolded and the geography of Middle-earth became more complex, Tolkien added extra sheets of paper to the original map, using brown parcel tape to accommodate the expanding world."
-			  },
-			  {
-				"level": 1,
-				"veryBrief": "This map, used by Tolkien for *The Lord of the Rings*, shows how his world evolved.",
-				"midSize": "Drawn by Tolkien while writing *The Lord of the Rings*, this map illustrates the development of Middle-earth. You can see where he added extra sections as the story progressed.",
-				"long": "This working map provides a fascinating glimpse into Tolkien's creative process for *The Lord of the Rings*. Created between 1937 and 1949, it visually demonstrates how the geography of Middle-earth evolved as the story took shape. The added sections, attached with parcel tape, highlight the organic and developing nature of Tolkien's world-building."
-			  },
-			  {
-				"level": 2,
-				"veryBrief": "Tolkien's working map for *The Lord of the Rings* reveals the organic growth of Middle-earth.",
-				"midSize": "This map, contemporaneous with the writing of *The Lord of the Rings* (1937-1949), is a testament to Tolkien's world-building. The physical additions to the map reflect the expanding scope and detail of his narrative.",
-				"long": "This working map, created and modified by J.R.R. Tolkien between 1937 and 1949, offers significant insight into the development of Middle-earth during the writing of *The Lord of the Rings*. The physical act of adding extra sheets, evident in the brown parcel tape, underscores the organic and iterative nature of Tolkien's creative process. It demonstrates that the world of Middle-earth was not fully formed from the outset but rather grew and evolved alongside the narrative, responding to the demands of the story and Tolkien's deepening vision."
-			  }
-			]
-	  }
-	  
-	  
-  ]
+    ]
 }
