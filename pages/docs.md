@@ -38,21 +38,21 @@ Our <a href="about.html">About</a> page is here for any information or support.
 
 As mentioned before the goal is to obtain an easy to use and intuitive system that can be easily reproduced for a different exhibition. It tries to be compliant with the exam requirements and adds some facilities where needed to support its goals.
 
-### Hosting
+### 2.2 Hosting
 
 «The Middle Earth Cabinet» is hosted making use of [Github Pages](https://pages.github.com/), starting from a [repository](https://github.com/falaimo99/webdev) hosted on one of the curators and developers [github account](https://github.com/falaimo99).
 
-### 2.2.1 Frontend Technologies
+### 2.3.1 Frontend Technologies
 
 The Website makes use of the "traditional" frontend stack, (HTML, CSS, JS). It tends to adopt a modular approach, that separates html pages, style and scripts on different files.
 
-### 2.2.2 Backend Technologies
+### 2.3.2 Backend Technologies
 
 The requirements of the project don't comprehend a backend part development, the only "backend" part is assolved by the hosting system.
 
 The only other consideration about backend is about internal data retrieval, the Project make use of an items.json file to retrieve the informational content to display for the exhibition.
 
-### 2.3 Data Flow and Interactions
+### 2.4 Data Flow and Interactions
 
 ## Frontend Development
 
@@ -129,6 +129,8 @@ After the setup phase the user is able to explore the map in different ways:
 
 A useful "Resume Journey" button will substitute the "Start Journey" one, and will make it possible to resume from the last item you selected.
 
+Every Journey consists only of the selected items in that zone and will automatically reach an end when you get to the last one
+
 Besides the map are available two buttons, one to return back to the homepage and another to visualize the british museum map, and a link that leads the user to the original source, in this view is also highlighted the actual exhibition location.
 
 #### Map Svg
@@ -186,7 +188,7 @@ In the "Adventurers" setup and the about page there are images from the film, to
 
 As mentioned earlier in this documentation the data for the items is provided via `json`, the data is still sparse and need to be cleared yet. We tried to provide a basic structure for the item cards and a small set of metadata information but it was truly a challenge to keep it consistent.
 
-### 5.1 JSON Guidelines
+### 4.1 JSON Guidelines
 
 The data schema can be easily adopted as is, and can be reproduced for other use cases. A further development could be redacting an effective JSON schema.
 
@@ -199,34 +201,14 @@ Every Item is described using the following properties:
     -   Including, when available, relevant geographical coordinates
 -   The nine descriptions that permit to adjust level and length, they were generated using an LLM providing the adequate (usually not much) context and then proofread.
 
-VI. Interactive Features (if applicable)
+## Appendices
 
-### 6.1 Virtual Tours
+### A. Wireframes or Mockups (if relevant to technical implementation)
 
-### 6.1.1 Technology Used (e.g., Panoramas, 3D Scans)
+![Excalibur](../excalidraw.png)
 
-### 6.1.2 User Controls and Navigation
+This is the only available mockup, made at the start of the development, even if we didn't follow up and update
 
-### 6.1.3 Data Storage and Delivery
+### B.
 
-### 6.2 3D Models of Artifacts
-
-### 6.2.1 File Formats and Optimization
-
-### 6.2.2 Embedding and Interaction within the Website
-
-### 6.3 Interactive Maps and Location Information
-
-### 6.4 User Engagement Features (e.g., Comments, Sharing)
-
-## Appendices (if applicable)
-
-### A. Database Schema Diagrams
-
-### B. API Documentation (e.g., using Swagger/OpenAPI)
-
-### C. Style Guides
-
-### D. Wireframes or Mockups (if relevant to technical implementation)
-
-### E. Future Developments and current issues
+### C. Future Developments
