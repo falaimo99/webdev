@@ -139,7 +139,7 @@ It is implemented using the `<svg>` element in html, and it was used to simplify
 
 ### 3.2.3 Item Card
 
-Each exhibit card follows the same template. The first set of information at display is the museal description of the item, adjustable per level and length through radio buttons. You can also access, with dedicated buttons, the available metadata and map for each item.
+Each exhibit card follows the same template. The first set of information at display is the museal description of the item, adjustable per level and length through radio buttons. You can also access, with dedicated buttons, the available metadata and map for each item. The map is retrieved using [leaflet](https://leafletjs.com/) and [OpenStreetMap](https://www.openstreetmap.org/)
 
 In each card you can also find arrows to move from one item to the other without using the map to select each one of them.
 
@@ -163,27 +163,41 @@ The functions provided regulate the behavior of the setup dialogs, of the Britis
 The Styling and Theming is full of small references to Tolkien's work.
 We'll try to outline them in this paragraph, it is a simple theming but we deem effective enough to please the eye.
 
-V. Content Management
+As mentioned before the theme chosen for the homepage traces back to the British Museum Homepage, but we decided to add our own video background, selecting and intertwining real life clips of Tolkien and scenes from the movie, this is intended to create a visual reference to our two paths, the origin and the legacy.
 
-### 5.1 Content Creation Guidelines
+The map contains a total different approach, we decided to adopt a colorful and yet simple style for it.
 
-### 5.1.1 Text Formatting and Style
+The main colors hint to Tolkien's world and life:
 
-### 5.1.2 Image and Multimedia Guidelines (e.g., file formats, sizes, optimization)
+-   Gold for the legacy path, referring to the color of the ring.
+-   Green for the origin path, Tolkien was notoriously fond of trees and nature, he included lots of descriptions of the natural world in his works.
+-   Skyblue for some details, it is a color that is recurrent in important and mysterious characters.
+-   Lighter bronze-brown, provides a good and pleasing base color for buttons, being close to the background dominating color.
 
-### 5.1.3 Metadata and SEO Considerations
+The buttons are highlighted when hovered on and are rounded and solid, this creates a more modern look.
 
-### 5.2 Content Workflow and Publishing Process
+The map style is simple and vectorial, tuned for readability and to provide good contrast between background, map borders and items at display.
 
-### 5.3 Managing Exhibition Data
+The background is the map of Middle Earth itself, blurred enough to avoid distraction.
 
-### 5.3.1 Data Input and Validation Procedures
+In the "Adventurers" setup and the about page there are images from the film, to provide a sort of early 2000s reminiscence, when magazines, scrapbooks and archaic html websites were popular.
 
-### 5.3.2 Linking Exhibits to Multimedia and Other Information
+## Data Management
 
-### 5.3.3 Version Control for Exhibition Data (if applicable)
+As mentioned earlier in this documentation the data for the items is provided via `json`, the data is still sparse and need to be cleared yet. We tried to provide a basic structure for the item cards and a small set of metadata information but it was truly a challenge to keep it consistent.
 
-### 5.4 Managing Static Content (e.g., About Us, Contact)
+### 5.1 JSON Guidelines
+
+The data schema can be easily adopted as is, and can be reproduced for other use cases. A further development could be redacting an effective JSON schema.
+
+Every Item is described using the following properties:
+
+-   An identfier,
+-   An h1 and an h2 to show in the main view of the card
+-   An image reference, it can be a link or a static local file
+-   Various metadata descriptors coming mainly from [schema](https://www.schema.org) and [Dublin Core](https://www.dublincore.org/)
+    -   Including, when available, relevant geographical coordinates
+-   The nine descriptions that permit to adjust level and length, they were generated using an LLM providing the adequate (usually not much) context and then proofread.
 
 VI. Interactive Features (if applicable)
 
