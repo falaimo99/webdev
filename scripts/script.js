@@ -106,10 +106,18 @@ const charDialog = () => {
 
     selectBtn.addEventListener("click", () => {
         const map = document.querySelector("svg");
-        const newJourney = document.querySelector("#resume-journey-btn");
+        const resumeJourney = document.querySelector("#resume-journey-btn");
+        resumeJourney.style.display = "block";
+
+        const newJourney = document.querySelector("#new-journey-btn");
+        newJourney.style.display = "block";
+        
         dialog.style.display = "none";
         map.style.display = "block";
-        newJourney.style.display = "block";
+
+        // const newJourney = document.querySelector("#new-journey-btn");
+        // newJourney.style.display = "block";
+
         if (selectedMask != undefined) {
             map.style.animation = `${selectedMask.id}Transform forwards 3s`;
         }
@@ -151,11 +159,11 @@ document.addEventListener("DOMContentLoaded", function () {
             fetchItemDetails(itemId, event.clientX, event.clientY);
         });
     });
+    
 
-    const startButton = document.getElementById("resume-journey-btn"); // Adjust ID if needed
-    startButton.addEventListener("click", function () {
-        // console.log(currentItemIndex)
-        // Simulate a click at a fixed position or fetch the real position of item 1
+    const resumeButton = document.getElementById("resume-journey-btn"); 
+    resumeButton.addEventListener("click", function () {
+       
 
         let idx = 1;
         if (selectedPath) {
@@ -167,6 +175,7 @@ document.addEventListener("DOMContentLoaded", function () {
         // a new setup button
     });
 
+    
     // Close tooltip when the close button is clicked
     closeBtn.addEventListener("click", () => {
         tooltip.classList.add("hidden");
@@ -184,10 +193,10 @@ document.addEventListener("DOMContentLoaded", function () {
                     currentItemIndex = paths[selectedPath].indexOf(+itemId);
                 }
 
-                const newJourney = document.querySelector(
+                const resumeJourney = document.querySelector(
                     "#resume-journey-btn"
                 );
-                newJourney.innerHTML = "Resume your Journey";
+                resumeJourney.innerHTML = "Resume Journey";
 
                 if (item) {
                     const template = document.getElementById("tooltipTemplate");

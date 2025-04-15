@@ -64,21 +64,25 @@ body {
     top: 1rem;
     left: 1rem;
     background-color: hsl(0, 0%, 38.82%);
+    animation: glowing infinite 1s;
 }
 .top-btn:hover {
     background-color: hsl(0, 0%, 58.82%);
 }
-#resume-journey-btn {
+#resume-journey-btn, #new-journey-btn, .home, .map-icon{
     display: none;
     font-weight: 600;
     width: max-content;
     height: fit-content;
-    grid-column: 2;
     align-self: center;
     border-color: antiquewhite;
     border-style: solid;
     animation: glowing infinite 3s;
 }
+
+
+
+
 @keyframes glowing {
     0% {
         border-color: gold;
@@ -93,6 +97,8 @@ body {
         border-color: gold;
     }
 }
+
+
 
 a {
     cursor: pointer;

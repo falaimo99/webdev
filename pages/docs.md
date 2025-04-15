@@ -124,10 +124,10 @@ _This chart was realized using [mermaid](https://mermaid.js.org/)_
 
 After the setup phase the user is able to explore the map in different ways:
 
--   if they selected a Path, the map will zoom and pan to focus on the museum section dedicated to it, highlighted with the theme colour of that path. It will then appear a "Start your journey" button that will guide you through the right order of appearance of the exhibits.
+-   if they selected a Path, the map will zoom and pan to focus on the museum section dedicated to it, highlighted with the theme colour of that path. It will then appear a "Start Journey" button that will guide you through the right order of appearance of the exhibits.
 -   if they selected free roam they can freely explore each and every item available without an order.
 
-A useful "Resume your Journey" button will substitute the "Star your Journey" one, and will make it possible to resume from the last item you selected.
+A useful "Resume Journey" button will substitute the "Start Journey" one, and will make it possible to resume from the last item you selected.
 
 Besides the map are available two buttons, one to return back to the homepage and another to visualize the british museum map, and a link that leads the user to the original source, in this view is also highlighted the actual exhibition location.
 
