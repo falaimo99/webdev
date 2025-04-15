@@ -69,7 +69,10 @@ body {
 .top-btn:hover {
     background-color: hsl(0, 0%, 58.82%);
 }
-#resume-journey-btn, #new-journey-btn, .home, .map-icon{
+#resume-journey-btn,
+#new-journey-btn,
+.home,
+.map-icon {
     display: none;
     font-weight: 600;
     width: max-content;
@@ -80,26 +83,20 @@ body {
     animation: glowing infinite 3s;
 }
 
-
-
-
 @keyframes glowing {
     0% {
-        border-color: #c2b280; 
+        border-color: #c2b280;
     }
     33% {
-        border-color: #556b2f; 
+        border-color: #556b2f;
     }
     66% {
-        border-color: #708090; 
+        border-color: #708090;
     }
     100% {
-        border-color: #c2b280; 
+        border-color: #c2b280;
     }
 }
-
-
-
 
 a {
     cursor: pointer;
@@ -282,7 +279,7 @@ nav {
     border: solid #556b2f;
 }
 #legacypath-btn {
-    border: solid #c2b280; ;
+    border: solid #c2b280;
 }
 
 .path-button-interface {
@@ -385,13 +382,11 @@ button {
 }
 
 .metadata-container h3:first-child,
-.map-container h3:first-child
- {
+.map-container h3:first-child {
     margin-bottom: 1.5rem;
 }
 
-.metadata-container h3:nth-child(2)
- {
+.metadata-container h3:nth-child(2) {
     margin-bottom: 0.5rem;
 }
 
@@ -411,7 +406,6 @@ button {
     font-size: 12px;
     color: rgba(255, 255, 255, 0.6);
 }
-
 
 /* Close Button */
 #close-tooltip {
@@ -489,9 +483,6 @@ button {
     display: none;
 }
 
-
-
-
 .item-controls {
     display: flex;
     flex-direction: column;
@@ -513,7 +504,6 @@ button {
     gap: 1rem;
 }
 
-
 .nav-buttons {
     position: fixed;
     top: 50%;
@@ -528,9 +518,8 @@ button {
     transform: translateX(-50%);
 }
 
-
 /* Individual labels styled like elegant buttons */
-.radio-button-group label{
+.radio-button-group label {
     background-color: #3e3b32; /* Dark brown / deep grey */
     color: #f5f0e6; /* parchment-like text */
     padding: 0.75rem 1.25rem;
@@ -538,17 +527,18 @@ button {
     font-weight: 600;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.2s ease;
-    font-family: 'Garamond', 'Times New Roman', serif;
+    font-family: "Garamond", "Times New Roman", serif;
     border: 2px solid #8b7c5b; /* bronze-ish */
     font-size: 1rem;
     text-align: center;
-    
 }
 
 .nav-buttons button {
-    background-color: rgba(0, 0, 0, 0.2);
+    color: white;
+    background-color: rgba(253, 253, 253, 0.2);
     padding: 0.75rem 1rem;
-    border-radius: 8px;
+    border-radius: 11px;
+    border-style: solid;
     z-index: 1000;
 }
 
@@ -558,8 +548,6 @@ button {
     margin-right: 0;
     margin-left: 0;
 }
-
-
 
 .radio-button-group label:hover {
     background-color: #5a584e;
@@ -576,8 +564,6 @@ button {
     background-color: #6b5842; /* lighter bronze-brown */
     border-color: #d1b980;
     box-shadow: 0 0 5px #d1b980;
-    
-
 }
 
 /* Navigation buttons */
@@ -593,7 +579,7 @@ button {
     font-weight: bold;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.2s;
-    font-family: 'Garamond', 'Georgia', serif;
+    font-family: "Garamond", "Georgia", serif;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 

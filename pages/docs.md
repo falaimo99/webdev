@@ -60,7 +60,7 @@ The only other consideration about backend is about internal data retrieval, the
 
 The website structure is fairly simple having only one job in mind. Navigation is facilitated by the presence of recognizable buttons and an attempt to respect visual hyerarchy among the elements at screen.
 
-Starting from the index/homepage it is possible to visit one of the informational pages (about, docs, disclaimer), and an highlighted access to the main feature of the website, "The Map" page, from which you can start exploring the collection.
+Starting from the index/homepage it is possible to visit one of the informational pages (about, docs), and an highlighted access to the main feature of the website, "The Map" page, from which you can start exploring the collection.
 
 ### 3.1.1 Sitemap
 
@@ -68,7 +68,6 @@ Starting from the index/homepage it is possible to visit one of the informationa
 
 flowchart LR
     Homepage["Homepage"] --> n1["About"]
-    Homepage --> n2["Disclaimer"]
     Homepage --> n3["Documentation"]
     Homepage --> n4["The Map"]
     n4 --> n5["Map Items*"]
@@ -103,7 +102,7 @@ The index/homepage is strongly inspired by The British Museum one, being this im
 
 The homepage features:
 
--   A pitch black header bar containing the links to the informational pages (about, disclaimer, docs)
+-   A pitch black header bar containing the links to the informational pages (about, docs)
 -   A background video that merges real life Tolkien artifacts and clips with movies clips from «The Lord Of The Rings» Trilogy, it was realized using the open source video editor [kdenlive](https://kdenlive.org/)
 -   A small tooltip box containing some informative text about the exhibition and a slightly bigger button leading to "The Map" the main feature of the website.
 
@@ -145,12 +144,12 @@ Each exhibit card follows the same template. The first set of information at dis
 
 In each card you can also find arrows to move from one item to the other without using the map to select each one of them.
 
-### 3.2.4 Informational Pages (About, Disclaimer, Docs)
+### 3.2.4 Informational Pages (About, Docs)
 
-The Informational pages give access to the relevant information for those interested in the project and its developers:
+The Informational page give access to the relevant information for those interested in the project and its developers:
 
 -   "About" provides a small overview of the team and links to their github profiles
--   "Disclaimer" provides legal text and the selected license, providing context to those who visit the project externally
+-   "Docs" provides technical documentation, and licensing
 
 ### 3.3 JavaScript Functionality
 
@@ -209,6 +208,22 @@ Every Item is described using the following properties:
 
 This is the only available mockup, made at the start of the development, even if we didn't follow up and update
 
-### B.
+### B. Challenges
+
+The biggest challenge was probably the unexpected strict and protective stance that The Tolkien Estate took towards any trademark, copyright and product slightly related to Tolkien and his imaginarium. It was difficult even to find the correct links to the images displayed in the imaginary exhibit and to gather the few available metadata for each time. The reason is probably related to how popular and dear this world is, making it perfectly sustainable to avoid any sort of information leak or sharing.
 
 ### C. Future Developments
+
+Future developments could involve:
+
+-   a better and more thorough research of material and related metadata, possibly encased in a reusable schema.
+-   a better integration of styling and design purposes, to make the overall look even more coherent
+-   devise similar exhibitions about different subjects to test the model and the workflow
+
+# Licensing
+
+This software is released under the [MIT License](https://mit-license.org/).
+
+This is a university project and its purpose is purely educational.
+
+© 2025 The Tolkien Estate, Wētā Workshop. All Rights Reserved.

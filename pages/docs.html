@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>docs.md</title>
+        <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+
+        <style>
+            /* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+            /*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+            html {
+                width: 100vw;
+            }
+            body {
+                font-family: var(
+                    --vscode-markdown-font-family,
+                    -apple-system,
+                    BlinkMacSystemFont,
+                    "Segoe WPC",
+                    "Segoe UI",
+                    "Ubuntu",
+                    "Droid Sans",
+                    sans-serif
+                );
+                font-size: var(--vscode-markdown-font-size, 13pt);
+                line-height: var(--vscode-markdown-line-height, 22px);
+                width: 70ch;
+                margin: 0 25%;
+                align-self: center;
+            }
+
+            #code-csp-warning {
+                position: fixed;
+                top: 0;
+                right: 0;
+                color: white;
+                margin: 16px;
+                text-align: center;
+                font-size: 12px;
+                font-family: sans-serif;
+                background-color: #444444;
+                cursor: pointer;
+                padding: 6px;
+                box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
+            }
+
+            #code-csp-warning:hover {
+                text-decoration: none;
+                background-color: #007acc;
+                box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+            }
+
+            body.scrollBeyondLastLine {
+                margin-bottom: calc(100vh - 22px);
+            }
+
+            body.showEditorSelection .code-line {
+                position: relative;
+            }
+
+            body.showEditorSelection .code-active-line:before,
+            body.showEditorSelection .code-line:hover:before {
+                content: "";
+                display: block;
+                position: absolute;
+                top: 0;
+                left: -12px;
+                height: 100%;
+            }
+
+            body.showEditorSelection li.code-active-line:before,
+            body.showEditorSelection li.code-line:hover:before {
+                left: -30px;
+            }
+
+            .vscode-light.showEditorSelection .code-active-line:before {
+                border-left: 3px solid rgba(0, 0, 0, 0.15);
+            }
+
+            .vscode-light.showEditorSelection .code-line:hover:before {
+                border-left: 3px solid rgba(0, 0, 0, 0.4);
+            }
+
+            .vscode-light.showEditorSelection
+                .code-line
+                .code-line:hover:before {
+                border-left: none;
+            }
+
+            .vscode-dark.showEditorSelection .code-active-line:before {
+                border-left: 3px solid rgba(255, 255, 255, 0.4);
+            }
+
+            .vscode-dark.showEditorSelection .code-line:hover:before {
+                border-left: 3px solid rgba(255, 255, 255, 0.6);
+            }
+
+            .vscode-dark.showEditorSelection
+                .code-line
+                .code-line:hover:before {
+                border-left: none;
+            }
+
+            .vscode-high-contrast.showEditorSelection .code-active-line:before {
+                border-left: 3px solid rgba(255, 160, 0, 0.7);
+            }
+
+            .vscode-high-contrast.showEditorSelection .code-line:hover:before {
+                border-left: 3px solid rgba(255, 160, 0, 1);
+            }
+
+            .vscode-high-contrast.showEditorSelection
+                .code-line
+                .code-line:hover:before {
+                border-left: none;
+            }
+
+            img {
+                max-width: 100%;
+                max-height: 100%;
+            }
+
+            a {
+                text-decoration: none;
+            }
+
+            a:hover {
+                text-decoration: underline;
+            }
+
+            a:focus,
+            input:focus,
+            select:focus,
+            textarea:focus {
+                outline: 1px solid -webkit-focus-ring-color;
+                outline-offset: -1px;
+            }
+
+            hr {
+                border: 0;
+                height: 2px;
+                border-bottom: 2px solid;
+            }
+
+            h1 {
+                padding-bottom: 0.3em;
+                line-height: 1.2;
+                border-bottom-width: 1px;
+                border-bottom-style: solid;
+            }
+
+            h1,
+            h2,
+            h3 {
+                font-weight: normal;
+            }
+
+            table {
+                border-collapse: collapse;
+            }
+
+            table > thead > tr > th {
+                text-align: left;
+                border-bottom: 1px solid;
+            }
+
+            table > thead > tr > th,
+            table > thead > tr > td,
+            table > tbody > tr > th,
+            table > tbody > tr > td {
+                padding: 5px 10px;
+            }
+
+            table > tbody > tr + tr > td {
+                border-top: 1px solid;
+            }
+
+            blockquote {
+                margin: 0 7px 0 5px;
+                padding: 0 16px 0 10px;
+                border-left-width: 5px;
+                border-left-style: solid;
+            }
+
+            code {
+                font-family: Menlo, Monaco, Consolas, "Droid Sans Mono",
+                    "Courier New", monospace, "Droid Sans Fallback";
+                font-size: 1em;
+                line-height: 1.357em;
+            }
+
+            body.wordWrap pre {
+                white-space: pre-wrap;
+            }
+
+            pre:not(.hljs),
+            pre.hljs code > div {
+                padding: 16px;
+                border-radius: 3px;
+                overflow: auto;
+            }
+
+            pre code {
+                color: var(--vscode-editor-foreground);
+                tab-size: 4;
+            }
+
+            /** Theming */
+
+            .vscode-light pre {
+                background-color: rgba(220, 220, 220, 0.4);
+            }
+
+            .vscode-dark pre {
+                background-color: rgba(10, 10, 10, 0.4);
+            }
+
+            .vscode-high-contrast pre {
+                background-color: rgb(0, 0, 0);
+            }
+
+            .vscode-high-contrast h1 {
+                border-color: rgb(0, 0, 0);
+            }
+
+            .vscode-light table > thead > tr > th {
+                border-color: rgba(0, 0, 0, 0.69);
+            }
+
+            .vscode-dark table > thead > tr > th {
+                border-color: rgba(255, 255, 255, 0.69);
+            }
+
+            .vscode-light h1,
+            .vscode-light hr,
+            .vscode-light table > tbody > tr + tr > td {
+                border-color: rgba(0, 0, 0, 0.18);
+            }
+
+            .vscode-dark h1,
+            .vscode-dark hr,
+            .vscode-dark table > tbody > tr + tr > td {
+                border-color: rgba(255, 255, 255, 0.18);
+            }
+        </style>
+
+        <style>
+            /* Tomorrow Theme */
+            /* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+            /* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+            /* Tomorrow Comment */
+            .hljs-comment,
+            .hljs-quote {
+                color: #8e908c;
+            }
+
+            /* Tomorrow Red */
+            .hljs-variable,
+            .hljs-template-variable,
+            .hljs-tag,
+            .hljs-name,
+            .hljs-selector-id,
+            .hljs-selector-class,
+            .hljs-regexp,
+            .hljs-deletion {
+                color: #c82829;
+            }
+
+            /* Tomorrow Orange */
+            .hljs-number,
+            .hljs-built_in,
+            .hljs-builtin-name,
+            .hljs-literal,
+            .hljs-type,
+            .hljs-params,
+            .hljs-meta,
+            .hljs-link {
+                color: #f5871f;
+            }
+
+            /* Tomorrow Yellow */
+            .hljs-attribute {
+                color: #eab700;
+            }
+
+            /* Tomorrow Green */
+            .hljs-string,
+            .hljs-symbol,
+            .hljs-bullet,
+            .hljs-addition {
+                color: #718c00;
+            }
+
+            /* Tomorrow Blue */
+            .hljs-title,
+            .hljs-section {
+                color: #4271ae;
+            }
+
+            /* Tomorrow Purple */
+            .hljs-keyword,
+            .hljs-selector-tag {
+                color: #8959a8;
+            }
+
+            .hljs {
+                display: block;
+                overflow-x: auto;
+                color: #4d4d4c;
+                padding: 0.5em;
+            }
+
+            .hljs-emphasis {
+                font-style: italic;
+            }
+
+            .hljs-strong {
+                font-weight: bold;
+            }
+        </style>
+
+        <style>
+            /*
+ * Markdown PDF CSS
+ */
+
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC",
+                    "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+                padding: 0 12px;
+            }
+
+            pre {
+                background-color: #f8f8f8;
+                border: 1px solid #cccccc;
+                border-radius: 3px;
+                overflow-x: auto;
+                white-space: pre-wrap;
+                overflow-wrap: break-word;
+            }
+
+            pre:not(.hljs) {
+                padding: 23px;
+                line-height: 19px;
+            }
+
+            blockquote {
+                background: rgba(127, 127, 127, 0.1);
+                border-color: rgba(0, 122, 204, 0.5);
+            }
+
+            .emoji {
+                height: 1.4em;
+            }
+
+            code {
+                font-size: 14px;
+                line-height: 19px;
+            }
+
+            /* for inline code */
+            :not(pre):not(.hljs) > code {
+                color: #c9ae75; /* Change the old color so it seems less like an error */
+                font-size: inherit;
+            }
+
+            /* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+            .page {
+                page-break-after: always;
+            }
+            .top-btn {
+                cursor: pointer;
+                padding: 0.8rem;
+                border-radius: 5px;
+                color: #ffffff;
+                background-color: hsl(0, 0%, 38.82%);
+                animation: glowing infinite 1s;
+                margin-top: 1rem;
+            }
+            .top-btn:hover {
+                background-color: hsl(0, 0%, 58.82%);
+            }
+        </style>
+
+        <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        />
+    </head>
+    <body>
+        <script>
+            mermaid.initialize({
+                startOnLoad: true,
+                theme:
+                    document.body.classList.contains("vscode-dark") ||
+                    document.body.classList.contains("vscode-high-contrast")
+                        ? "dark"
+                        : "default",
+            });
+        </script>
+        <span
+            class="material-icons top-btn"
+            id="home"
+            onclick="location.href=`/index.html`"
+        >
+            home
+        </span>
+        <h2 id="introduction">Introduction</h2>
+        <p>
+            The Middle Earth Cabinet is a Project Website following the
+            guidelines for the 2024-2025 a.y. valid for the exam
+            &quot;Information Modeling and Web Technologies&quot;.
+        </p>
+        <h3 id="11-purpose-of-this-document">1.1 Purpose of this Document</h3>
+        <p>
+            This document has the purpose of providing a complete documentation
+            of the work done. It urges to be comprehensive and extensive,
+            describing every individual aspect of the website itself.
+        </p>
+        <h3 id="12-audience">1.2 Audience</h3>
+        <p>
+            The selected audience for this website is, by design, diverse and
+            the website itself is built to give to each and every user the tools
+            to enforce this flexibility.
+        </p>
+        <p>The three main groups described by the requirements include:</p>
+        <ul>
+            <li>Elementary and Middle School kids.</li>
+            <li>
+                Average museum visitors with different available time for the
+                visit.
+            </li>
+            <li>
+                Users that are experts in the domain (in our case the so called
+                «Tolkien Scholars») or users that want a deep dive and have some
+                time to spend for the exhibit.
+            </li>
+        </ul>
+        <p>
+            The functionality allowing users to adjust the length and complexity
+            of the text for each exhibit across three levels per axis will be
+            discussed in detail later. For now, it's important to understand
+            that this feature allows for tailored information delivery.
+        </p>
+        <p>
+            This led us to work on a small description and metadata database
+            described in JSON, for a total of 9 descriptions per exhibit.
+        </p>
+        <h3 id="13-scope-of-the-website">1.3 Scope of the Website</h3>
+        <p>
+            This Website serves as an online guide and tour for the imaginary
+            exhibition «The Middle Earth Cabinet». The Scope of the Website is
+            therefore to provide the adequate informational content tailored for
+            the target audience and presented in a streamlined and intuitive
+            way, but also to be informative about the location of the exhibit
+            and transparent about the curators.
+        </p>
+        <h3 id="14-document-conventions">1.4 Document Conventions</h3>
+        <p>
+            The terminology of the documentation will make use of technical
+            jargon and it will refer to common practices in a familiar way,
+            confident that those who read it are knowledgeable enough to
+            understand it.
+        </p>
+        <h3 id="15-contact-information-for-support">
+            1.5 Contact Information for Support
+        </h3>
+        <p>
+            Our <a href="about.html">About</a> page is here for any information
+            or support.
+        </p>
+        <h2 id="website-overview-and-architecture">
+            Website Overview and Architecture
+        </h2>
+        <h3 id="21-website-goals-and-objectives">
+            2.1 Website Goals and Objectives
+        </h3>
+        <p>
+            As mentioned before the goal is to obtain an easy to use and
+            intuitive system that can be easily reproduced for a different
+            exhibition. It tries to be compliant with the exam requirements and
+            adds some facilities where needed to support its goals.
+        </p>
+        <h3 id="22-hosting">2.2 Hosting</h3>
+        <p>
+            «The Middle Earth Cabinet» is hosted making use of
+            <a href="https://pages.github.com/">Github Pages</a>, starting from
+            a
+            <a href="https://github.com/falaimo99/webdev">repository</a> hosted
+            on one of the curators and developers
+            <a href="https://github.com/falaimo99">github account</a>.
+        </p>
+        <h3 id="231-frontend-technologies">2.3.1 Frontend Technologies</h3>
+        <p>
+            The Website makes use of the &quot;traditional&quot; frontend stack,
+            (HTML, CSS, JS). It tends to adopt a modular approach, that
+            separates html pages, style and scripts on different files.
+        </p>
+        <h3 id="232-backend-technologies">2.3.2 Backend Technologies</h3>
+        <p>
+            The requirements of the project don't comprehend a backend part
+            development, the only &quot;backend&quot; part is assolved by the
+            hosting system.
+        </p>
+        <p>
+            The only other consideration about backend is about internal data
+            retrieval, the Project make use of an items.json file to retrieve
+            the informational content to display for the exhibition.
+        </p>
+        <h3 id="24-data-flow-and-interactions">
+            2.4 Data Flow and Interactions
+        </h3>
+        <h2 id="frontend-development">Frontend Development</h2>
+        <h3 id="31-website-structure-and-navigation">
+            3.1 Website Structure and Navigation
+        </h3>
+        <p>
+            The website structure is fairly simple having only one job in mind.
+            Navigation is facilitated by the presence of recognizable buttons
+            and an attempt to respect visual hyerarchy among the elements at
+            screen.
+        </p>
+        <p>
+            Starting from the index/homepage it is possible to visit one of the
+            informational pages (about, docs), and an highlighted access to the
+            main feature of the website, &quot;The Map&quot; page, from which
+            you can start exploring the collection.
+        </p>
+        <h3 id="311-sitemap">3.1.1 Sitemap</h3>
+        <pre><code class="language-mermaid"><div class="mermaid">
+flowchart LR
+    Homepage["Homepage"] --> n1["About"]
+    Homepage --> n3["Documentation"]
+    Homepage --> n4["The Map"]
+    n4 --> n5["Map Items*"]
+
+</div></code></pre>
+        <p>
+            <em
+                >This chart was realized using
+                <a href="https://mermaid.js.org/">mermaid</a></em
+            >
+        </p>
+        <p>* these are not pages but are still treated as relevant elements.</p>
+        <h3 id="312-user-interface-ui-design-principles">
+            3.1.2 User Interface (UI) Design Principles
+        </h3>
+        <p>
+            We tried to stick to the basic UI Design Principles without
+            outlining our own requirements. We followed common sense regarding
+            matters of readability and interaction facilities at user's
+            disposal.
+        </p>
+        <h3 id="313-responsive-design-and-mobile-compatibility">
+            3.1.3 Responsive Design and Mobile Compatibility
+        </h3>
+        <p>Is yet to be implemented! Not present in the requirements.</p>
+        <h3 id="32-page-templates-and-components">
+            3.2 Page Templates and Components
+        </h3>
+        <p>
+            The pages are few enough to make it available for us to devise
+            unique designs for each of them. Trying to retain a coherent
+            aesthetic.
+        </p>
+        <p>Consistent templates are present in:</p>
+        <ul>
+            <li>button styling</li>
+            <li>exhibit cards</li>
+        </ul>
+        <h3 id="321-homepage">3.2.1 Homepage</h3>
+        <p>
+            The index/homepage is strongly inspired by The British Museum one,
+            being this imaginary exhibition staged inside &quot;The King's
+            Library&quot;, the first series of rooms indexed in the
+            <a href="https://www.britishmuseum.org/visit/museum-map"
+                >Official Map</a
+            >
+            of the aforementioned museum.
+        </p>
+        <p>The homepage features:</p>
+        <ul>
+            <li>
+                A pitch black header bar containing the links to the
+                informational pages (about, docs)
+            </li>
+            <li>
+                A background video that merges real life Tolkien artifacts and
+                clips with movies clips from «The Lord Of The Rings» Trilogy, it
+                was realized using the open source video editor
+                <a href="https://kdenlive.org/">kdenlive</a>
+            </li>
+            <li>
+                A small tooltip box containing some informative text about the
+                exhibition and a slightly bigger button leading to &quot;The
+                Map&quot; the main feature of the website.
+            </li>
+        </ul>
+        <p>
+            The differences with the British Museum website are to be found in
+            layout, we have of course fewer elements to deal with; and
+            overflowing, we decided to have a static full-viewport homepage,
+            while the BM site has to include many more elements below their bar
+            and background video.
+        </p>
+        <h3 id="322-%22the-map%22-page">3.2.2 &quot;The Map&quot; Page</h3>
+        <p>
+            This is the page that guides the user through the exhibition, this
+            is a graph representation of the user interaction, this acts as a
+            &quot;setup phase&quot; that allows the user how they want to visit
+            and the difficulty of the descriptions. During this phase the user
+            is presented with two <code>&lt;dialog&gt;</code> elements.
+        </p>
+        <pre><code class="language-mermaid"><div class="mermaid">flowchart LR
+
+n1["Path Selection"] --> n2["Character Selection"] --> n3["King's Library Map and Exhibition"]
+
+</div></code></pre>
+        <p>
+            <em
+                >This chart was realized using
+                <a href="https://mermaid.js.org/">mermaid</a></em
+            >
+        </p>
+        <p>
+            After the setup phase the user is able to explore the map in
+            different ways:
+        </p>
+        <ul>
+            <li>
+                if they selected a Path, the map will zoom and pan to focus on
+                the museum section dedicated to it, highlighted with the theme
+                colour of that path. It will then appear a &quot;Start
+                Journey&quot; button that will guide you through the right order
+                of appearance of the exhibits.
+            </li>
+            <li>
+                if they selected free roam they can freely explore each and
+                every item available without an order.
+            </li>
+        </ul>
+        <p>
+            A useful &quot;Resume Journey&quot; button will substitute the
+            &quot;Start Journey&quot; one, and will make it possible to resume
+            from the last item you selected.
+        </p>
+        <p>
+            Every Journey consists only of the selected items in that zone and
+            will automatically reach an end when you get to the last one
+        </p>
+        <p>
+            Besides the map are available two buttons, one to return back to the
+            homepage and another to visualize the british museum map, and a link
+            that leads the user to the original source, in this view is also
+            highlighted the actual exhibition location.
+        </p>
+        <h4 id="map-svg">Map Svg</h4>
+        <p>
+            The process to realize the svg that allows the map to function was
+            rather simple but required some work and refinements, the map was
+            traced using the official map provided by the British Museum, at
+            first using <a href="https://www.figma.com">figma</a> and then
+            refined using <a href="https://www.inkscape.com">inkscape</a>.
+        </p>
+        <p>
+            It is implemented using the <code>&lt;svg&gt;</code> element in
+            html, and it was used to simplify the interaction scripts at work
+            that will be later described.
+        </p>
+        <h3 id="323-item-card">3.2.3 Item Card</h3>
+        <p>
+            Each exhibit card follows the same template. The first set of
+            information at display is the museal description of the item,
+            adjustable per level and length through radio buttons. You can also
+            access, with dedicated buttons, the available metadata and map for
+            each item. The map is retrieved using
+            <a href="https://leafletjs.com/">leaflet</a> and
+            <a href="https://www.openstreetmap.org/">OpenStreetMap</a>
+        </p>
+        <p>
+            In each card you can also find arrows to move from one item to the
+            other without using the map to select each one of them.
+        </p>
+        <h3 id="324-informational-pages-about-docs">
+            3.2.4 Informational Pages (About, Docs)
+        </h3>
+        <p>
+            The Informational page give access to the relevant information for
+            those interested in the project and its developers:
+        </p>
+        <ul>
+            <li>
+                &quot;About&quot; provides a small overview of the team and
+                links to their github profiles
+            </li>
+            <li>
+                &quot;Docs&quot; provides technical documentation, and licensing
+            </li>
+        </ul>
+        <h3 id="33-javascript-functionality">3.3 JavaScript Functionality</h3>
+        <p>
+            All the relevant javascript code is contained into
+            <code>scripts/script.js</code>, being all the pages except &quot;The
+            Map&quot; page static it is relevant only for the functionalities
+            described in paragraph 3.2.2 and 3.2.3.
+        </p>
+        <p>
+            Javascript is used for all the interactive functionality on the
+            website, everything is managed client side. The script loads content
+            coming from <code>data/items.json</code>, and adjusts it according
+            to the choices made by the user during the setup phase. Javascript
+            is also used to set the variables during the setup phase and to make
+            them available throughout the session.
+        </p>
+        <p>
+            The functions provided regulate the behavior of the setup dialogs,
+            of the British Museum Map dialog, and the item card content
+            retrieval and displaying.
+        </p>
+        <h3 id="34-styling-and-theming-css">3.4 Styling and Theming (CSS)</h3>
+        <p>
+            The Styling and Theming is full of small references to Tolkien's
+            work. We'll try to outline them in this paragraph, it is a simple
+            theming but we deem effective enough to please the eye.
+        </p>
+        <p>
+            As mentioned before the theme chosen for the homepage traces back to
+            the British Museum Homepage, but we decided to add our own video
+            background, selecting and intertwining real life clips of Tolkien
+            and scenes from the movie, this is intended to create a visual
+            reference to our two paths, the origin and the legacy.
+        </p>
+        <p>
+            The map contains a total different approach, we decided to adopt a
+            colorful and yet simple style for it.
+        </p>
+        <p>The main colors hint to Tolkien's world and life:</p>
+        <ul>
+            <li>
+                Gold for the legacy path, referring to the color of the ring.
+            </li>
+            <li>
+                Green for the origin path, Tolkien was notoriously fond of trees
+                and nature, he included lots of descriptions of the natural
+                world in his works.
+            </li>
+            <li>
+                Skyblue for some details, it is a color that is recurrent in
+                important and mysterious characters.
+            </li>
+            <li>
+                Lighter bronze-brown, provides a good and pleasing base color
+                for buttons, being close to the background dominating color.
+            </li>
+        </ul>
+        <p>
+            The buttons are highlighted when hovered on and are rounded and
+            solid, this creates a more modern look.
+        </p>
+        <p>
+            The map style is simple and vectorial, tuned for readability and to
+            provide good contrast between background, map borders and items at
+            display.
+        </p>
+        <p>
+            The background is the map of Middle Earth itself, blurred enough to
+            avoid distraction.
+        </p>
+        <p>
+            In the &quot;Adventurers&quot; setup and the about page there are
+            images from the film, to provide a sort of early 2000s reminiscence,
+            when magazines, scrapbooks and archaic html websites were popular.
+        </p>
+        <h2 id="data-management">Data Management</h2>
+        <p>
+            As mentioned earlier in this documentation the data for the items is
+            provided via <code>json</code>, the data is still sparse and need to
+            be cleared yet. We tried to provide a basic structure for the item
+            cards and a small set of metadata information but it was truly a
+            challenge to keep it consistent.
+        </p>
+        <h3 id="41-json-guidelines">4.1 JSON Guidelines</h3>
+        <p>
+            The data schema can be easily adopted as is, and can be reproduced
+            for other use cases. A further development could be redacting an
+            effective JSON schema.
+        </p>
+        <p>Every Item is described using the following properties:</p>
+        <ul>
+            <li>An identfier,</li>
+            <li>An h1 and an h2 to show in the main view of the card</li>
+            <li>An image reference, it can be a link or a static local file</li>
+            <li>
+                Various metadata descriptors coming mainly from
+                <a href="https://www.schema.org">schema</a> and
+                <a href="https://www.dublincore.org/">Dublin Core</a>
+                <ul>
+                    <li>
+                        Including, when available, relevant geographical
+                        coordinates
+                    </li>
+                </ul>
+            </li>
+            <li>
+                The nine descriptions that permit to adjust level and length,
+                they were generated using an LLM providing the adequate (usually
+                not much) context and then proofread.
+            </li>
+        </ul>
+        <h2 id="appendices">Appendices</h2>
+        <h3
+            id="a-wireframes-or-mockups-if-relevant-to-technical-implementation"
+        >
+            A. Wireframes or Mockups (if relevant to technical implementation)
+        </h3>
+        <p><img src="../excalidraw.png" alt="Excalibur" /></p>
+        <p>
+            This is the only available mockup, made at the start of the
+            development, even if we didn't follow up and update
+        </p>
+        <h3 id="b-challenges">B. Challenges</h3>
+        <p>
+            The biggest challenge was probably the unexpected strict and
+            protective stance that The Tolkien Estate took towards any
+            trademark, copyright and product slightly related to Tolkien and his
+            imaginarium. It was difficult even to find the correct links to the
+            images displayed in the imaginary exhibit and to gather the few
+            available metadata for each time. The reason is probably related to
+            how popular and dear this world is, making it perfectly sustainable
+            to avoid any sort of information leak or sharing.
+        </p>
+        <h3 id="c-future-developments">C. Future Developments</h3>
+        <p>Future developments could involve:</p>
+        <ul>
+            <li>
+                a better and more thorough research of material and related
+                metadata, possibly encased in a reusable schema.
+            </li>
+            <li>
+                a better integration of styling and design purposes, to make the
+                overall look even more coherent
+            </li>
+            <li>
+                devise similar exhibitions about different subjects to test the
+                model and the workflow
+            </li>
+        </ul>
+        <h1 id="licensing">Licensing</h1>
+        <p>
+            This software is released under the
+            <a href="https://mit-license.org/">MIT License</a>.
+        </p>
+        <p>
+            This is a university project and its purpose is purely educational.
+        </p>
+        <p>© 2025 The Tolkien Estate, Wētā Workshop. All Rights Reserved.</p>
+    </body>
+</html>
