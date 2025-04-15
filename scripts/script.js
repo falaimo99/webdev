@@ -302,7 +302,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
                         
                         description.appendChild(navButtons);
-                        // controlsContainer.appendChild(navButtons);
                         controlsContainer.appendChild(viewSwitcher);
                         description.appendChild(controlsContainer);
                     }
