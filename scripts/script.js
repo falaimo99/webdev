@@ -33,8 +33,6 @@ const maskColor = (mask, color, opacity) => {
 
 let selectedMask = undefined;
 
-// Script for the Welcome Dialog, it will trigger a series of event
-// that will reflect in the final map view
 const welcomeDialog = () => {
     const pathBtns = document.querySelectorAll(".path-button");
     const welcomeDialog = document.querySelector(".welcomeDialog");
@@ -115,8 +113,6 @@ const charDialog = () => {
         dialog.style.display = "none";
         map.style.display = "block";
 
-        // const newJourney = document.querySelector("#new-journey-btn");
-        // newJourney.style.display = "block";
 
         if (selectedMask != undefined) {
             map.style.animation = `${selectedMask.id}Transform forwards 3s`;
@@ -151,7 +147,6 @@ document.addEventListener("DOMContentLoaded", function () {
         freePath: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],
     };
 
-    // Open tooltip when an item (circle, ellipse) is clicked
     document.querySelectorAll("circle, ellipse").forEach((circle) => {
         circle.addEventListener("click", function (event) {
             const itemId =
@@ -171,12 +166,9 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         fetchItemDetails(idx, window.innerWidth / 2, window.innerHeight / 2);
-        // If the user went on we should change the button to resume and add
-        // a new setup button
     });
 
     
-    // Close tooltip when the close button is clicked
     closeBtn.addEventListener("click", () => {
         tooltip.classList.add("hidden");
     });
@@ -188,7 +180,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 const item = data.items.find(
                     (obj) => obj.id === parseInt(itemId)
                 );
-                // Update current index
                 if (selectedPath) {
                     currentItemIndex = paths[selectedPath].indexOf(+itemId);
                 }
@@ -220,16 +211,15 @@ document.addEventListener("DOMContentLoaded", function () {
                         "No description available.";
                     tooltipContent.querySelector("small").textContent = ``;
 
-                    // Add navigation buttons
                     const navButtons = document.createElement("div");
                     navButtons.classList.add("nav-buttons");
                     if (selectedPath) {
                         const prevBtn = document.createElement("button");
-                        prevBtn.textContent = "← Previous";
+                        prevBtn.textContent = "←";
                         prevBtn.classList.add("inactive");
 
                         const nextBtn = document.createElement("button");
-                        nextBtn.textContent = "Next →";
+                        nextBtn.textContent = "→";
                         nextBtn.classList.add("inactive");
 
                         if (currentItemIndex > 0) {
@@ -270,7 +260,6 @@ document.addEventListener("DOMContentLoaded", function () {
 	</div>
 `;
 
-                    // Helper render functions
                     function renderDescription() {
                         const tooltipContentClone =
                             template.content.cloneNode(true);
@@ -310,8 +299,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
                         const controlsContainer = document.createElement("div");
                         controlsContainer.classList.add("item-controls");
+
+                        
+                        description.appendChild(navButtons);
+                        // controlsContainer.appendChild(navButtons);
                         controlsContainer.appendChild(viewSwitcher);
-                        controlsContainer.appendChild(navButtons);
                         description.appendChild(controlsContainer);
                     }
 
@@ -319,39 +311,46 @@ document.addEventListener("DOMContentLoaded", function () {
                         const metadataContainer = document.createElement("div");
                         metadataContainer.classList.add("metadata-container");
                         metadataContainer.innerHTML = `
-		<h3>Metadata</h3>
-		<p><strong>Title:</strong> ${item["DC.Title"] || "N/A"}</p>
-		<p><strong>Creator:</strong> ${item["DC.creator"] || "N/A"}</p>
-		<p><strong>Date:</strong> ${item["DC.date"] || "N/A"}</p>
-		<p><strong>Provenance:</strong> ${item["DC.provenance"] || "N/A"}</p>
-		<p><strong>Source:</strong> <a href="${
-            item["DC.source"]
-        }" target="_blank">View Image</a></p>
-		<p><strong>Description:</strong> ${item["DC.description"] || "N/A"}</p>
+		<h3>${item["h1"] ? "<span><strong>"+item["h1"]+"</strong></span></h3>" : "</h3>"}
+        <h3>Metadata</h3>
+		${item["DC.Title"] ? "<p><strong>Title: </strong>"+item["DC.Title"]+"</p>" : ""}
+        ${item["DC.creator"] ? "<p><strong>Creator: </strong>"+item["DC.creator"]+"</p>" : ""}
+        ${item["DC.date"] ? "<p><strong>Date: </strong>"+item["DC.date"]+"</p>" : ""}
+        ${item["DC.provenance"] ? "<p><strong>Provenance: </strong>"+item["DC.provenance"]+"</p>" : ""}
+        ${item["DC.source"] ? "<p><strong>Source: </strong> <a href="+item["DC.source"]+" target='_blank'>View Source</a></p>" : ""}
+        ${item["DC.description"] ? "<p><strong>Description: </strong>"+item["DC.description"]+"</p>" : ""}
+		
 	`;
                         description.innerHTML = "";
                         description.appendChild(metadataContainer);
                         const controlsContainer = document.createElement("div");
                         controlsContainer.classList.add("item-controls");
+                        description.appendChild(navButtons);
                         controlsContainer.appendChild(viewSwitcher);
-                        controlsContainer.appendChild(navButtons);
                         description.appendChild(controlsContainer);
                     }
 
                     function renderMap() {
-                        const mapContainer = document.createElement("div");
-                        mapContainer.id = "map";
-                        mapContainer.style =
-                            "height: 300px; width: 100%; border-radius: 0.5rem; margin-bottom: 1rem;";
+                        const mapView = document.createElement("div");
+                        mapView.id = "map";
+                        mapView.style =
+                            "height: 300px; width: 80%; border-radius: 0.5rem; margin-bottom: 1rem; margin-left: 10%; margin-right: 10%;";
                         description.innerHTML = "";
+                        const mapContainer = document.createElement("div");
+                        mapContainer.classList.add('map-container')
+
+                        mapContainer.innerHTML = `
+		<h3>${item["h1"] ? "<span><strong>"+item["h1"]+"</strong></span></h3>" : "</h3>"}`
+
+                        mapContainer.appendChild(mapView);
+
                         description.appendChild(mapContainer);
                         const controlsContainer = document.createElement("div");
                         controlsContainer.classList.add("item-controls");
+                        description.appendChild(navButtons);
                         controlsContainer.appendChild(viewSwitcher);
-                        controlsContainer.appendChild(navButtons);
                         description.appendChild(controlsContainer);
 
-                        // Initialize OpenStreetMap
                         const lat = parseFloat(
                             item["schema.GeoCoordinates"]?.latitude
                         );
@@ -360,12 +359,12 @@ document.addEventListener("DOMContentLoaded", function () {
                         );
 
                         if (!lat || !lng) {
-                            mapContainer.innerHTML =
+                            mapView.innerHTML =
                                 "<p>Location not available</p>";
                             return;
                         }
 
-                        const map = L.map(mapContainer).setView([lat, lng], 13);
+                        const map = L.map(mapView).setView([lat, lng], 13);
                         L.tileLayer(
                             "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
                             {
@@ -387,11 +386,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
                     renderDescription(); // default view
 
-                    // description.innerHTML = "";
-                    // description.appendChild(tooltipContent);
-                    // description.appendChild(navButtons);
-
-                    // tooltip.style.right = `${10}px`;
                     tooltip.style.top = "10%";
                     tooltip.style.height = "80%";
                     tooltip.style.maxHeight = "40rem";
@@ -419,9 +413,7 @@ function updateDescription(item) {
         'input[name="complexity"]:checked'
     );
     const length = document.querySelector('input[name="length"]:checked');
-    // TODO: changes here at list
-
-    // currentLevel = complexityLevels.findIndex(x => x===complexity);
+    
 
     if (complexity && length) {
         const complexityValue = complexity.value;
