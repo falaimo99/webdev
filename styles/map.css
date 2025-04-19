@@ -156,7 +156,12 @@ dialog {
   border-radius: 11px;
 }
 
-
+#originpath-description{
+  font-weight: 600;
+}
+#legacypath-description{
+  font-weight: 600;
+}
 
 .charDialog {
   width: 50%;
