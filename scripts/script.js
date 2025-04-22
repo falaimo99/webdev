@@ -147,7 +147,7 @@ document.addEventListener("DOMContentLoaded", function () {
         freePath: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],
     };
 
-    document.querySelectorAll("circle, ellipse").forEach((circle) => {
+    document.querySelectorAll("circle, ellipse, path").forEach((circle) => {
         circle.addEventListener("click", function (event) {
             const itemId =
                 event.target.nextElementSibling?.id.match(/\d+/)?.[0];
@@ -339,9 +339,16 @@ document.addEventListener("DOMContentLoaded", function () {
                         mapContainer.classList.add('map-container')
 
                         mapContainer.innerHTML = `
-		<h3>${item["h1"] ? "<span><strong>"+item["h1"]+"</strong></span></h3>" : "</h3>"}`
-
+		<h3>${item["h1"] ? "<span><strong>"+item["h1"]+"</strong></span></h3>" : "</h3>"}
+        `
+                        const mapDescription = document.createElement("div");
+                        mapDescription.innerHTML = `
+        ${item["DC.provenance"] ? "<p><strong>Provenance: </strong>"+item["DC.provenance"]+"</p>" : ""}
+        ${item["DC.source"] ? "<p><strong>Source: </strong> <a href="+item["DC.source"]+" target='_blank'>View Source</a></p>" : ""}
+                        `
                         mapContainer.appendChild(mapView);
+
+                        mapContainer.appendChild(mapDescription);
 
                         description.appendChild(mapContainer);
                         const controlsContainer = document.createElement("div");
